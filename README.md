@@ -136,6 +136,8 @@ There you go :) You know how to make a good install. For cherry on the cake you 
 
 ```chmod 777 {/home/mainuser/shared-folder}```
 
+Then you can login into this new user you created without breaking everything!
+
 ## Screen tear 📺
 If you cannot find a solution you can try disabling gpu acceleration for a specific program when launching it: 
 ```{code} --disable-gpu```
