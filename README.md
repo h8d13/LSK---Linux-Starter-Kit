@@ -98,7 +98,7 @@ To secure that further you can look into reverse proxies.
 ## 🖥️ Remote desktop sessions
 
 For some weird reason this can be quite annoying depending on the distro
-One thing  I found to fix a lot of my issues is to create a second user with elevated privileges so that you can remote connect to it easily while keeping the device functional on it's own. 
+> **_NOTE:_** One thing  I found to fix a lot of my issues is to create a second user with elevated privileges so that you can remote connect to it easily while keeping the device functional on it's own. 
 
 ```sudo apt install xrdp xserver-xorg-core```
 
@@ -126,7 +126,6 @@ Depending on your desktop type.
 Then add the specific port 3389
 
 It should look something like: 192.x.x.x:3390 and you DO NOT NEED to specify a user just yet.
-
 Now this is where it usually fails because you're already in the session. To me the best is to make a second user for remote sessions:
 
 ```sudo adduser {rdpuser}```
