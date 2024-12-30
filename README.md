@@ -160,6 +160,7 @@ flatpak remove --unused
 ```
 
 Some distros like Linux Mint have a neat little software manager pre-installed!
+Basically just uses Flatpack for people who don't like terminal. 
 
 ## Developer tools
 
