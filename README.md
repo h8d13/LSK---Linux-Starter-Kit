@@ -135,3 +135,28 @@ There you go :) You know how to make a good install. For cherry on the cake you 
 
 ```chmod 777 {/home/mainuser/shared-folder}```
 
+If you get screen tear cannot find a solution you can try disabling gpu acceleration for a specific program when launching it: 
+```{code} --disable-gpu```
+
+Flatpack is the most practical way to download apps in my opinion: They will be slightly heavier than on Windows because:
+Many modern apps (like Stremio) are built using Electron, which bundles a full Chromium engine and Node.js runtime. This increases the size of the app significantly.
+
+.deb packages will also work! dpkg is designed to work with these files. 
+They will be lighter because they interact directly with the host system. 
+
+But they install seemlessly with dependencies: 
+
+```flatpak list
+flatpak install 
+flatpak uninstall 
+flatpak uninstall --unused
+flatpak remove --unused
+```
+
+Some distros like Linux Mint have a neat little software manager pre-installed!
+
+## Developer tools
+
+I personally just get vs code from the official source and is nicely integrated with Python with the public Microsoft extensions.
+The beauty of it is that a large part of linux itself uses python compatible libraries as it's 
+
