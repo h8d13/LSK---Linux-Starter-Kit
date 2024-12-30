@@ -113,6 +113,8 @@ Check if it's running:
 
 If not rebooting sometimes helps. 
 
+----
+
 If you have ufw enable make sure to ```sudo ufw allow 3389```
 This is the standard port.
 
