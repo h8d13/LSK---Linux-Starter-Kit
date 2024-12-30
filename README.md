@@ -141,6 +141,8 @@ There you go :) You know how to make a good install. For cherry on the cake you 
 If you cannot find a solution you can try disabling gpu acceleration for a specific program when launching it: 
 ```{code} --disable-gpu```
 
+
+## Packages
 Flatpack is the most practical way to download apps in my opinion: They will be slightly heavier than on Windows because:
 Many modern apps (like Stremio) are built using Electron, which bundles a full Chromium engine and Node.js runtime. This increases the size of the app significantly.
 
