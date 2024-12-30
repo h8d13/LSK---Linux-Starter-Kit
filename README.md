@@ -167,3 +167,10 @@ Basically just uses Flatpack for people who don't like terminal.
 I personally just get vs code from the official source and is nicely integrated with Python with the public Microsoft extensions.
 The beauty of it is that a large part of linux itself uses python compatible libraries as it's 
 
+
+You can simply create a file called hello.py and click the python version at the bottom right to start creating a .venv
+
+Then save your code and make sure to run it with the venv path to not get mixed with system wide packages:
+
+```cd .venv```
+```sudo ./bin/python3 hello.py ```
