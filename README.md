@@ -231,6 +231,8 @@ Basically just uses Flatpack for people who don't like terminal.
 
 For Ubuntu, it will be snap packages by default. But you can easily install flatpack or deb packages too. 
 
+Do be careful that .deb interacts with the host system so download from trusted sources. 
+
 ## Developer tools
 
 I personally just get vs code from the official source and is nicely integrated with Python with the public Microsoft extensions.
