@@ -1,4 +1,7 @@
-The installs themselves are pretty straight forward depending on distro
+The installs themselves are pretty straight forward depending on distro:
+Make sure to use GPT partition as it's more modern and can support drives larger than 2TB. Unless specifically needed for the OS you are installing. 
+
+You can use Rufus or Etcher for quick USBs!
 
 ## After initial install
 
