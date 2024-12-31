@@ -467,4 +467,27 @@ else:
     swipe_screen(device, 100, 1000, 100, 100, duration=1000)
 
 ```
+----
+
+You can go a step further to and install F-Droid and Termux on the tablet/phone itself to get a sub linux.
+
+Go to: Settings > Briometrics and Security
+
+Install unknown apps
+
+Go to https://f-droid.org/en/ and download the apk
+Then download termux from F-Droid
+
+Open termux 
+Run ```pkg update```
+```pkg upgrade```
+
+You can then go full inception and download Python 
+``` pkg install python ```
+
+You could even run servers or a lightweight desktop on this hardware too. 
+
+
+
+
 
