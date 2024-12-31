@@ -273,3 +273,9 @@ while cap.isOpened():
 cap.release()
 cv2.destroyAllWindows()
 ```
+
+You might need to give your user permissions run these seperatly: 
+```
+sudo usermod -a -G video $USER
+newgrp video
+```
