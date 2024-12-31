@@ -38,6 +38,7 @@ The same can be done with ```lsusb``` if you're using weird connectors.
 Now we can take care of graphics: 
 For intel it is most of time already integrated... As it's a often used in "dual" graphics 
 
+Then Nvidia:
 ```sudo apt install {nvidia-driver-XXX}```
 
 For AMD it's a bit more fun: They are included in the Linux kernel due to their open-source. 
