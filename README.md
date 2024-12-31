@@ -390,7 +390,9 @@ Some devices need specific communications protocols: Say again this was a finger
 You can often find the information online because some nerd reversed it or it's released by manufacturers. 
 
 
+### BONUS 🎁
 
+I've included some simple example scripts in the repo for general purposes and reference! 
 
 
 
