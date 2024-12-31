@@ -188,6 +188,8 @@ firefox
 
 It will look and feel like a normal window but is running on the linux system! 
 
+![X11DIRECTACCESS](capcap.png)
+
 It really isn't that complicated but the reason why these are set up like this is to prevent session hijacking: RSA host key fingerprint which is used to verify the server's identity in future connections to prevent man-in-the-middle attacks.
 Why you should get a prompt at some point that generates the keys. 
 
