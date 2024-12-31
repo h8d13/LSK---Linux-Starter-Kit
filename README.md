@@ -234,6 +234,9 @@ flatpak remove --unused
 Some distros like Linux Mint have a neat little software manager pre-installed!
 Basically just uses Flatpack for people who don't like terminal. 
 
+
+For Ubuntu, it will be snap packages by default. But you can easily install flatpack too!
+
 ## Developer tools
 
 I personally just get vs code from the official source and is nicely integrated with Python with the public Microsoft extensions.
