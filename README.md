@@ -240,7 +240,7 @@ This means either going the light Ubuntu distros (Mate or Xubuntu) route or Mint
 But if it's not too old you can go for the regular long term support. 
 You can also go XFCE route ( another lighter desktop), which might not look as polished but is lighter and has more performance on old hardware. 
 
-## Working with cameras or HMDI inputs
+## 📷 Working with cameras or HMDI inputs 🔌 
 
 Again you might need some basic tools: 
 ```sudo apt install v4l-utils ffmpeg```
@@ -254,5 +254,22 @@ Then check the ouput:
 Or using VLC (open-source):
 ```vlc v4l2:///dev/video0```
 
+----
 
+Better yet use open-cv !
+``` pip install opencv-python```
 
+Then create a script:
+```
+import cv2
+
+cap = cv2.VideoCapture(0)
+while cap.isOpened():
+    _, frame = cap.read()
+    _, binary = cv2.threshold(cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY), 127, 255, cv2.THRESH_BINARY)
+    cv2.imshow('Binary', binary)
+    if cv2.waitKey(1) & 0xFF == ord('q'): break
+
+cap.release()
+cv2.destroyAllWindows()
+```
