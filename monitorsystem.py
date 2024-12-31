@@ -1,7 +1,8 @@
 ## This script will display a green dot in the system tray until it hits any of the threshold values.
 ## Depending on distros there might need libraries or to allow notification tray applications
 
-### sudo apt install qt6-base-dev
+### sudo apt install -y libxcb1 libxcb-xinerama0 libxcb-cursor0 libxkbcommon-x11-0 libxcb-render0 libxcb-render-util0
+### sudo apt install -y qt6-base-dev qt6-wayland libqt5x11extras5
 
 
 import sys
