@@ -194,7 +194,7 @@ Package Manager: Pacman
 Debian-Based Distros (e.g., Ubuntu, Linux Mint, Raspberry Pi OS):
 Package Manager: APT (Advanced Package Tool)
 
-## System Monitoring
+## System Monitoring 📈
 
 Many know ```htop``` which is great already but there is a special one to my heart because it looks cooler: 
 
