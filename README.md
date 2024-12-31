@@ -487,6 +487,7 @@ You can then go full inception and download Python
 ``` pkg install python ```
 
 You could even run servers or a lightweight desktop on this hardware too. 
+Altho mine is probably too old...
 
 ![ANDROID](capcapcapcap.PNG)
 
