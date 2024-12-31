@@ -288,7 +288,7 @@ As we mentionned above:
 First find detected devices: ```lsusb```
 
 
-Then we want to understand the devices endpoints IN/OUT: 
+Then we want to understand the devices endpoints IN/OUT, this will print all the verbose info:
 
 ```lsusb -d {1c4f:007c} -v```
 
