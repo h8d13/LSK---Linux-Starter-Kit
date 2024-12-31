@@ -415,7 +415,8 @@ It's simple but shows off PyQt integration with low level linux system using psu
 Connect it allow USB debugging (in settings developer mode) & file transfer
 
 Check connection with adb devices
-Then simply run: scrcpy 
+``` adb devices```
+Then simply run: ```scrcpy``` 
 
 Then you can interface with python this simply opens the clock app:
 
