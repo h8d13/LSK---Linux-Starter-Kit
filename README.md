@@ -100,9 +100,16 @@ If you 're still having issues with dependencies USE AT YOUR OWN RISK:
 
 ## Security 🔒
 
-Ubuntu and Mint come with a pre-installed security manager: you can re-configure it with:
+
+Check security updates are installed: 
+
+```cat /etc/apt/apt.conf.d/20auto-upgrades```
+
+Re-configure it ? 
 
 ``` sudo dpkg-reconfigure unattended-upgrades```
+
+----
 
 Firewall
 
