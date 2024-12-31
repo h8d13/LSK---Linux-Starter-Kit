@@ -210,7 +210,7 @@ This also means Native GPU/hardware access without added encoding/decoding.
 What I mean is xrdp is okay, X11 direct is incredible. Then VNC is the noob way. 
 
 You can now chose between KDE, XFCE4 or whatver desktop you like... 
-I like to keep the original user's desktop intact to always be able to control from there.
+I like to keep the original user's desktop intact to always be able to control from there and install desktops on secondary users...
 
 
 ## Screen tear 📺 
