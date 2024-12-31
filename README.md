@@ -1,5 +1,6 @@
 The installs themselves are pretty straight forward depending on distro:
-The only things to be careful about: Where are you installing your OS? And set a root user & password! 
+The only things to be careful about: Where are you installing your OS and make sure your keyboard input layout is correct?
+And set a root user & password! 
 
 Make sure to use GPT partition as it's more modern and can support drives larger than 2TB. Unless specifically needed for the OS you are installing. 
 
