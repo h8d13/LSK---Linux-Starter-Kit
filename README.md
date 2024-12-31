@@ -231,3 +231,11 @@ I hate the fact you have to click 2 times to get to your apps...
 ```sudo apt install gnome-shell-extensions gnome-shell-extension-manager```
 
 Then toggle ON: Ubuntu Dock
+
+## Reviving Old Hardware @geerlingguy
+
+From what I gather the older the hardware, the more lightweight the distro you will want to pick. 
+This means either going the light Ubuntu distros (Mate or Xubuntu) route or Mint which is slightly lighter than Ubuntu.
+
+But if it's not too old you can go for the regular long term support. 
+You can also go XFCE route ( another lighter desktop), which might not look as polished but is lighter and has more performance on old hardware. 
