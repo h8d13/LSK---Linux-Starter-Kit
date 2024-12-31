@@ -1,3 +1,5 @@
+# For Deb based systems 
+
 The installs themselves are pretty straight forward depending on distro:
 The only things to be careful about: Where are you installing your OS and make sure your keyboard input layout is correct?
 And set a root user & password! 
