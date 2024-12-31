@@ -165,7 +165,7 @@ Basically just uses Flatpack for people who don't like terminal.
 ## Developer tools
 
 I personally just get vs code from the official source and is nicely integrated with Python with the public Microsoft extensions.
-The beauty of it is that a large part of linux itself uses python compatible libraries as it's 
+The beauty of it is that a large part of linux itself uses python compatible libraries as it's all open-source. 
 
 
 You can simply create a file called hello.py and click the python version at the bottom right to start creating a .venv
