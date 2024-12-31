@@ -216,11 +216,11 @@ If you cannot find a solution you can temporarly still get in the app: try disab
 
 
 ## Packages
-Flatpack is the most practical way to download apps in my opinion: They will be slightly heavier than on Windows because:
-Many modern apps (like Stremio) are built using Electron, which bundles a full Chromium engine and Node.js runtime. This increases the size of the app significantly.
-
 .deb packages will also work! dpkg is designed to work with these files. 
 They will be lighter because they interact directly with the host system. 
+
+Flatpack is the most practical way to download apps in my opinion: They will be slightly heavier than on Windows because:
+Many modern apps (like Stremio) are built using Electron, which bundles a full Chromium engine and Node.js runtime. This increases the size of the app significantly.
 
 But they install seemlessly with dependencies: 
 
@@ -233,7 +233,6 @@ flatpak remove --unused
 
 Some distros like Linux Mint have a neat little software manager pre-installed!
 Basically just uses Flatpack for people who don't like terminal. 
-
 
 For Ubuntu, it will be snap packages by default. But you can easily install flatpack too!
 
