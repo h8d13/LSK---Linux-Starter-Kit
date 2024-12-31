@@ -209,6 +209,10 @@ Why you should get a prompt at some point that generates the keys.
 This also means Native GPU/hardware access without added encoding/decoding. 
 What I mean is xrdp is okay, X11 direct is incredible. Then VNC is the noob way. 
 
+You can now chose between KDE, XFCE4 or whatver desktop you like... 
+I like to keep the original user's desktop intact to always be able to control from there.
+
+
 ## Screen tear 📺 
 Can happen sometimes if you made a mistake in drivers or your isntall was corrupted.
 If you cannot find a solution you can temporarly still get in the app: try disabling gpu acceleration for a specific program when launching it through the Terminal: 
