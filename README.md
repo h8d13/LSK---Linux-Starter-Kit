@@ -284,7 +284,7 @@ You can also go XFCE route ( another lighter desktop), which might not look as p
 ## 📷 Working with cameras or HMDI inputs 
 
 Again you might need some basic tools: 
-```sudo apt install v4l-utils ffmpeg```
+```sudo apt install vlc v4l-utils ffmpeg```
 
 First check devices:
 ``` ls /dev/video* ```
