@@ -413,6 +413,7 @@ It's simple but shows off PyQt integration with low level linux system using psu
 ```sudo apt install adb scrcpy```
 
 Connect it allow USB debugging (in settings developer mode) & file transfer
+✅ Press always allow this computer
 
 Check connection with adb devices
 ``` adb devices```
@@ -423,7 +424,7 @@ Then you can interface with python this simply opens the clock app:
 In your venv terminal:
 ```pip install pure-python-adb```
 
-Then python script:
+Then in python script:
 ```from ppadb.client import Client as AdbClient
 
 # Connect to ADB
@@ -434,7 +435,7 @@ device = client.devices()[0]
 device.shell("am start -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -n com.sec.android.app.clockpackage/.ClockPackage")
 ```
 
-You can now watch Subway surfers on the side :D
+You can now play Subway surfers on the side :D
 
 
 
