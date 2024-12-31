@@ -220,6 +220,3 @@ Many know ```htop``` which is great already but there is a special one to my hea
 
 ``` sudo apt install btm ```
 You can then simply launch it in terminal: ```btm```
-
-
-
