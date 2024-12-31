@@ -218,7 +218,7 @@ Can happen sometimes if you made a mistake in drivers or your isntall was corrup
 If you cannot find a solution you can temporarly still get in the app: try disabling gpu acceleration for a specific program when launching it through the Terminal: 
 ```{code} --disable-gpu```
 
-If an issue liek this persists I would recommend checking if the installation was not corrupted somewhere..
+If an issue like this persists; I would recommend checking if the installation was not corrupted somewhere along even at initial install..
 
 ## Packages
 .deb packages will also work! dpkg is designed to work with these files. 
