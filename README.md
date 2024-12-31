@@ -220,3 +220,14 @@ Many know ```htop``` which is great already but there is a special one to my hea
 
 ``` sudo apt install btm ```
 You can then simply launch it in terminal: ```btm```
+
+## Making your desktop your own ! 
+
+Linux is highly customizable in general. 
+
+If you are using default Ubuntu GNOME desktop here is a hot tip:
+I hate the fact you have to click 2 times to get to your apps...
+
+```sudo apt install gnome-shell-extensions gnome-shell-extension-manager```
+
+Then toggle ON: Ubuntu Dock
