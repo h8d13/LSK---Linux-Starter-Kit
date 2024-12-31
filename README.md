@@ -100,6 +100,12 @@ If you 're still having issues with dependencies USE AT YOUR OWN RISK:
 
 ## Security 🔒
 
+Ubuntu and Mint come with a pre-installed security manager: you can re-configure it with:
+
+``` sudo dpkg-reconfigure unattended-upgrades```
+
+Firewall
+
 ```sudo apt install ufw```
 ```sudo ufw enable```
 ```sudo ufw allow ssh``` Make sure to use keys :)
