@@ -253,20 +253,6 @@ sudo apt install -y libxcb1 libxcb-xinerama0 libxcb-cursor0 libxkbcommon-x11-0 l
 (optional) sudo apt install -y qt6-base-dev qt6-wayland libqt5x11extras5
 ```
 
-
-## Picking a distro
-
-This part is obviously the all time neckbeard debate... But i will just go over the package managers:
-
-Fedora-Based Distros (e.g., Fedora, CentOS Stream, AlmaLinux):
-Package Manager: DNF (or YUM in older versions)
-
-Arch-Based Distros (e.g., Arch Linux, Manjaro, EndeavourOS):
-Package Manager: Pacman
-
-Debian-Based Distros (e.g., Ubuntu, Linux Mint, Raspberry Pi OS):
-Package Manager: APT (Advanced Package Tool)
-
 ## System Monitoring 📈
 
 Many know ```htop``` which is great already but there is a special one to my heart because it looks cooler: 
