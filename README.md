@@ -155,7 +155,39 @@ There you go :) You know how to make a good install. For cherry on the cake you 
 
 Then you can login into this new user you created without breaking everything!
 
-## Screen tear 📺
+## Direct SSH access AND LOW LEVEL X11 ACCESS
+
+One by one: 
+
+``` sudo apt install openssh-server
+sudo systemctl start ssh
+sudo ufw allow ssh
+sudo ufw allow 22
+sudo systemctl status ssh
+```
+
+Then from your Windows machine: Make sure you installed [ VC](https://vcxsrv.com/)
+And launched it.
+
+Check you are using X11 then follow:
+```
+echo $XDG_SESSION_TYPE
+xhost +local:
+export DISPLAY=windows_ip:0
+```
+
+If the set up works it's incredibly cool you can for example:
+
+```
+ssh -X user@linux_ip
+firefox
+```
+
+It will look and feel like a normal window but is running on the linux system! 
+
+
+## Screen tear 📺 
+Can happen sometimes if you made a mistake in drivers or your isntall was corrupted.
 If you cannot find a solution you can temporarly still get in the app: try disabling gpu acceleration for a specific program when launching it through the Terminal: 
 ```{code} --disable-gpu```
 
