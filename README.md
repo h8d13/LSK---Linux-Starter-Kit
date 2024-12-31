@@ -406,5 +406,33 @@ disk > 90%
 
 It's simple but shows off PyQt integration with low level linux system using psutil. 
 
+----
+
+### One more bonus: In a few clicks control other Linux systems (like a phone or tablet with Android) from you new system 😎
+
+sudo apt install adb scrcpy
+
+Connect it allow USB debugging (in settings developer mode) & file transfer
+
+Check connection with adb devices
+Then simply run: scrcpy 
+
+Then you can interface with python this simply opens the clock app:
+
+In your venv terminal:
+```pip install pure-python-adb```
+
+Then python script:
+```from ppadb.client import Client as AdbClient
+
+# Connect to ADB
+client = AdbClient(host="127.0.0.1", port=5037)
+device = client.devices()[0]
+
+# Launch the Samsung Clock app
+device.shell("am start -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -n com.sec.android.app.clockpackage/.ClockPackage")
+```
+
+
 
 
