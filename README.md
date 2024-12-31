@@ -396,6 +396,15 @@ You can often find the information online because some nerd reversed it or it's 
 
 I've included some simple example scripts in the repo for general purposes and reference! 
 
+![SYSTEMONITOR](capcapcap.PNG)
+
+One of them is a green dot that is only green if:
+
+cpu > 80%
+ram > 85%
+disk > 90%
+
+It's simple but shows off PyQt integration with low level linux system using psutil. 
 
 
 
