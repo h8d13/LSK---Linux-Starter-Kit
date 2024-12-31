@@ -8,6 +8,7 @@ def monitor_connections(interval=5):
     sudo apt install net-tools
     Args:
         interval (int): Time in seconds between monitoring iterations.
+    This script will show you TCP/UDP in IPv4 and IPv6 active on your system. 
     """
     try:
         while True:
