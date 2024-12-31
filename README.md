@@ -410,7 +410,7 @@ It's simple but shows off PyQt integration with low level linux system using psu
 
 ### One more bonus: In a few clicks control other Linux systems (like a phone or tablet with Android) from you new system 😎
 
-sudo apt install adb scrcpy
+```sudo apt install adb scrcpy```
 
 Connect it allow USB debugging (in settings developer mode) & file transfer
 
@@ -433,6 +433,7 @@ device = client.devices()[0]
 device.shell("am start -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -n com.sec.android.app.clockpackage/.ClockPackage")
 ```
 
+You can now watch Subway surfers on the side :D
 
 
 
