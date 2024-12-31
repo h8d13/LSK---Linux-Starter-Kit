@@ -20,6 +20,15 @@ To see all devices being detected including network, other devices, etc
 ```lspci | grep -i vga```
 For GPU specifically
 
+You can also use ```lscpu```
+
+But if you're there already you probably understand CPU architectures :D
+If you're unsure again best is to go down some Googling: From you computer's manufacturer website, then check CPU "architecture" or "instruction set"
+64 bit, 32 bit, or ARM (Raspberri pi for example) 
+
+This can get confusing because it is sometimes named AMD64 (86x64) because it was created by AMD, but doesn't mean it's not compatible with Intel. 
+This is also the most adopted now, so most modern hardware will run this.
+
 The same can be done with ```lsusb``` if you're using weird connectors. 
 
 ```sudo reboot``` after the update and upgrade are done. 
