@@ -281,7 +281,7 @@ newgrp video
 ```
 
 
-### Working with USBs devices 🔌 
+## Working with USBs devices 🔌 
 
 As we mentionned above:
 
@@ -292,7 +292,8 @@ Then we want to understand the devices endpoints IN/OUT:
 
 ```lsusb -d {1c4f:007c} -v```
 
-Now that we have the information we need we can try to interface with it, depending on device it might be really easy or the worst time of your life. 
+#### Now that we have the information we need we can try to interface with it, depending on device it might be really easy or the worst time of your life. 
+
 ----
 
 ``` pip install pyusb```
@@ -302,82 +303,44 @@ We'll create a simple keylogger for educational purposes but the idea can be rep
 ```
 import usb.core
 import usb.util
-import sys
 
-VENDOR_ID = 0x1c4f ## You will find this using the command above
-PRODUCT_ID = 0x007c # Same here
+## QWERTY HEXADECIMAL VALUES
+def get_key(data):
+   keymap = {
+       0x04: 'a', 0x05: 'b', 0x06: 'c', 0x07: 'd', 0x08: 'e', 0x09: 'f',
+       0x0A: 'g', 0x0B: 'h', 0x0C: 'i', 0x0D: 'j', 0x0E: 'k', 0x0F: 'l',
+       0x10: 'm', 0x11: 'n', 0x12: 'o', 0x13: 'p', 0x14: 'q', 0x15: 'r',
+       0x16: 's', 0x17: 't', 0x18: 'u', 0x19: 'v', 0x1A: 'w', 0x1B: 'x',
+       0x1C: 'y', 0x1D: 'z', 0x1E: '1', 0x1F: '2', 0x20: '3', 0x21: '4',
+       0x22: '5', 0x23: '6', 0x24: '7', 0x25: '8', 0x26: '9', 0x27: '0'
+   }
+   return keymap.get(data[2], ''), hex(data[2]) if len(data) > 2 else ('', '')
 
-def inspect_device():
-   device = usb.core.find(idVendor=VENDOR_ID, idProduct=PRODUCT_ID)
-   if device is None:
-       print("Keyboard not found")
-       sys.exit(1)
-
-   print(f"\nFound device: {hex(VENDOR_ID)}:{hex(PRODUCT_ID)}")
-   
-   for cfg in device:
-       print(f"\nConfiguration {cfg.bConfigurationValue}:")
-       for intf in cfg:
-           print(f"\n\tInterface {intf.bInterfaceNumber}:")
-           print(f"\tInterface class: {intf.bInterfaceClass}")
-           
-           for ep_num in range(intf.bNumEndpoints):
-               ep = usb.util.find_descriptor(
-                   intf,
-                   custom_match=lambda e: \
-                       usb.util.endpoint_address(e.bEndpointAddress) == ep_num + 1
-               )
-               if ep:
-                   print(f"\n\t\tEndpoint {ep.bEndpointAddress:02x}h:")
-                   print(f"\t\tDirection: {'IN' if usb.util.endpoint_direction(ep.bEndpointAddress) == usb.util.ENDPOINT_IN else 'OUT'}")
-                   print(f"\t\tAttributes: {ep.bmAttributes:02x}h")
-                   print(f"\t\tMax packet size: {ep.wMaxPacketSize}")
-
-   return device
-
-def monitor_keyboard(device):
+## DETACH FROM KERNEL AND SPECIFY VENDOR+PRODUCT
+def monitor_keyboard():
+   device = usb.core.find(idVendor=0x1c4f, idProduct=0x007c)
    if device.is_kernel_driver_active(0):
        device.detach_kernel_driver(0)
-       print("Detached kernel driver")
-
-   device.set_configuration()
-   cfg = device.get_active_configuration()
-   intf = cfg[(0,0)]
    
-   ep = usb.util.find_descriptor(
-       intf,
-       custom_match=lambda e: \
-           usb.util.endpoint_direction(e.bEndpointAddress) == \
-           usb.util.ENDPOINT_IN
-   )
+   device.set_configuration()
+   endpoint = device.get_active_configuration()[(0,0)][0]
 
-   print("\nStarting keyboard monitor... Press Ctrl+C to exit")
+   ### MAIN LOOP RETURN KEY, HEX AND DECIMAL VALUE
    try:
        while True:
            try:
-               data = ep.read(ep.wMaxPacketSize, timeout=1000)
-               if data:
-                   print(f"Raw data: {[hex(x) for x in data]}")
+               data = endpoint.read(8)
+               key, hex_value = get_key(data)
+               if key:
+                   print(f"Key: {key} | Hex: {hex_value} | Decimal: {int(hex_value, 16)}")
            except usb.core.USBError as e:
-               if e.args[0] == 110:
-                   continue
-               else:
-                   print(f"USB Error: {str(e)}")
+               if e.args[0] != 110:
                    break
    except KeyboardInterrupt:
-       print("\nExiting...")
-   finally:
-       try:
-           device.attach_kernel_driver(0)
-           print("Reattached kernel driver")
-       except:
-           pass
+       device.attach_kernel_driver(0)
 
 if __name__ == "__main__":
-   device = inspect_device()
-   print("\nPress Enter to start monitoring keyboard...")
-   input()
-   monitor_keyboard(device)
+   monitor_keyboard()
 ```
 
 Some devices need specific communications protocols: Say again this was a fingerprint scanner there would often be sent write data that 'activates' the fingerprint area then another to 'confirm'. 
