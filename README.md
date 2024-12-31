@@ -142,7 +142,7 @@ There you go :) You know how to make a good install. For cherry on the cake you 
 Then you can login into this new user you created without breaking everything!
 
 ## Screen tear 📺
-If you cannot find a solution you can try disabling gpu acceleration for a specific program when launching it: 
+If you cannot find a solution you can temporarly still get in the app: try disabling gpu acceleration for a specific program when launching it through the Terminal: 
 ```{code} --disable-gpu```
 
 
