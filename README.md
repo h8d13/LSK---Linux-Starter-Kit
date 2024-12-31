@@ -279,3 +279,111 @@ You might need to give your user permissions run these seperatly:
 sudo usermod -a -G video $USER
 newgrp video
 ```
+
+
+### Working with USBs devices
+
+As we mentionned above:
+
+First find detected devices: ```lsusb```
+Then we want to understand the devices endpoints IN/OUT: 
+
+```lsusb -d {1c4f:007c} -v```
+
+Now that we have the information we need we can try to interface with it, depending on device it might be really easy or the worst time of your life. 
+----
+
+``` pip install pyusb```
+
+We'll create a simple keylogger for educational purposes but the idea can be replicated to other more intresting devices (say a fingerpint scanner!) 
+
+```
+import usb.core
+import usb.util
+import sys
+
+VENDOR_ID = 0x1c4f ## You will find this using the command above
+PRODUCT_ID = 0x007c # Same here
+
+def inspect_device():
+   device = usb.core.find(idVendor=VENDOR_ID, idProduct=PRODUCT_ID)
+   if device is None:
+       print("Keyboard not found")
+       sys.exit(1)
+
+   print(f"\nFound device: {hex(VENDOR_ID)}:{hex(PRODUCT_ID)}")
+   
+   for cfg in device:
+       print(f"\nConfiguration {cfg.bConfigurationValue}:")
+       for intf in cfg:
+           print(f"\n\tInterface {intf.bInterfaceNumber}:")
+           print(f"\tInterface class: {intf.bInterfaceClass}")
+           
+           for ep_num in range(intf.bNumEndpoints):
+               ep = usb.util.find_descriptor(
+                   intf,
+                   custom_match=lambda e: \
+                       usb.util.endpoint_address(e.bEndpointAddress) == ep_num + 1
+               )
+               if ep:
+                   print(f"\n\t\tEndpoint {ep.bEndpointAddress:02x}h:")
+                   print(f"\t\tDirection: {'IN' if usb.util.endpoint_direction(ep.bEndpointAddress) == usb.util.ENDPOINT_IN else 'OUT'}")
+                   print(f"\t\tAttributes: {ep.bmAttributes:02x}h")
+                   print(f"\t\tMax packet size: {ep.wMaxPacketSize}")
+
+   return device
+
+def monitor_keyboard(device):
+   if device.is_kernel_driver_active(0):
+       device.detach_kernel_driver(0)
+       print("Detached kernel driver")
+
+   device.set_configuration()
+   cfg = device.get_active_configuration()
+   intf = cfg[(0,0)]
+   
+   ep = usb.util.find_descriptor(
+       intf,
+       custom_match=lambda e: \
+           usb.util.endpoint_direction(e.bEndpointAddress) == \
+           usb.util.ENDPOINT_IN
+   )
+
+   print("\nStarting keyboard monitor... Press Ctrl+C to exit")
+   try:
+       while True:
+           try:
+               data = ep.read(ep.wMaxPacketSize, timeout=1000)
+               if data:
+                   print(f"Raw data: {[hex(x) for x in data]}")
+           except usb.core.USBError as e:
+               if e.args[0] == 110:
+                   continue
+               else:
+                   print(f"USB Error: {str(e)}")
+                   break
+   except KeyboardInterrupt:
+       print("\nExiting...")
+   finally:
+       try:
+           device.attach_kernel_driver(0)
+           print("Reattached kernel driver")
+       except:
+           pass
+
+if __name__ == "__main__":
+   device = inspect_device()
+   print("\nPress Enter to start monitoring keyboard...")
+   input()
+   monitor_keyboard(device)
+```
+
+Some devices need specific communications protocols: Say again this was a fingerprint scanner there would often be sent write data that 'activates' the fingerprint area then another to 'confirm'. 
+You can often find the information online because some nerd reversed it or it's released by manufacturers. 
+
+
+
+
+
+
+
