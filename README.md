@@ -214,7 +214,7 @@ I like to keep the original user's desktop intact to always be able to control f
 
 
 ## Screen tear 📺 
-Can happen sometimes if you made a mistake in drivers or your isntall was corrupted.
+Can happen sometimes if you made a mistake in drivers or your install was corrupted.
 If you cannot find a solution you can temporarly still get in the app: try disabling gpu acceleration for a specific program when launching it through the Terminal: 
 ```{code} --disable-gpu```
 
