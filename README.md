@@ -436,7 +436,34 @@ device = client.devices()[0]
 device.shell("am start -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -n com.sec.android.app.clockpackage/.ClockPackage")
 ```
 
-You can now play Subway surfers on the side :D
+You can now play Subway surfers on the side :D Or get neural network to play it for you hehe
 
+``` 
+from ppadb.client import Client as AdbClient
 
+def swipe_screen(device, x1, y1, x2, y2, duration=2000):
+    """
+    Simulates a swipe gesture on the connected device.
+    :param device: Connected ADB device.
+    :param x1: Starting x-coordinate.
+    :param y1: Starting y-coordinate.
+    :param x2: Ending x-coordinate.
+    :param y2: Ending y-coordinate.
+    :param duration: Duration of the swipe in milliseconds (default: 2000 for a pronounced swipe).
+    """
+    device.shell(f"input swipe {x1} {y1} {x2} {y2} {duration}")
+    print(f"Swiped from ({x1}, {y1}) to ({x2}, {y2}) over {duration}ms")
+
+# Connect to ADB and device
+client = AdbClient(host="127.0.0.1", port=5037)
+devices = client.devices()
+
+if not devices:
+    print("No devices connected")
+else:
+    device = devices[0]
+    print(f"Connected to device: {device.serial}")
+    swipe_screen(device, 100, 1000, 100, 100, duration=1000)
+
+```
 
