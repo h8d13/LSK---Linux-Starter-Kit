@@ -476,7 +476,8 @@ Go to: Settings > Briometrics and Security
 Install unknown apps
 
 Go to https://f-droid.org/en/ and download the apk
-Then download termux from F-Droid
+Then download termux
+From F-Droid (Open-source)
 
 Open termux 
 Run ```pkg update```
@@ -487,7 +488,6 @@ You can then go full inception and download Python
 
 You could even run servers or a lightweight desktop on this hardware too. 
 
-
-
+![ANDROID](capcapcapcap.PNG)
 
 
