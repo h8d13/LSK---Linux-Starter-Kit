@@ -191,6 +191,16 @@ Then save your code and make sure to run it with the venv path to not get mixed 
 ```cd .venv```
 ```sudo ./bin/python3 hello.py ```
 
+
+If you are going to work with PyQt6 and creating GUI you might need some tools:
+
+```
+sudo apt install -y libxcb1 libxcb-xinerama0 libxcb-cursor0 libxkbcommon-x11-0 libxcb-render0 libxcb-render-util0
+
+(optional) sudo apt install -y qt6-base-dev qt6-wayland libqt5x11extras5
+```
+
+
 ## Picking a distro
 
 This part is obviously the all time neckbeard debate... But i will just go over the package managers:
