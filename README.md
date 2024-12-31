@@ -114,7 +114,8 @@ To secure that further you can look into reverse proxies.
 ## 🖥️ Remote desktop sessions
 
 For some weird reason this can be quite annoying depending on the distro
-> **_NOTE:_** One thing  I found to fix a lot of my issues is to create a second user with elevated privileges so that you can remote connect to it easily while keeping the device functional on it's own. 
+> **_NOTE:_** One thing  I found to fix a lot of my issues is to create a second user with elevated privileges so that you can remote connect to it easily while keeping the device functional on it's own.
+> YOu could also just use VNC but that's cheating and increased latency with framebuffers :D
 
 ```sudo apt install xrdp xserver-xorg-core```
 
