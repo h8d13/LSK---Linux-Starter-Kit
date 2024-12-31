@@ -239,3 +239,18 @@ This means either going the light Ubuntu distros (Mate or Xubuntu) route or Mint
 
 But if it's not too old you can go for the regular long term support. 
 You can also go XFCE route ( another lighter desktop), which might not look as polished but is lighter and has more performance on old hardware. 
+
+## Working with cameras or HMDI inputs
+
+Again you might need some basic tools: 
+```sudo apt install v4l-utils ffmpeg```
+
+First check devices:
+``` ls /dev/video* ```
+Then check the ouput: 
+```ffplay /dev/video0```
+Or using VLC (open-source):
+```vlc v4l2:///dev/video0```
+
+
+
