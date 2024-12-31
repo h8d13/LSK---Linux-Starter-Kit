@@ -177,3 +177,43 @@ Then save your code and make sure to run it with the venv path to not get mixed 
 
 ```cd .venv```
 ```sudo ./bin/python3 hello.py ```
+
+## Picking a distro
+
+This part is obviously the all time neckbeard debate...
+
+├── **Debian**
+│   ├── **Ubuntu**
+│   │   ├── Linux Mint
+│   │   ├── Pop!_OS
+│   │   ├── Zorin OS
+│   │   └── Kubuntu / Xubuntu / Lubuntu
+│   ├── Kali Linux
+│   └── Raspberry Pi OS
+│
+├── **Arch Linux**
+│   ├── Manjaro
+│   ├── ...
+│
+├── **Fedora**
+│   ├── RHEL (Red Hat Enterprise Linux)
+│   │   ├── CentOS Stream
+│   │   └── AlmaLinux
+│
+├── **Independent**
+│   ├── Alpine Linux
+│   ├── Tails (Privacy-focused)
+│   └── Qubes OS (Security-focused)
+
+
+Fedora-Based Distros (e.g., Fedora, CentOS Stream, AlmaLinux):
+Package Manager: DNF (or YUM in older versions)
+
+Arch-Based Distros (e.g., Arch Linux, Manjaro, EndeavourOS):
+Package Manager: Pacman
+
+Debian-Based Distros (e.g., Ubuntu, Linux Mint, Raspberry Pi OS):
+Package Manager: APT (Advanced Package Tool)
+
+
+
