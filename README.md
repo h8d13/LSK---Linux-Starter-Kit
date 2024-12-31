@@ -247,6 +247,8 @@ Again you might need some basic tools:
 
 First check devices:
 ``` ls /dev/video* ```
+
+----
 Then check the ouput: 
 ```ffplay /dev/video0```
 Or using VLC (open-source):
