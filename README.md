@@ -224,17 +224,12 @@ Many modern apps (like Stremio) are built using Electron, which bundles a full C
 
 But they install seemlessly with dependencies: 
 
-```flatpak list
-flatpak install 
-flatpak uninstall 
-flatpak uninstall --unused
-flatpak remove --unused
-```
+```flatpak install flathub com.stremio.Stremio```
 
 Some distros like Linux Mint have a neat little software manager pre-installed!
 Basically just uses Flatpack for people who don't like terminal. 
 
-For Ubuntu, it will be snap packages by default. But you can easily install flatpack too!
+For Ubuntu, it will be snap packages by default. But you can easily install flatpack or deb packages too. 
 
 ## Developer tools
 
