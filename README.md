@@ -450,7 +450,7 @@ def swipe_screen(device, x1, y1, x2, y2, duration=2000):
     :param y1: Starting y-coordinate.
     :param x2: Ending x-coordinate.
     :param y2: Ending y-coordinate.
-    :param duration: Duration of the swipe in milliseconds (default: 2000 for a pronounced swipe).
+    :param duration: ms
     """
     device.shell(f"input swipe {x1} {y1} {x2} {y2} {duration}")
     print(f"Swiped from ({x1}, {y1}) to ({x2}, {y2}) over {duration}ms")
