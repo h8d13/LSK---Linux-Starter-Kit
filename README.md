@@ -409,7 +409,8 @@ It's simple but shows off PyQt integration with low level linux system using psu
 
 ----
 
-### One more bonus: In a few clicks control other Linux systems (like a phone or tablet with Android) from you new system 😎
+### One more bonus...
+In a few clicks control other Linux systems (like a phone or tablet with Android) from you new system 😎
 
 ```sudo apt install adb scrcpy```
 
