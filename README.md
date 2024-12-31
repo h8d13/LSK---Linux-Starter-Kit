@@ -240,7 +240,7 @@ This means either going the light Ubuntu distros (Mate or Xubuntu) route or Mint
 But if it's not too old you can go for the regular long term support. 
 You can also go XFCE route ( another lighter desktop), which might not look as polished but is lighter and has more performance on old hardware. 
 
-## 📷 Working with cameras or HMDI inputs 🔌 
+## 📷 Working with cameras or HMDI inputs 
 
 Again you might need some basic tools: 
 ```sudo apt install v4l-utils ffmpeg```
@@ -281,11 +281,13 @@ newgrp video
 ```
 
 
-### Working with USBs devices
+### Working with USBs devices 🔌 
 
 As we mentionned above:
 
 First find detected devices: ```lsusb```
+
+
 Then we want to understand the devices endpoints IN/OUT: 
 
 ```lsusb -d {1c4f:007c} -v```
