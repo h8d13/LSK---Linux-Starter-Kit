@@ -165,6 +165,9 @@ sudo ufw allow ssh
 sudo ufw allow 22
 sudo systemctl status ssh
 ```
+Regular SSH access: 
+
+```ssh {user@host}```
 
 Then from your Windows machine: Make sure you installed [ VC](https://vcxsrv.com/)
 And launched it.
@@ -173,10 +176,10 @@ Check you are using X11 then follow:
 ```
 echo $XDG_SESSION_TYPE
 xhost +local:
-export DISPLAY=windows_ip:0
+export DISPLAY={windows_ip:0}
 ```
 
-If the set up works it's incredibly cool you can for example:
+If the set up works it's incredibly cool, you can for example:
 
 ```
 ssh -X user@linux_ip
@@ -185,9 +188,10 @@ firefox
 
 It will look and feel like a normal window but is running on the linux system! 
 
-
 It really isn't that complicated but the reason why these are set up like this is to prevent session hijacking: RSA host key fingerprint which is used to verify the server's identity in future connections to prevent man-in-the-middle attacks.
 Why you should get a prompt at some point that generates the keys. 
+
+
 
 
 
