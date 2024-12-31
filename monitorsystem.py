@@ -4,7 +4,6 @@
 ### sudo apt install -y libxcb1 libxcb-xinerama0 libxcb-cursor0 libxkbcommon-x11-0 libxcb-render0 libxcb-render-util0
 ### sudo apt install -y qt6-base-dev qt6-wayland libqt5x11extras5
 
-
 import sys
 import psutil
 from dataclasses import dataclass
@@ -170,3 +169,14 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+
+
+### Then to make this an executable:
+
+# sudo apt install binutils
+# pip install pyinstaller
+
+# pyinstaller --onefile --windowed monitor.py
+
+# This will create a one file executable in you curretn directory under ./dist/monitor
+# You can now double click it like an app! 
