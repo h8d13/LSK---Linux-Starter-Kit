@@ -180,31 +180,7 @@ Then save your code and make sure to run it with the venv path to not get mixed 
 
 ## Picking a distro
 
-This part is obviously the all time neckbeard debate...
-
-├── **Debian**
-│   ├── **Ubuntu**
-│   │   ├── Linux Mint
-│   │   ├── Pop!_OS
-│   │   ├── Zorin OS
-│   │   └── Kubuntu / Xubuntu / Lubuntu
-│   ├── Kali Linux
-│   └── Raspberry Pi OS
-│
-├── **Arch Linux**
-│   ├── Manjaro
-│   ├── ...
-│
-├── **Fedora**
-│   ├── RHEL (Red Hat Enterprise Linux)
-│   │   ├── CentOS Stream
-│   │   └── AlmaLinux
-│
-├── **Independent**
-│   ├── Alpine Linux
-│   ├── Tails (Privacy-focused)
-│   └── Qubes OS (Security-focused)
-
+This part is obviously the all time neckbeard debate... But i will just go over the package managers:
 
 Fedora-Based Distros (e.g., Fedora, CentOS Stream, AlmaLinux):
 Package Manager: DNF (or YUM in older versions)
