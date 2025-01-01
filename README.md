@@ -28,7 +28,7 @@ But if you're there already you probably understand CPU architectures :D
 If you're unsure again best is to go down some Googling: From you computer's manufacturer website, then check CPU "architecture" or "instruction set"
 64 bit, 32 bit, or ARM (Raspberri pi for example) 
 
-This can get confusing because it is sometimes named AMD64 (86x64) because it was created by AMD, but doesn't mean it's not compatible with Intel. 
+This can get confusing because it is sometimes named AMD64 (86x64) because it was created by AMD (then open-sourced, idk?), but doesn't mean it's not compatible with Intel. 
 This is also the most adopted now, so most modern hardware will run this.
 
 The same can be done with ```lsusb``` if you're using weird connectors. 
