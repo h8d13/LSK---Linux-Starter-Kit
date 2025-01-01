@@ -56,6 +56,12 @@ But you will need some tools for modern applications:
 
 You will need to reboot again, then ```nvidia-smi``` to check or the mesa/vulkan equivalent.
 
+Sometimes this is not enabled by default (and necessary for many base pkgs) ?
+```
+sudo add-apt-repository universe
+sudo apt update
+```
+
 ## Keeping an install clean
 
 Keep only essential packages, this both helps your system and makes you less vulnerable:
