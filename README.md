@@ -1,10 +1,11 @@
 # For Deb based systems 
 
 The installs themselves are pretty straight forward depending on distro:
-The only things to be careful about: Where are you installing your OS and make sure your keyboard input layout is correct?
-And set a root user & password! 
+The only things to be careful about: Where are you installing your OS and make sure your keyboard input layout is correct? 
 
-Make sure to use GPT partition as it's more modern and can support drives larger than 2TB. Unless specifically needed for the OS you are installing. 
+> **_NOTE:_** Use GPT for modern systems, especially if you need support for drives larger than 2TB or UEFI boot.
+> However, if your system uses legacy BIOS, MBR may be required.
+> For security reasons, many modern Debian-based systems disable the root account by default. I prefer to enable it, but you always have ```sudo``` for elevated tasks.
 
 You can use Rufus or Etcher for quick USBs!
 
@@ -51,6 +52,7 @@ But you will need some tools for modern applications:
 > **_NOTE:_** It's best to go find on the official sites for compatibility:
 > Device manufacturer (This gives you the full specs)
 > Graphics provider (Specific version compatible with^^)
+> You might need libdrm for older hardware
 
 You will need to reboot again, then ```nvidia-smi``` to check or the mesa/vulkan equivalent.
 
@@ -225,7 +227,7 @@ If you cannot find a solution you can temporarly still get in the app: try disab
 (Windows example, but this happens sometimes when launching an app with GPU acceleration on debian systems, likely due to drivers)
 
 If an issue like this persists; I would recommend checking if the installation was not corrupted somewhere along even at initial install..
-Simple solution si to check compatibility issues and re-install a clean OS with more knowledge.
+Simple solution is to check compatibility issues and re-install a clean OS with more knowledge.
 
 ## Packages
 .deb packages will also work! dpkg is designed to work with these files. 
@@ -256,7 +258,7 @@ You can simply create a file called hello.py and click the python version at the
 Then save your code and make sure to run it with the venv path to not get mixed with system wide packages:
 
 ```cd .venv```
-```sudo ./bin/python3 hello.py ```
+```./bin/python3 hello.py ```
 
 
 If you are going to work with PyQt6 and creating GUI you might need some tools:
@@ -505,7 +507,7 @@ FINAL BONUS AND I'M OUT:
  
 After some googling I found out that the GNU project (Stands for GNU Not Unix) a lot of the commands you still use today, file system, bash, gcc, coreutils, POSIX standards, FHS is based/inspired by Unix.
 
-An operating system that was dominant in entreprise in the 70-80s and that little hackers like yourself hated because they had to pay AT&T Bell Labs enourmous amounts for lincenses. 
+An operating system that was dominant in entreprise in the 70-80s and that little hackers like yourself hated because they had to pay AT&T Bell Labs enourmous amounts for licenses. 
 
 Minix was also another "copy" project made for students that was much cheaper alternative 'was about 70$ which you would get a book with :D
 
