@@ -45,7 +45,7 @@ The same can be done with ```lsusb``` if you're using weird connectors.
 > lsmod     # Loaded kernel modules
 > lsscsi    # SCSI devices
 > lspnp     # Plug and Play devices
-> lsmem     # Memory information ```
+> lsmem     # Memory information 
 
 ## When first upgrade is done
 
