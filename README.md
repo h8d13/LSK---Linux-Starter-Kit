@@ -536,6 +536,9 @@ Peace <3
 
 
 You're not done ???? Okay. 
+
+```sudo apt install qemu-system-x86 qemu-utils``` to verify install: qemu-system-x86_64 --version
+
 Try QEMU and create your own computer within your computer (used Qubes to make it even more ironic 🧠)
 
 ```sudo apt install qemu-system-x86 qemu-utils
