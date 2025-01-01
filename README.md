@@ -23,7 +23,9 @@ To see all devices being detected including network, other devices, etc
 ```lspci | grep -i vga```
 For GPU specifically
 
-You can also use ```lscpu```
+You can also use ```lscpu``` and ```lsblk```
+
+^ That last one is especially useful for detecting USBs or SSDs, etc
 
 But if you're there already you probably understand CPU architectures :D
 If you're unsure again best is to go down some Googling: From you computer's manufacturer website, then check CPU "architecture" or "instruction set"
@@ -535,6 +537,18 @@ Peace <3
 
 You're not done ???? Okay. 
 Try QEMU and create your own computer within your computer 🧠
+
+```sudo apt install qemu-system-x86 qemu-utils
+qemu-img create -f qcow2 myvm.qcow2 20G
+
+
+
+```
+
+
+
+
+
 
 
 "To seek is to recognize potential beyond a current state, a gesture that inherently lacks contempt for what is."
