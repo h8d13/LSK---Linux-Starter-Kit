@@ -549,7 +549,8 @@ Also check compatibility of the OS you're trying to emulate.
 > **_NOTE:_** You might need to do some extra steps for Virtualization depending on if you're using intel or amd (I mean you're fucked if you have intel?).
 > ```LC_ALL=C lscpu | grep Virtualization
 > lsmod | grep kvm
-> ls -l /dev/kvm && groups | grep kvm
+> ls -l /dev/kvm
+> groups | grep kvm
 > sudo usermod -aG kvm $USER
 >```
 
