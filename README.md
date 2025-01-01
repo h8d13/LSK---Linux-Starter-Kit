@@ -87,11 +87,11 @@ To make sure dependencies are also removed
 
 Check the problematic package:
 
-```grep -r "brave" /etc/apt/sources.list /etc/apt/sources.list.d/```
+```grep -r {"brave"} /etc/apt/sources.list /etc/apt/sources.list.d/```
 
 Remove it from sources list:
 
-```sudo rm /etc/apt/sources.list.d/brave-browser-release.list```
+```sudo rm /etc/apt/sources.list.d/{brave-browser-release.list}```
 
 Then run update to your packages lists again to remove the warning:
 ```sudo apt update```
