@@ -221,7 +221,7 @@ If you cannot find a solution you can temporarly still get in the app: try disab
 ```{code} --disable-gpu```
 
 
-![screentearing](weirdtear.webp)
+<img src="weirdtear.webp" alt="screentearing" width="300">
 
 
 If an issue like this persists; I would recommend checking if the installation was not corrupted somewhere along even at initial install..
