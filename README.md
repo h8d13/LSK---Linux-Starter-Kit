@@ -222,7 +222,7 @@ If you cannot find a solution you can temporarly still get in the app: try disab
 
 
 <img src="weirdtear.webp" alt="screentearing" width="300">
-
+_(Obviously on windows but this can happen sometimes when apps use GPU acceleration on linux and it's missing something) _
 
 If an issue like this persists; I would recommend checking if the installation was not corrupted somewhere along even at initial install..
 Simple solution si to check compatibility issues and re-install a clean OS with more knowledge.
