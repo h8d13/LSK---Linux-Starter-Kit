@@ -227,7 +227,7 @@ If you cannot find a solution you can temporarly still get in the app: try disab
 
 
 <img src="weirdtear.webp" alt="screentearing" width="300">
-(Windows example, but this happens sometimes when launching an app with GPU acceleration on debian systems, likely due to drivers)
+(Windows example, happens sometimes when launching an app with GPU acceleration on debian systems, likely due to drivers)
 
 If an issue like this persists; I would recommend checking if the installation was not corrupted somewhere along even at initial install..
 Simple solution is to check compatibility issues and re-install a clean OS with more knowledge.
