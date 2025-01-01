@@ -220,6 +220,10 @@ Can happen sometimes if you made a mistake in drivers or your install was corrup
 If you cannot find a solution you can temporarly still get in the app: try disabling gpu acceleration for a specific program when launching it through the Terminal: 
 ```{code} --disable-gpu```
 
+
+![screentearing](weirdtear.webp)
+
+
 If an issue like this persists; I would recommend checking if the installation was not corrupted somewhere along even at initial install..
 Simple solution si to check compatibility issues and re-install a clean OS with more knowledge.
 
