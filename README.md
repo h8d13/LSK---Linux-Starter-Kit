@@ -218,7 +218,7 @@ I like to keep the original user's desktop intact to always be able to control f
 
 > **_NOTE:_** This is all especially helpful if you're thinking about or have a VPS.
 > You can also use tools like FileZila to monitor system files with a kind of "double tree" interface which uses sFTP
-
+> This let's you for example edit code that is live on a head-less server on the fly using temp downloads.
 
 ## Screen tear 📺 
 Can happen sometimes if you made a mistake in drivers or your install was corrupted.
