@@ -522,3 +522,8 @@ Finally, continuity, the fact that these will keep evolving way more than any cl
 A lot of what I mentionned in this is all available to check out in full because of their open-source nature and that also gives YOU the freedom to do what you want with it today and the next.
 
 Peace <3
+
+
+
+You're not done ???? Okay. 
+Try QEMU and create your own computer within your computer 🧠
