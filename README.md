@@ -552,20 +552,23 @@ qemu-system-x86_64 \
   -cpu host \
   -smp 2 \
   -hda myvm.qcow2 \
-  -cdrom ubuntu.iso \
+  -cdrom qubes.iso \
   -boot d
-
-
 
 ```
 
+When done installing: 
 
+You just need to remove some things:
 
-
-
-
+```
+qemu-system-x86_64 \
+  -enable-kvm \
+  -m 2048 \
+  -cpu host \
+  -smp 2 \
+  -hda ~/myvm.qcow2 \
+  -boot c
+```
 
 "To seek is to recognize potential beyond a current state, a gesture that inherently lacks contempt for what is."
-
-You can also try to do python with a web app:
-https://github.com/h8d13/Python-NextJS
