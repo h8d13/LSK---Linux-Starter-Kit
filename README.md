@@ -542,7 +542,7 @@ Try QEMU and create your own computer within your computer (used Qubes to make i
 qemu-img create -f qcow2 myvm.qcow2 20G
 
 #Create an ISO from a USB or use an existing... There is tools for this too, but since you're now a terminal pro.
-sudo dd if=/dev/sda of=ubuntu.iso bs=4M status=progress
+sudo dd if=/dev/sda of=qubes.iso bs=4M status=progress
 ## This is also done at a block level copying everything from it including empty space. Now you regret that 512gb USB stick...
 
 ## Now you can launch your first VM
