@@ -539,8 +539,6 @@ A lot of what I mentionned in this is all available to check out in full because
 
 Peace <3
 
-
-
 You're not done ???? Okay. 
 
 ```sudo apt install qemu-system-x86 qemu-utils``` to verify install: ```qemu-system-x86_64 --version```
