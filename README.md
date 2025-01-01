@@ -544,6 +544,7 @@ You're not done ???? Okay.
 ```sudo apt install qemu-system-x86 qemu-utils``` to verify install: ```qemu-system-x86_64 --version```
 
 Try QEMU and create your own computer within your computer (used Qubes to make it even more ironic 🧠)
+Also check compatibility of the OS you're trying to emulate.
 
 ```sudo apt install qemu-system-x86 qemu-utils
 sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
@@ -567,6 +568,16 @@ qemu-system-x86_64 \
 ```
 
 When done installing: 
+
+You just need to remove some things (the disk and boot order).
+> **_NOTE:_** You might need to do some extra steps for Virtualization depending on if you're using intel or amd.
+> ```LC_ALL=C lscpu | grep Virtualization
+> lsmod | grep kvm
+> ls -l /dev/kvm && groups | grep kvm
+> sudo usermod -aG kvm $USER
+>```
+
+
 
 You just need to remove some things (the disk and boot order):
 
