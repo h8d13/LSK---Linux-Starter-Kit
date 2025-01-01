@@ -532,3 +532,6 @@ Try QEMU and create your own computer within your computer 🧠
 
 
 "To seek is to recognize potential beyond a current state, a gesture that inherently lacks contempt for what is."
+
+You can also try to do python with a web app:
+https://github.com/h8d13/Python-NextJS
