@@ -611,4 +611,11 @@ qemu-system-x86_64 \
   -boot c
 ```
 
+
+You might need to play around with settings if you get screen-tear. For example this fixed my KDE Neon VM
+
+-vga virtio -display gtk,gl=off
+
+
+
 "To seek is to recognize potential beyond a current state, a gesture that inherently lacks contempt for what is."
