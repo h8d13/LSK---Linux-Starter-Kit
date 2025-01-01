@@ -39,6 +39,13 @@ The same can be done with ```lsusb``` if you're using weird connectors.
 
 ```sudo reboot``` after the update and upgrade are done. 
 
+> **_NOTE:_**
+> lshw      # Hardware configuration
+> lsmod     # Loaded kernel modules
+> lsscsi    # SCSI devices
+> lspnp     # Plug and Play devices
+> lsmem     # Memory information
+
 ## When first upgrade is done
 
 Now we can take care of graphics: 
