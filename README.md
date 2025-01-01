@@ -613,6 +613,7 @@ qemu-system-x86_64 \
 
 
 You might need to play around with settings if you get screen-tear. For example this fixed my KDE Neon VM
+Again dpeneding on what you're trying to achieve and your hardware.
 
 -vga virtio -display gtk,gl=off
 
