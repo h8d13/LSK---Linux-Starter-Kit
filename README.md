@@ -503,12 +503,10 @@ Altho mine is probably too old...
 
 ----
 
-FINAL BONUS AND I'M OUT:
+### FINAL BONUS AND I'M OUT:
  
 After some googling I found out that the GNU project (Stands for GNU Not Unix) a lot of the commands you still use today, file system, bash, gcc, coreutils, POSIX standards, FHS is based/inspired by Unix.
-
 An operating system that was dominant in entreprise in the 70-80s and that little hackers like yourself hated because they had to pay AT&T Bell Labs enourmous amounts for licenses. 
-
 Minix was also another "copy" project made for students that was much cheaper alternative 'was about 70$ which you would get a book with :D
 
 Peace <3
