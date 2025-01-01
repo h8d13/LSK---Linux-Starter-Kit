@@ -246,6 +246,8 @@ If you cannot find a solution you can temporarly still get in the app: try disab
 If an issue like this persists; I would recommend checking if the installation was not corrupted somewhere along even at initial install..
 Simple solution is to check compatibility issues and re-install a clean OS with more knowledge.
 
+It's also recommended to make savepoints before making major changes, there are a lot of different libraries to do this for more redundant storage :D
+
 ## Packages
 .deb packages will also work! dpkg is designed to work with these files. 
 They will be lighter because they interact directly with the host system. 
