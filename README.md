@@ -216,6 +216,9 @@ What I mean is xrdp is okay, X11 direct is incredible. Then VNC is the noob way.
 You can now chose between KDE, XFCE4 or whatver desktop you like... 
 I like to keep the original user's desktop intact to always be able to control from there and install desktops on secondary users...
 
+> **_NOTE:_** This is all especially helpful if you're thinking about or have a VPS.
+> You can also use tools like FileZila to monitor system files with a kind of "double tree" interface which uses sFTP
+
 
 ## Screen tear 📺 
 Can happen sometimes if you made a mistake in drivers or your install was corrupted.
@@ -506,9 +509,16 @@ Altho mine is probably too old...
 ### FINAL BONUS AND I'M OUT:
  
 After some googling I found out that the GNU project (Stands for GNU Not Unix) a lot of the commands you still use today, file system, bash, gcc, coreutils, POSIX standards, FHS is based/inspired by Unix.
+This is ls, cat, rm, cp > Which linux adds features on top of
 An operating system that was dominant in entreprise in the 70-80s and that little hackers like yourself hated because they had to pay AT&T Bell Labs enourmous amounts for licenses. 
 Minix was also another "copy" project made for students that was much cheaper alternative 'was about 70$ which you would get a book with :D
 
+Why is this important today? 
+
+Faster development, collaboration, open access to experimentation and iteration, it also makes accountability important as new finds in vulnerabilities or malicious code are resolved quicker. 
+It's also freedom of vendor lock-in, both license wise and hardware. Plus the support for modern tech like AI, encryption, etc
+Finally, continuity, the fact that these will keep evolving way more than any closed counter-part.
+
+A lot of what I mentionned in this is all available to check out in full because of their open-source nature and that also gives YOU the freedom to do what you want with it today and the next.
+
 Peace <3
-
-
