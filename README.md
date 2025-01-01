@@ -542,6 +542,8 @@ You're not done ???? Okay.
 Try QEMU and create your own computer within your computer (used Qubes to make it even more ironic 🧠)
 
 ```sudo apt install qemu-system-x86 qemu-utils
+sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
+
 qemu-img create -f qcow2 myvm.qcow2 20G
 
 #Create an ISO from a USB or use an existing... There is tools for this too, but since you're a terminal pro.
