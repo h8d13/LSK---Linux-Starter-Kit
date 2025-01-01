@@ -221,6 +221,7 @@ If you cannot find a solution you can temporarly still get in the app: try disab
 ```{code} --disable-gpu```
 
 If an issue like this persists; I would recommend checking if the installation was not corrupted somewhere along even at initial install..
+Simple solution si to check compatibility issues and re-install a clean OS with more knowledge.
 
 ## Packages
 .deb packages will also work! dpkg is designed to work with these files. 
