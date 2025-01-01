@@ -541,10 +541,17 @@ Peace <3
 
 You're not done ???? Okay. 
 
+----
+
 ```sudo apt install qemu-system-x86 qemu-utils``` to verify install: ```qemu-system-x86_64 --version```
 
 Try QEMU and create your own computer within your computer (used Qubes to make it even more ironic 🧠)
 Also check compatibility of the OS you're trying to emulate.
+
+```sudo apt install qemu-system-x86 qemu-utils
+sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
+```
+
 
 > **_NOTE:_** You might need to do some extra steps for Virtualization depending on if you're using intel or amd (I mean you're fucked if you have intel?).
 > ```LC_ALL=C lscpu | grep Virtualization
@@ -555,9 +562,7 @@ Also check compatibility of the OS you're trying to emulate.
 >```
 
 
-```sudo apt install qemu-system-x86 qemu-utils
-sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
-
+```
 qemu-img create -f qcow2 myvm.qcow2 20G
 
 #Create an ISO from a USB or use an existing... There is tools for this too, but since you're a terminal pro.
