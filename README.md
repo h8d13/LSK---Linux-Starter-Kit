@@ -529,3 +529,6 @@ Peace <3
 
 You're not done ???? Okay. 
 Try QEMU and create your own computer within your computer 🧠
+
+
+"To seek is to recognize potential beyond the current state, a gesture that inherently lacks contempt for what is."
