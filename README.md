@@ -570,7 +570,7 @@ qemu-system-x86_64 \
 When done installing: 
 
 You just need to remove some things (the disk and boot order).
-> **_NOTE:_** You might need to do some extra steps for Virtualization depending on if you're using intel or amd.
+> **_NOTE:_** You might need to do some extra steps for Virtualization depending on if you're using intel or amd (I mean you're fucked if you have intel?).
 > ```LC_ALL=C lscpu | grep Virtualization
 > lsmod | grep kvm
 > ls -l /dev/kvm && groups | grep kvm
