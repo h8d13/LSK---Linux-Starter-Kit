@@ -6,6 +6,7 @@ The only things to be careful about: Where are you installing your OS and make s
 > **_NOTE:_** Use GPT for modern systems, especially if you need support for drives larger than 2TB or UEFI boot.
 > However, if your system uses legacy BIOS, MBR may be required.
 > For security reasons, many modern Debian-based systems disable the root account by default. I prefer to enable it, but you always have ```sudo``` for elevated tasks.
+> I made this guide for beginners to Deb systems (especially with RaspP being so popular and many VPS servers using Deb too) much information might change or is up to personal preferences. 
 
 You can use Rufus or Etcher for quick USBs!
 
