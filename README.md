@@ -646,6 +646,7 @@ You might need to play around with settings if you get screen-tear.
 
 > **_NOTE:_**
 > For example this fixed my KDE Neon VM. Again depending on what you're trying to achieve and your hardware. Add to the boot commands above:
+> Tip: after downloading an ISO rename the annoying name to something shorter. Then right click it properties and it will show the full path to your ISO. 
 
 ```
 --display gtk,gl=off
