@@ -628,10 +628,10 @@ You can also control alt G to lock into the QEMU instance and do the same to rel
 You might need to play around with settings if you get screen-tear.
 
 > **_NOTE:_**
-> For example this fixed my KDE Neon VM. Again dpeneding on what you're trying to achieve and your hardware.
+> For example this fixed my KDE Neon VM. Again dpeneding on what you're trying to achieve and your hardware. Add to the boot commands above:
 
 ```
--vga virtio -display gtk,gl=off
+--display gtk,gl=off
 ```
 ----
 
