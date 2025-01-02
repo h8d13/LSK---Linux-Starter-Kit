@@ -151,10 +151,11 @@ If you're running local servers:
 
 To secure that further you can look into reverse proxies. 
 
-For my browser Mozilla is the way to go (they are at much of the origin of documentation about JavaScript as a whole, it is also pre-installed and open-source. You can also add privacy badger and an adblock for an even better experience.)
-I've ditched my TV devices with mini-computers this way!
-You can always get chromium (the same rendering engine, same tools as Chrome without the hassle)
+For my browser Mozilla is the way to go (they are at much of the origin of documentation about JavaScript as a whole, it is also pre-installed and open-source. 
 
+You can also add privacy badger and an adblock for an even better experience.) I've ditched my TV devices with mini-computers this way!
+
+You can always get chromium (the same rendering engine, same tools as Chrome without the hassle)
 
 ## 🖥️ Remote desktop sessions
 
