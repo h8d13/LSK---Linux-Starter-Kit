@@ -679,7 +679,9 @@ sudo apt install xboxdrv
 sudo modprobe xpad
 ```
 
-Test your inputs in steam to verify it's all good. If still not working it's often the same issue with permissions:
+Test your inputs in steam to verify it's all good. 
+
+If still not working it's often the same issue with linux permissions:
 ```sudo usermod -aG input $USER```
 
 ----
