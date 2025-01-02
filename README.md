@@ -623,6 +623,7 @@ qemu-system-x86_64 \
   -boot c
 ```
 
+You can also control alt G to lock into the QEMU instance and do the same to release.
 
 You might need to play around with settings if you get screen-tear.
 
