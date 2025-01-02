@@ -340,15 +340,19 @@ You will find yourself using the mouse less which gains you precious time.
 
 You can do the same: Ctrl alt shift right/left to move windows to another workspace.
 
+You can just alt to return to workspace 1.
 You can also control alt T for a quick terminal & control shift Q to close it. 
 
 There are countless popular managers with varying levels of difficulty, but the original in mint is enough for me:
-
 Right click your menu bar > add workspaces to it, choose how many you want and boom you have virtual desktops.
+
+----
 
 On KDE the default is Meta (windows key) + W to open the overview. 
 Here is a link for further set-up as the shortcuts aren't all done by default:
 https://askubuntu.com/questions/1290451/in-kde-plasma-how-can-i-switch-between-virtual-desktops-using-meta-tab
+
+----
 
 In PopOS the default will be Ctrl + super + up/down and they also have tiling built-in (automatic resizing) which is very practical. 
 
