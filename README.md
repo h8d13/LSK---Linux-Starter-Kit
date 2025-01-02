@@ -325,6 +325,8 @@ YOu will find yourself using the mouse less which gains you precious time.
 
 You can do the same: Ctrl alt shift right/left to move windows to another workspace.
 
+You can also control shift T for a quick terminal and control shift Q to close it. 
+
 ## Reviving Old Hardware @geerlingguy
 
 From what I gather the older the hardware, the more lightweight the distro you will want to pick. 
