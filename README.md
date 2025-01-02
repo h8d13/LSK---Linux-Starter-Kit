@@ -384,7 +384,7 @@ newgrp video
 ```
 
 
-## Working with USBs devices 🔌 
+## Working with USBs 🔌 
 
 As we mentionned above:
 
