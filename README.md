@@ -648,6 +648,7 @@ You might need to play around with settings if you get screen-tear.
 > For example this fixed my KDE Neon VM. Again depending on what you're trying to achieve and your hardware. Add to the boot commands above:
 > Tip: after downloading an ISO rename the annoying name to something shorter. Then right click it properties and it will show the full path to your ISO.
 > Also change the 2000 to something higher depending on available RAM, well because 2GiB will not do it for many OSes.
+> About the disk space we created I put 20GiB but you might want more for modern OSes. Also what is cool is that this space isn't actually "used" on your host system yet, so unless you clutter the VM it will not take the full size from your host OS.
 
 ```
 --display gtk,gl=off
