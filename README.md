@@ -305,7 +305,7 @@ sudo apt install -y libxcb1 libxcb-xinerama0 libxcb-cursor0 libxkbcommon-x11-0 l
 ```
 You can also toggle telemetry data off in Visual Studio Code for privacy. 
 
-If you're working with .config, .ignore, files they are always hidden by default and you can see them by doing alt + '.' in your files browser.
+If you're working with .config, .ignore, files they are always hidden by default and you can see them by doing alt + '.' in your files browser. Or right clicking and enable "Hidden files".
 
 another thing is on Linux default copy is with shift, it sounds annoying but it's because ctrl + C is reserved for interruption of programs.
 
