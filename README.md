@@ -2,6 +2,7 @@
 
 The installs themselves are pretty straight forward depending on distro:
 The only things to be careful about: Where are you installing your OS and make sure your keyboard input layout is correct? 
+Also make sure that you remove the bootable media after the install and change the boot order so you don't install twice :D
 
 > **_NOTE:_** Use GPT for modern systems, especially if you need support for drives larger than 2TB or UEFI boot.
 > However, if your system uses legacy BIOS, MBR may be required.
