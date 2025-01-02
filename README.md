@@ -640,5 +640,8 @@ This will force some downloads (steam linux run time, proton version, steamworks
 Otherwise Steam let's you play against bots only, which is a bit sad...
 
 Sometimes it might even re-install the game totally so better to not do that with 130gb game directly. 
+You can check proton db for compatibilities. 
+
+----
 
 "To seek is to recognize potential beyond a current state, a gesture that inherently lacks contempt for what is."
