@@ -628,6 +628,17 @@ You might need to play around with settings if you get screen-tear.
 
 You're still here.........
 
+Let's 1V1 Rocket League:
 
+Install steam
+Go to settings > Compatibilty
+
+Enable proton experimental
+RIght click your game go to compatibility again > Force Proton Expiremental. 
+This will force some downloads (steam linux run time, proton version, steamworks). 
+
+Otherwise Steam let's you play against bots only, which is a bit sad...
+
+Sometimes it might even re-install the game totally so better to not do that with 130gb game directly. 
 
 "To seek is to recognize potential beyond a current state, a gesture that inherently lacks contempt for what is."
