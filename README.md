@@ -632,9 +632,6 @@ You might need to play around with settings if you get screen-tear.
 
 ```
 --display gtk,gl=off
-
-# If you're using a trackpad:
--usb -device usb-tablet
 ```
 ----
 
