@@ -338,6 +338,10 @@ There are countless popular managers with varying levels of difficulty, but the 
 
 Right click your menu bar > add workspaces to it, choose how many you want and boom you have virtual desktops.
 
+On KDE the default is Meta (windows key) + W to open the overview. 
+Here is a link for further set-up as the shortcuts aren't all done by default:
+https://askubuntu.com/questions/1290451/in-kde-plasma-how-can-i-switch-between-virtual-desktops-using-meta-tab
+
 ## Reviving Old Hardware @geerlingguy
 
 From what I gather the older the hardware, the more lightweight the distro you will want to pick. 
