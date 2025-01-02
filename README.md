@@ -320,6 +320,8 @@ I hate the fact you have to click 2 times to get to your apps...
 
 Then toggle ON: Ubuntu Dock
 
+I also loves virtual dektops for manangers: in linux mint its control alt left or right and is super ingrained in my brain. 
+
 ## Reviving Old Hardware @geerlingguy
 
 From what I gather the older the hardware, the more lightweight the distro you will want to pick. 
