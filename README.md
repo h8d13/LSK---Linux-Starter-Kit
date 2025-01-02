@@ -272,7 +272,7 @@ Simple solution is to check compatibility issues and re-install a clean OS with 
 It's also recommended to make savepoints before making major changes, there are a lot of different libraries to do this for more redundant storage :D
 
 ## Packages
-.deb packages will also work! dpkg is designed to work with these files. 
+.deb packages are your friends! "dpkg" is designed to work with these files. 
 They will be lighter because they interact directly with the host system. 
 
 Flatpack is the most practical way to download apps in my opinion: They will be slightly heavier than on Windows because:
@@ -285,7 +285,7 @@ But they install seemlessly with dependencies:
 Some distros like Linux Mint have a neat little software manager pre-installed!
 Basically just uses Flatpack for people who don't like terminal. 
 
-For Ubuntu, it will be snap packages by default. But you can easily install flatpack or deb packages too. 
+For Ubuntu, it will be snap packages by default. But you can easily install flatpack or deb packages too or use other managers. 
 
 Do be careful that .deb interacts with the host system so download from trusted sources. 
 
