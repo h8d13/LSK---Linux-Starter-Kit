@@ -300,6 +300,7 @@ sudo apt install -y libxcb1 libxcb-xinerama0 libxcb-cursor0 libxkbcommon-x11-0 l
 
 (optional) sudo apt install -y qt6-base-dev qt6-wayland libqt5x11extras5
 ```
+You can also toggle telemetry data off in Visual Studio Code for privacy. 
 
 ## System Monitoring 📈
 
