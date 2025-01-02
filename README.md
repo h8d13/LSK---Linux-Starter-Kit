@@ -671,7 +671,7 @@ You might need to play around with settings if you get screen-tear.
 --display gtk,gl=off
 ```
 
-Make it feel like home: In your QEMU window set the view to "Best Fit" or "Fullscreen" depending on the desktop type try different resolutions: I found to enjoy 16:10 @ 1050px which i think is plenty for dev uness working with HD graphics. 
+Make it feel like home: In your QEMU window set the view to "Best Fit" or "Fullscreen" depending on the desktop type try different resolutions: I found to enjoy 16:10 @ 1050px which i think is plenty for dev uness working with HD graphics. Ctrl + alt + F to get out of fullscreen. 
 
 ----
 
