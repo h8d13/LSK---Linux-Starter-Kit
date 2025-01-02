@@ -160,6 +160,7 @@ You can always get chromium (the same rendering engine, same tools as Chrome wit
 For some weird reason this can be quite annoying depending on the distro
 > **_NOTE:_** One thing  I found to fix a lot of my issues is to create a second user with elevated privileges so that you can remote connect to it easily while keeping the device functional on it's own.
 > You could also just use VNC but that's cheating and increased latency with framebuffers :D
+> You might have to check your session type (Wayland vs x11) but many distros still use x11 by default (on many distros you can simply log out and choose from the login page).
 
 ```sudo apt install xrdp xserver-xorg-core```
 
