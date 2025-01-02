@@ -668,6 +668,19 @@ Otherwise Steam let's you play against bots only, which is a bit sad...
 Sometimes it might even re-install the game totally so better to not do that with 130gb game directly. 
 You can check proton db for compatibilities. 
 
+For a USB generic xbox controller:
+
+```
+sudo apt update
+sudo apt install xboxdrv
+
+## If xboxdrv doesn't work, ensure the xpad module is loaded:
+
+sudo modprobe xpad
+```
+
+Test your inputs in steam to verify it's all good. 
+
 ----
 
 "To seek is to recognize potential beyond a current state, a gesture that inherently lacks contempt for what is."
