@@ -321,6 +321,7 @@ I hate the fact you have to click 2 times to get to your apps...
 Then toggle ON: Ubuntu Dock
 
 I also loves virtual dektops for manangers: in linux mint its control alt left or right and is super ingrained in my brain. 
+YOu will find yourself using the mouse less which gains you precious time. 
 
 ## Reviving Old Hardware @geerlingguy
 
