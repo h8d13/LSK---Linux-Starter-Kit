@@ -338,15 +338,11 @@ Then toggle ON: Ubuntu Dock
 ----
 
 I also loves virtual dektops for managers: in linux MINT its control alt left or right and is super ingrained in my brain. 
-You will find yourself using the mouse less which gains you precious time. 
+You will find yourself using the mouse less which gains you precious time. Up to show global overview of desktops and down to see windows in this desktop.
 
-You can do the same: Ctrl alt shift right/left to move windows to another workspace.
-Up to show global overview and down to see windows in this desktop.
+You can do the same: Ctrl alt shift right/left to move windows to another workspace. You can just alt to return to workspace 1. 
 
-You can just alt to return to workspace 1. 
 You can also control alt T for a quick terminal & control shift Q to close it. 
-
-
 
 There are countless popular managers with varying levels of difficulty, but the original in mint is enough for me:
 Right click your menu bar > add workspaces to it, choose how many you want and boom you have virtual desktops.
