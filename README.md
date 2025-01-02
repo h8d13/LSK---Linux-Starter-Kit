@@ -670,6 +670,10 @@ You might need to play around with settings if you get screen-tear.
 ```
 --display gtk,gl=off
 ```
+
+Make it feel like home: In your QEMU window set the view to "Best Fit" depending on the desktop type try different resolutions: I found to enjoy 16:10 @ 900px which i think is plenty for dev uness working with graphics. 
+
+
 ----
 
 You're still here.........
