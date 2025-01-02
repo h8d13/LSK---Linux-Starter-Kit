@@ -324,8 +324,8 @@ I hate the fact you have to click 2 times to get to your apps...
 
 Then toggle ON: Ubuntu Dock
 
-I also loves virtual dektops for manangers: in linux mint its control alt left or right and is super ingrained in my brain. 
-YOu will find yourself using the mouse less which gains you precious time. 
+I also loves virtual dektops for managers: in linux mint its control alt left or right and is super ingrained in my brain. 
+You will find yourself using the mouse less which gains you precious time. 
 
 You can do the same: Ctrl alt shift right/left to move windows to another workspace.
 
@@ -447,8 +447,9 @@ if __name__ == "__main__":
 ```
 
 Some devices need specific communications protocols: Say again this was a fingerprint scanner there would often be sent write data that 'activates' the fingerprint area then another to 'confirm'. 
-You can often find the information online because some nerd reversed it or it's released by manufacturers. 
 
+You can often find the information online because some nerd reversed it or it's released by manufacturers. 
+when running the verbose command I provided above you will also see entry/exit points of the device which might help 😉
 
 ### BONUS 🎁
 
