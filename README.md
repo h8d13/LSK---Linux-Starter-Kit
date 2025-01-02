@@ -680,7 +680,7 @@ sudo modprobe xpad
 ```
 
 Test your inputs in steam to verify it's all good. If still not working it's often the same issue with permissions:
-sudo usermod -aG input $USER
+```sudo usermod -aG input $USER```
 
 ----
 
