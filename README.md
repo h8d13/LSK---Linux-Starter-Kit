@@ -304,7 +304,7 @@ You can also toggle telemetry data off in Visual Studio Code for privacy.
 
 If you're working with .config, .ignore, files they are always hidden by default and you can see them by doing alt + '.' in your files browser.
 
-another thing is on Linux default copy is with shift, it Doubs annoying but it's because ctrl + C is reserved for interruption of programs.
+another thing is on Linux default copy is with shift, it sounds annoying but it's because ctrl + C is reserved for interruption of programs.
 
 ## System Monitoring 📈
 
