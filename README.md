@@ -314,7 +314,8 @@ You can also toggle telemetry data off in Visual Studio Code for privacy.
 
 If you're working with .config, .ignore, files they are always hidden by default and you can see them by doing alt + '.' in your files browser. Or right clicking and enable "Hidden files".
 
-another thing is on Linux default copy is with shift, it sounds annoying but it's because ctrl + C is reserved for interruption of programs.
+Another thing is on Linux default copy is with shift, it sounds annoying but it's because ctrl + C is reserved for interruption of programs.
+
 
 ## System Monitoring 📈
 
@@ -348,6 +349,8 @@ Right click your menu bar > add workspaces to it, choose how many you want and b
 On KDE the default is Meta (windows key) + W to open the overview. 
 Here is a link for further set-up as the shortcuts aren't all done by default:
 https://askubuntu.com/questions/1290451/in-kde-plasma-how-can-i-switch-between-virtual-desktops-using-meta-tab
+
+In PopOS the default will be Ctrl + super + up/down and they also have tiling built-in (automatic resizing) which is very practical. 
 
 ## Reviving Old Hardware @geerlingguy
 
