@@ -67,7 +67,7 @@ But you will need some tools for modern applications:
 
 ```sudo apt install mesa-vulkan-drivers mesa-utils``` 
 
-On Linux Mint it is handled automatically, you just have to follow the welcome window lanchers green buttons :)
+On Linux Mint it is handled automatically, you just have to follow the welcome window launchers green buttons :)
 
 > **_NOTE:_** It's best to go find on the official sites for compatibility:
 > Device manufacturer (This gives you the full specs)
