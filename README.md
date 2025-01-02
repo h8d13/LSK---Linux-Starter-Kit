@@ -327,7 +327,9 @@ This means either going the light Ubuntu distros (Mate or Xubuntu) route or Mint
 But if it's not too old you can go for the regular long term support. 
 You can also go XFCE route ( another lighter desktop), which might not look as polished but is lighter and has more performance on old hardware. 
 
-There are also a bunch of beatufil system that are also deb based like Zorin OS and KDE Neon and others. But under the hood you will still be able to use all your new knowledge as it's still bellow all the pretty windows. Deb iso image (that also comes with a desktop) is actually 600mb which is crazy for it can do and all the included tools. 
+There are also a bunch of beautiful systems that are also deb based like Zorin OS and KDE Neon and others. But under the hood you will still be able to use all your new knowledge as it's still bellow all the pretty windows.
+
+Deb iso image (that also comes with a desktop) is actually 600mb which is crazy for it can do and all the included tools. 
 
 ## 📷 Working with cameras or HMDI inputs 
 
