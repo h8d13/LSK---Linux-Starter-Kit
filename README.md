@@ -247,7 +247,7 @@ What I mean is xrdp is okay, X11 direct is incredible. Then VNC is the noob way.
 You can now chose between KDE, XFCE4 or whatver desktop you like... 
 I like to keep the original user's desktop intact to always be able to control from there and install desktops on secondary users...
 
-> **_NOTE:_** This is all especially helpful if you're thinking about or have a VPS.
+> **_NOTE:_** This is all especially helpful if you're thinking about or have a VPS or any head-less device like a PI.
 > You can also use tools like FileZila to monitor system files with a kind of "double tree" interface which uses sFTP
 > This let's you for example edit code that is live on a head-less server on the fly using temp downloads.
 
