@@ -616,7 +616,7 @@ qemu-system-x86_64 \
 ---
 
 When done installing: 
-You just need to remove some things (the disk and boot order):
+You just need to remove/change some things (the disk and boot order):
 
 ```
 qemu-system-x86_64 \
