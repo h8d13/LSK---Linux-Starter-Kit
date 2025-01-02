@@ -8,3 +8,6 @@ FIX: (MSI motherboard)
 You have to find some boot setting in your BIOS:
 Boot > Secure Boot
 OS Type > Other OS
+
+You might for some OSes also need to disable fast boot setting which can break installs. 
+
