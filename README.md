@@ -313,7 +313,7 @@ Many know ```htop``` which is great already but there is a special one to my hea
 ``` sudo apt install btm ```
 You can then simply launch it in terminal: ```btm```
 
-## Making your desktop your own ! 
+## YOUR ENVIRONMENT ! 
 
 Linux is highly customizable in general. 
 
@@ -330,6 +330,10 @@ You will find yourself using the mouse less which gains you precious time.
 You can do the same: Ctrl alt shift right/left to move windows to another workspace.
 
 You can also control alt T for a quick terminal & control shift Q to close it. 
+
+There are countless popular managers with varying levels of difficulty, but the original in mint is enough for me:
+
+Right click your menu bar > add workspaces to it, choose how many you want and boom you have virtual desktops.
 
 ## Reviving Old Hardware @geerlingguy
 
