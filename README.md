@@ -620,7 +620,7 @@ qemu-system-x86_64 \
   -cpu host \
   -smp 2 \
   -hda myvm.qcow2 \
-  -cdrom qubes.iso \
+  -cdrom /home/usr/Downloads/qubes.iso \
   -boot d
 
 ```
