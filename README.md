@@ -335,7 +335,9 @@ I hate the fact you have to click 2 times to get to your apps...
 
 Then toggle ON: Ubuntu Dock
 
-I also loves virtual dektops for managers: in linux mint its control alt left or right and is super ingrained in my brain. 
+----
+
+I also loves virtual dektops for managers: in linux MINT its control alt left or right and is super ingrained in my brain. 
 You will find yourself using the mouse less which gains you precious time. 
 
 You can do the same: Ctrl alt shift right/left to move windows to another workspace.
