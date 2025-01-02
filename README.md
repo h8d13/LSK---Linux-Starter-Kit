@@ -323,6 +323,8 @@ Then toggle ON: Ubuntu Dock
 I also loves virtual dektops for manangers: in linux mint its control alt left or right and is super ingrained in my brain. 
 YOu will find yourself using the mouse less which gains you precious time. 
 
+You can do the same: Ctrl alt shift right/left to move windows to another workspace.
+
 ## Reviving Old Hardware @geerlingguy
 
 From what I gather the older the hardware, the more lightweight the distro you will want to pick. 
