@@ -318,6 +318,19 @@ If you're working with .config, .ignore, files they are always hidden by default
 
 Another thing is on Linux default copy is with shift, it sounds annoying but it's because ctrl + C is reserved for interruption of programs.
 
+---
+
+**Compiling code:**
+
+```
+# sudo apt install binutils
+
+# pip install pyinstaller
+
+# pyinstaller --onefile --windowed yourscript.py
+```
+
+
 
 ## System Monitoring 📈
 
