@@ -373,6 +373,8 @@ https://askubuntu.com/questions/1290451/in-kde-plasma-how-can-i-switch-between-v
 In PopOS the default will be Ctrl + super + up/down and they also have tiling built-in (automatic resizing) which is very practical. 
 When you activated tiling you can also use just super for launcher, and super + direction to select a window.
 
+Then shift + super + up/down to move them to different desktops.
+
 ![popostilingworkspaces](poposexample.png)
 
 ## Reviving Old Hardware @geerlingguy
