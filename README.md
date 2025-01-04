@@ -332,15 +332,19 @@ You can then simply launch it in terminal: ```btm```
 
 If it's not found, it means that you might need to follow install instructions:
 Or if you're like me and still confused at the 20 package managers available:
-
+```
 curl -LO https://github.com/ClementTsang/bottom/releases/download/0.10.2/bottom_0.10.2-1_amd64.deb
-
+# then 
 sudo dpkg -i bottom_0.10.2-1_amd64.deb
-
+```
 Want to go deeper ? 
+For kernel logs
 
-```` sudo journalctl -k ```` For kernel logs
-```sudo journalctl -k -f ``` To follow: you will see real-time updates. 
+```` sudo journalctl -k ````
+
+```sudo journalctl -k -f ``` 
+
+To follow: you will see real-time updates. 
 
 What is cool is that you can see how your firewall for example might be protecting you, or even a USB connecting.
 
