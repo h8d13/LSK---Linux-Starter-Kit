@@ -96,6 +96,9 @@ We can compare to our python version:
 
 ![image](https://github.com/user-attachments/assets/bb4db4e9-fdc7-43b5-87e5-67be26746d42)
 
+
+You can then go further and add notifications are anything that you need. Say you need a shortcut to a specific command or setting, it's all at the end of your fingertips.
+
 Which uses about 250mb more VRAM
 And 0,2% extra CPU. 
 
