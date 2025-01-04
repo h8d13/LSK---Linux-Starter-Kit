@@ -83,6 +83,11 @@ Now we can check for footprint.
 Using about 0,0 - 0,3% of CPU which is great. 
 405M of VIRT memory (about 30-40mb of actual RAM). 
 
+![image](https://github.com/user-attachments/assets/bb4db4e9-fdc7-43b5-87e5-67be26746d42)
+
+
+
+
 The total file size is now bellow 100kb. 
 
 > **_NOTE:_** There are 4 instances because of how Qt handles threading I believe. 
