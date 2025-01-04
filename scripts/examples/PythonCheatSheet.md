@@ -18,9 +18,11 @@ Meaning a folder! So just make sure you created one with a descriptive name for 
 You can now start coding in a more secure way than interacting with operating system directly!
 
 For good practice you want to make sure to track the versions of what you are using for example: 
+```
 requests==2.28.1
 pandas>=1.5.0,<2.0.0
 numpy~=1.23.0 
+````
 
 This is useful because you can use the same code in 3 or even 30 years. 
 
@@ -31,13 +33,16 @@ Project structures:
 Here is a bit of a gray area, depending especially of the scale fo what you're attempting. 
 
 For a small project you might not need more than:
+```
 /project_folder/
 ├── script.py
 ├── config.json
 └── requirements.txt
+```
 
 While for a slightly larger code base: 
 
+```
 /project_folder/
 ├── src/
 │   └── mypackage/
@@ -46,9 +51,11 @@ While for a slightly larger code base:
 │       └── utils.py
 ├── tests/
 │   └── test_main.py
+```
 
-Python introduced another concept that makes it possible to create larger codebases without even have to do __init__ files (while useful)
+Python introduced another concept that makes it possible to create larger codebases without even have to do __init__ files (while useful) I really like to code without them sometimes.
 
+```
 /project_folder/
 ├── src/
 │   └── myapp/
@@ -67,18 +74,15 @@ Python introduced another concept that makes it possible to create larger codeba
 │       │   └── logging.py
 │       │
 │       └── main.py
+```
 
 Basically init files are way to do what is above implicitely:
 
-# mypackage/__init__.py
+mypackage/__init__.py
 from .user import User  # Chose what to expose
 from .utils import helper_function
 
-Then you can call it from your main script. 
-
----
-
-Imports: 
+Then you can call it from your main script.
 
 Why the above is important is because:
 
@@ -89,13 +93,14 @@ But if you do decide to go without init files well you will have to be careful w
 
 I've made an imports folder that show this with a simple example. 
 
-The main difference is that without init files your imports will look longer: 
+The main difference is that without init files your imports will look longer (and are not loaded until needed? I think): 
 
 from calc.operations import add, substract
 WHERE > FOLDER.SCRIPT > function
 
 What I like to do is go without init files until there is a feature that is repeatable for example:
 
+````
 /project_folder/
 ├── filters/
 │   ├── __init__.py
@@ -113,6 +118,7 @@ What I like to do is go without init files until there is a feature that is repe
 │   └── image_loader.py
 ├── main.py
 └── requirements.txt
+````
 
 Now this WILL simplify your life.
 
@@ -154,13 +160,13 @@ utils.py
 database_connector.py
 auth_helper.py
 
-# Bad
+**Bad**
 Utils.py       # Don't use capitals
 database-connector.py
 
 FOR CLASSES
 
-# Good
+**Good**
 class UserProfile:
 class DatabaseConnection:
 class APIClient:
@@ -168,7 +174,7 @@ class APIClient:
 
 FOR DEFINITIONS
 
-# Good
+**Good**
 def get_user():
 def calculate_total():
 def fetch_data():
@@ -178,19 +184,20 @@ def calculateTotal():  # Don't use camelCase
 
 FOR CONSTANTS
 
-# Good
+**Good**
 MAX_CONNECTIONS = 100
 DEFAULT_TIMEOUT = 30
 
 FOR VARIABLES
-# Good
+
+**Good**
 username
 total_count
 is_valid
 
-These are just conventions for clearer code and because other programmign languages can have totally different standards. 
+These are just conventions for clearer code and because other programmign languages can have totally different standards. (For example JS: ```useEffect```)
 
-MAIN RULES:
+**MAIN RULES:**
 
 Packages/Modules: lowercase with underscores
 Classes: PascalCase
@@ -199,77 +206,95 @@ Constants: UPPERCASE with underscores
 
 ------
 
-CORE PYTHON CONCEPTS
+## CORE PYTHON CONCEPTS
 
-# Numbers
+Numbers
+```
 integer = 42
 float_num = 3.14
 complex_num = 1 + 2j
+````
 
-# Strings
+Strings
+```
 text = "Hello, World!"
 multiline = """
 This is a multiline string.
     It preserves indentation.
         Like this!
 """
+```
 
-# Booleans
+Booleans
+```
 is_valid = True
 is_done = False
 
 # None type
 empty = None
-
+```
 
 COLLECTIONS
 
-# Lists (mutable, ordered)
+Lists (mutable, ordered)
+```
 fruits = ['apple', 'banana', 'orange']
 fruits.append('grape')
-
-# Tuples (immutable, ordered)
+```
+Tuples (immutable, ordered)
+```
 coordinates = (10, 20)
 rgb = (255, 128, 0)
-
-# Dictionaries (key-value pairs)
+```
+Dictionaries (key-value pairs)
+```
 user = {
     'name': 'John',
     'age': 30,
     'email': 'john@example.com'
 }
-
-# Sets (unique, unordered)
+```
+Sets (unique, unordered)
+```
 unique_numbers = {1, 2, 3, 3}  # {1, 2, 3}
+````
+----
 
+## TYPE CONVERSIONS
 
-TYPE CONVERSIONS
-
-# String conversions
+String conversions
+```
 str_num = str(42)       # "42"
 num_from_str = int("42")  # 42
+```
 
-# Collection conversions
+Collection conversions
+```
 list_from_tuple = list((1, 2, 3))
 set_from_list = set([1, 2, 2, 3])  # {1, 2, 3}
-
 rounded = int(3.99)
+```
 
-# Dictionary Conversions
-# From list of tuples to dict
+Dictionary Conversions
+From list of tuples to dict
+```
 pairs = [('a', 1), ('b', 2)]
 dict_from_pairs = dict(pairs)  # {'a': 1, 'b': 2}
+```
 
-# From two lists to dict
+From two lists to dict
+```
 keys = ['a', 'b']
 values = [1, 2]
 dict_from_zip = dict(zip(keys, values))
+```
 
 -----
 
-PYTHON FLOW CONTROL
+## PYTHON FLOW CONTROL
 
-# If statements
+If statements
+```
 age = 20
 if age < 18:
     print("Minor")
@@ -277,50 +302,66 @@ elif age < 21:
     print("Young adult")
 else:
     print("Adult")
-
-# For loops
-# Range-based
+```
+For loops
+Range-based
+```
 for i in range(5):
     print(i)  # 0, 1, 2, 3, 4
+```
 
-# Iterating collections
+Iterating collections
+````
 fruits = ['apple', 'banana', 'orange']
 for fruit in fruits:
     print(fruit)
+````
 
-# Dictionary iteration
+Dictionary iteration
+```
 user = {'name': 'John', 'age': 30}
 for key, value in user.items():
     print(f"{key}: {value}")
+```
 
-# While loops
+While loops (everyones favourite)
+```
 count = 0
 while count < 5:
     print(count)
     count += 1
-
+````
 
 ----
 
-FUNCTION PRINCIPLES
+## FUNCTION PRINCIPLES
 
-# Basic function
+Basic function
+```
 def greet(name):
     return f"Hello, {name}!"
+```
 
-# Default parameters
+Default params
+```
 def greet_with_title(name, title="Mr."):
     return f"Hello, {title} {name}!"
+```
 
-# Multiple returns
+Multiple returns
+```
 def divide_and_remainder(a, b):
     return a // b, a % b
+````
 
-# *args for variable positional arguments
+*args for variable positional arguments
+```
 def sum_all(*numbers):
     return sum(numbers)
+```
 
-# **kwargs for variable keyword arguments
+**kwargs for variable keyword arguments
+```
 def create_user(**user_data):
     return {
         "name": user_data.get('name', 'Anonymous'),
@@ -330,13 +371,14 @@ def create_user(**user_data):
 # Example usage:
 result = sum_all(1, 2, 3, 4)  # 10
 user = create_user(name="John", age=30, city="New York")
-
+```
 
 ----
 
-USING OBJECTS
+## USING OBJECTS
 
-# Basic Class
+Basic Class
+```
 class Dog:
     def __init__(self, name, age):
         self.name = name
@@ -344,8 +386,10 @@ class Dog:
     
     def bark(self):
         return f"{self.name} says woof!"
+```
 
-# Inheritance
+Inheritance
+```
 class Animal:
     def __init__(self, name):
         self.name = name
@@ -356,8 +400,10 @@ class Animal:
 class Cat(Animal):
     def speak(self):
         return f"{self.name} says meow!"
+```
 
-# Properties
+Properties
+```
 class BankAccount:
     def __init__(self):
         self._balance = 0
@@ -371,8 +417,10 @@ class BankAccount:
         if value < 0:
             raise ValueError("Balance cannot be negative")
         self._balance = value
+```
 
-# Class Methods and Static Methods
+Class Methods and Static Methods (And more...)
+```
 class DateHandler:
     date_format = "%Y-%m-%d"
     
@@ -388,150 +436,187 @@ class DateHandler:
             return True
         except ValueError:
             return False
+```
 
 ----
 
 OPERATIONS 
 
 1. Lists
-### Creating
+Creating
+```
 my_list = [1, 2, 3]
 my_list = list()  # Empty list
+````
 
-### Adding
+Adding
+```
 my_list.append(4)      # Add to end: [1, 2, 3, 4]
 my_list.insert(0, 0)   # Insert at index: [0, 1, 2, 3, 4]
 my_list.extend([5, 6]) # Add multiple: [0, 1, 2, 3, 4, 5, 6]
+````
 
-### Removing
+Removing
+```
 my_list.pop()          # Remove & return last item
 my_list.pop(0)         # Remove & return item at index
 my_list.remove(3)      # Remove first occurrence of value
 del my_list[1]         # Delete at index
 my_list.clear()        # Remove all items
+```
 
-### Accessing
+Accessing
+```
 first = my_list[0]     # First item
 last = my_list[-1]     # Last item
 sliced = my_list[1:3]  # Slice: items 1 through 2
+````
 
-### Information
+Information
+```
 length = len(my_list)
 count = my_list.count(2)    # Count occurrences
 index = my_list.index(2)    # Find first index of value
+````
 
-### Ordering
+Ordering
+```
 my_list.sort()             # Sort in place
 my_list.reverse()          # Reverse in place
 sorted_list = sorted(my_list)  # Return new sorted list
-
+```
+...
 
 2. Dictionary
-### Creating
+Creating
+```
 my_dict = {'a': 1, 'b': 2}
 my_dict = dict()  # Empty dictionary
-
-### Adding/Modifying
+```
+Adding/Modifying
+```
 my_dict['c'] = 3         # Add or update
 my_dict.update({'d': 4}) # Add multiple
-
-### Removing
+```
+Removing
+```
 value = my_dict.pop('a')      # Remove & return value
 item = my_dict.popitem()      # Remove & return last item
 del my_dict['b']             # Delete key
 my_dict.clear()              # Remove all items
-
-### Accessing
+```
+Accessing
+```
 value = my_dict['a']         # Get value (raises KeyError if missing)
 value = my_dict.get('a', 0)  # Get value with default
-
-### Information
+```
+Information
+```
 keys = my_dict.keys()
 values = my_dict.values()
 items = my_dict.items()      # Key-value pairs
-
-### Checking
+```
+Checking
+```
 exists = 'a' in my_dict      # Check if key exists
-
+```
 
 3. Strings
-### Creating
+Creating
+```
 my_str = "Hello"
 my_str = str(123)  # Convert to string
+```
 
-### Modifying (creates new string)
+Modifying (creates new string)
+```
 upper = my_str.upper()
 lower = my_str.lower()
 no_spaces = my_str.strip()
 replaced = my_str.replace('l', 'L')
+```
 
-### Splitting/Joining
+Splitting/Joining
+```
 words = my_str.split()        # Split on spaces
 words = my_str.split(',')     # Split on comma
 new_str = ' '.join(words)     # Join with spaces
+```
 
-### Finding
+Finding
+```
 index = my_str.find('l')      # Returns -1 if not found
 index = my_str.index('l')     # Raises ValueError if not found
 count = my_str.count('l')     # Count occurrences
+```
 
-### Checking
+Checking
+```
 starts = my_str.startswith('H')
 ends = my_str.endswith('o')
 is_digit = my_str.isdigit()
 is_alpha = my_str.isalpha()
+```
 
-
-4. Sets 
-### Creating
+4. Sets
+Creating
+```
 my_set = {1, 2, 3}
 my_set = set()  # Empty set
-
-### Adding
+```
+Adding
+```
 my_set.add(4)           # Add single item
 my_set.update([5, 6])   # Add multiple items
+```
 
-### Removing
+Removing
+```
 my_set.remove(4)        # Raises KeyError if missing
 my_set.discard(4)       # No error if missing
 item = my_set.pop()     # Remove and return arbitrary item
 my_set.clear()          # Remove all items
+```
 
-### Set Operations
+Set Operations
+```
 union = set1 | set2           # Union
 intersect = set1 & set2       # Intersection
 diff = set1 - set2            # Difference
 sym_diff = set1 ^ set2        # Symmetric difference
+```
 
-### Checking
+Checking
+```
 exists = 1 in my_set          # Check if exists
 is_subset = set1 <= set2      # Check if subset
-
+```
 
 5. Tuples
-### Creating
+Creating
+```
 my_tuple = (1, 2, 3)
 my_tuple = tuple([1, 2, 3])
-
-### Accessing (immutable, so no changing)
+```
+Accessing (immutable, so no changing)
+```
 first = my_tuple[0]
 sliced = my_tuple[1:3]
-
-### Information
+```
+Information
+```
 length = len(my_tuple)
 count = my_tuple.count(2)
 index = my_tuple.index(2)
-
-
+```
 
 Each type has additional methods...
-
-
 ----
 
-ADVANCED FEATURES 
+MORE ADVANCED FEATURES 
 
-# Decorators
+Decorators
+```
 def timer(func):
     def wrapper(*args, **kwargs):
         import time
@@ -545,8 +630,10 @@ def timer(func):
 def slow_function():
     import time
     time.sleep(1)
+````
 
-# Context Managers
+Context Managers
+```
 class FileHandler:
     def __init__(self, filename):
         self.filename = filename
@@ -557,28 +644,37 @@ class FileHandler:
     
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.file.close()
+```
 
-# Generators
+Generators
+```
 def number_generator(n):
     for i in range(n):
         yield i
+```
 
-# List Comprehensions
+List Comprehensions
+```
 numbers = [1, 2, 3, 4, 5]
 squares = [x**2 for x in numbers]  # [1, 4, 9, 16, 25]
+```
 
-# Dictionary Comprehensions
+Dictionary Comprehensions
+```
 square_dict = {x: x**2 for x in numbers}  # {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+```
 
-# Lambda Functions
+Lambda Functions
+```
 multiply = lambda x, y: x * y
 result = multiply(5, 3)  # 15
-
+```
 
 ----
 
 TYPE HINTS AND DATA VALIDATIONS
 
+```
 from typing import List, Dict, Optional
 
 def process_users(users: List[dict]) -> Dict[str, str]:
@@ -587,41 +683,42 @@ def process_users(users: List[dict]) -> Dict[str, str]:
 def get_user(user_id: int) -> Optional[dict]:
     # Could return None or a user dict
     pass
-
+```
 
 ----
 
-WORKING WITH FILES IN PYTHON
+WORKING WITH FILES
 
-# Basic file operations
+Basic file operations
+```
 with open('file.txt', 'r') as f:
     content = f.read()
 
-# JSON handling
 import json
 
 with open('data.json', 'w') as f:
     json.dump(data, f)
 
-# CSV handling
 import csv
 
 with open('data.csv', 'r') as f:
     reader = csv.DictReader(f)
     for row in reader:
         print(row)
+```
 
 
 ----
 
 HANDLING ERRORS AND DEBUGGING
-
+```
 try:
     number = int("not a number")
 except ValueError as e:
     print(f"Couldn't convert to number: {e}")
 finally:
     print("This always runs")
+```
 
 If you're encountering issues with your code I recommend two things:
 
@@ -631,10 +728,10 @@ Then you can add specific print statements by reverse engineering the the previo
 If you're more of the thorough type you can try something more like this:
 LOGGING : Create a double logger! Check out examples loggers.py
 
-
 -----
 
 COMMENTS FOR CLARITY 
+```
 
 ### Main Functions ###
 def process_data(data):
@@ -682,7 +779,7 @@ data = [
     {'id': 2, 'name': 'jane'}
 ]
 results = process_data(data)
-
+````
 
 This will help you:
 
@@ -705,14 +802,14 @@ Basic types (str, int, list, dict)
 Built-in functions (print, len, range)
 Basic operators (+, -, *, /)
 
-# Data Formats
+**Data Formats**
 import json         # JSON handling
 import csv          # CSV files
 import xml         # XML processing
 import configparser # Config file parsing
 import pickle      # Python object serialization
 
-# System and OS
+**System and OS**
 import os          # Operating system interface
 import sys         # Python runtime
 import platform    # System platform info
@@ -723,7 +820,7 @@ import stat        # File permissions
 import pwd         # User info (Unix)
 import grp         # Group info (Unix)
 
-# Data Types and Algorithms
+**Data Types and Algorithms**
 import array       # Efficient arrays
 import enum        # Enumeration type
 import dataclasses # Data classes
@@ -733,12 +830,12 @@ import bisect      # Array bisection
 import contextlib  # Context managers
 import copy        # Shallow/deep copying
 
-# Time and Dates
+**Time and Dates**
 import time        # Time access/conversions
 import calendar    # Calendar functions
 import zoneinfo    # Time zone support
 
-# Mathematics
+**Mathematics**
 import math        # Mathematical functions
 import cmath       # Complex math
 import decimal     # Decimal fixed point
@@ -746,7 +843,7 @@ import fractions   # Rational numbers
 import random      # Random numbers
 import statistics  # Statistical functions
 
-# Networking
+**Networking**
 import socket      # Network interface
 import ssl         # SSL/TLS wrapper
 import email       # Email handling
@@ -756,7 +853,7 @@ import urllib      # URL handling
 import ftplib      # FTP protocol client
 import ipaddress   # IP address manipulation
 
-# Compression and Archiving
+**Compression and Archiving**
 import zlib        # Data compression
 import gzip        # gzip compression
 import bz2         # bzip2 compression
@@ -764,7 +861,7 @@ import lzma        # LZMA compression
 import zipfile     # ZIP archives
 import tarfile     # TAR archives
 
-# Development Tools
+**Development Tools**
 import unittest    # Unit testing
 import doctest     # Test doc strings
 import pdb         # Python debugger
@@ -773,30 +870,30 @@ import timeit      # Time small code bits
 import trace       # Trace code execution
 import pprint      # Pretty print data
 
-# Text Processing
+**Text Processing**
 import string      # String constants
 import textwrap    # Text wrapping
 import difflib     # Sequence comparison
 import unicodedata # Unicode database
 import stringprep  # String preparation
 
-# Concurrent Execution
+**Concurrent Execution**
 import threading   # Threading
 import multiprocessing  # Process-based parallelism
 import concurrent  # Concurrent execution
 import asyncio     # Async I/O
 import queue      # Queue data structure
 
-# Cryptography
+**Cryptography**
 import hashlib     # Hash functions
 import hmac        # HMAC algorithm
 import secrets     # Generate secure random numbers
 
-# Database
+**Database**
 import sqlite3     # SQLite database
 import dbm         # Interface to Unix DBM
 
-# Internationalization
+**Internationalization**
 import locale      # Internationalization
 import gettext     # Multilingual text
 
@@ -807,8 +904,10 @@ You can then use pip to access 600 000 other projects!
 
 PERFORMANCE
 
-# Threading - Good for I/O-bound tasks # Example: One part of your code NEEDS to be continuous and the other is more static. 
-# You can then dedicate a thread (cpu core) to a task
+Threading - Good for I/O-bound tasks # Example: One part of your code NEEDS to be continuous and the other is more static. 
+You can then dedicate a thread (cpu core) to a task
+
+```
 import threading
 
 def task():
@@ -818,10 +917,10 @@ def task():
 thread = threading.Thread(target=task)
 thread.start()
 thread.join()  # Wait for completion
+```
 
-
-
-# Multiprocessing - Good for CPU-bound tasks # Example: Image processing
+Multiprocessing - Good for CPU-bound tasks # Example: Image processing
+```
 import multiprocessing
 
 def cpu_task(num):
@@ -830,10 +929,10 @@ def cpu_task(num):
 # Create a pool of workers
 with multiprocessing.Pool() as pool:
     results = pool.map(cpu_task, [1, 2, 3, 4])
+```
 
-
-
-# Asyncio - Modern way to handle concurrency # Example: Web server handling multiple connections
+Asyncio - Modern way to handle concurrency # Example: Web server handling multiple connections
+```
 import asyncio
 
 async def async_task():
@@ -845,57 +944,50 @@ async def main():
     result = await async_task()
 
 asyncio.run(main())
-
-
+```
 
 Each use case will vary based on:
 
-# CPU-bound (Processing Limited)
-def cpu_heavy():
-    return sum(i * i for i in range(10**7))
-
-# I/O-bound (Input/Output Limited)
-def io_heavy():
-    with open('large_file.txt', 'r') as f:
-        return f.read()
-
-# Memory-bound (RAM Limited)
-def memory_heavy():
-    return [i for i in range(10**8)]  # Large list
-
+CPU-bound (Processing Limited)
+I/O-bound (Input/Output Limited)
+Memory-bound (RAM Limited)
 
 ---
 
-
-MEM
+### MEM
 
 Memory Units
-
+````
 1 bit: Single binary value (0 or 1)
 8 bits = 1 byte
 1024 bytes = 1 KB (kilobyte)
 1024 KB = 1 MB (megabyte)
 1024 MB = 1 GB (gigabyte)
 1024 GB = 1 TB (terabyte)
+````
 
 Binary Numbers
+```
 Binary numbers start with 0b in Python:
-pythonCopy0b1010 = 10 (decimal)
+0b1010 = 10 (decimal)
 0b1111 = 15 (decimal)
 0b10000 = 16 (decimal)
+```
+
 Integer Types and Ranges
 Signed Integers
-
+```
 8-bit (1 byte): -128 to 127
 16-bit (2 bytes): -32,768 to 32,767
 32-bit (4 bytes): -2.15 billion to 2.15 billion
 64-bit (8 bytes): -9.22 quintillion to 9.22 quintillion
+```
 
 Unsigned Integers (positive only)
-
+```
 8-bit: 0 to 255
 16-bit: 0 to 65,535
 32-bit: 0 to 4.29 billion
 64-bit: 0 to 18.45 quintillion
-
----
+```
+---``
