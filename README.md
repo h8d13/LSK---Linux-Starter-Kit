@@ -515,7 +515,7 @@ when running the verbose command I provided above you will also see entry/exit p
 
 I've included some simple example scripts in the repo for general purposes and reference! 
 
-![SYSTEMONITOR](capcapcap.PNG)
+![SYSTEMONITOR](media/capcapcap.PNG)
 
 One of them is a green dot that is only green if:
 
