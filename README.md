@@ -1,7 +1,7 @@
 # For Deb based systems 
 
 The installs themselves are pretty straight forward depending on distro:
-The only things to be careful about: Where are you installing your OS and make sure your keyboard input layout is correct (otherwise you won't get past you password aha).
+The only things to be careful about: Where are you installing your OS and make sure your keyboard input layout is correct (otherwise you won't get past your password aha).
 
 Also make sure that you remove the bootable media after the install and change the boot order so you don't install twice :D
 
