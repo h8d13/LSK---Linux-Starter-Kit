@@ -371,7 +371,7 @@ Right click your menu bar > add workspaces to it, choose how many you want and b
 
 On KDE the default is Meta (windows key) + W to open the overview. 
 Here is a link for further set-up as the shortcuts aren't all done by default:
-https://askubuntu.com/questions/1290451/in-kde-plasma-how-can-i-switch-between-virtual-desktops-using-meta-tab
+[Ubuntu Forums](https://askubuntu.com/questions/1290451/in-kde-plasma-how-can-i-switch-between-virtual-desktops-using-meta-tab)
 
 ----
 
