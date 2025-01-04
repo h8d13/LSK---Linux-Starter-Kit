@@ -389,7 +389,7 @@ When you activated tiling you can also use just super for launcher, and super + 
 
 Then shift + super + up/down to move them to different desktops.
 
-![popostilingworkspaces](poposexample.png)
+![popostilingworkspaces](media/poposexample.png)
 
 ## Reviving Old Hardware @geerlingguy
 
