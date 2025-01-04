@@ -607,7 +607,7 @@ You can then go full inception and download Python
 You could even run servers or a lightweight desktop on this hardware too. 
 Altho mine is probably too old...
 
-![ANDROID](capcapcapcap.PNG)
+![ANDROID](media/capcapcapcap.PNG)
 
 
 ----
