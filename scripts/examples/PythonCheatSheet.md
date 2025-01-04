@@ -30,7 +30,7 @@ This is useful because you can use the same code in 3 or even 30 years.
 
 Project structures:
 
-Here is a bit of a gray area, depending especially of the scale fo what you're attempting. 
+Here is a bit of a gray area, depending especially on the scale fo what you're attempting. 
 
 For a small project you might not need more than:
 ```
@@ -78,9 +78,11 @@ Python introduced another concept that makes it possible to create larger codeba
 
 Basically init files are way to do what is above implicitely:
 
+``` 
 mypackage/__init__.py
 from .user import User  # Chose what to expose
 from .utils import helper_function
+``` 
 
 Then you can call it from your main script.
 
@@ -88,6 +90,8 @@ Why the above is important is because:
 
 from mypackage.subpackage.module.file import function
 is not as clean as from mypackage import function
+
+---
 
 But if you do decide to go without init files well you will have to be careful when importing other scripts.
 
@@ -136,9 +140,9 @@ from filters.artistic.vintage import Vintage
 
 Now that imports hopefully make a little more sense to you:
 
-For imports from pip packages be careful to read their docs to see usages of specific features
+**For imports from pip packages be careful to read their docs to see usages of specific features**
 
-You can also from X import * but it's never recommended. Better to import in the right places the right compoenent for optimization reasons.
+You can also from X import * but it's never recommended. Better to import in the right places the right component for optimization reasons.
 
 ----
 
