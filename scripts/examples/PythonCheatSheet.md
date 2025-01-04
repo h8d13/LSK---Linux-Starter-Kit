@@ -735,7 +735,9 @@ If you're encountering issues with your code I recommend two things:
 Add try blocks on what you suspect might be failing to catch errors, see example above. 
 Then you can add specific print statements by reverse engineering the the previous elements of failure. 
 
-To create a print statement with a variable quicly ``` print(f'{problematicresultorvariablehere}')
+To create a print statement with a variable quicly ``` print(f'{problematicvariablehere} {problematicresulthere} ') ```
+One of my best friends who taught me most of this would always debug my code this way, just add print statements to all the error lines and get it fixed in about 30 seconds.
+In dev gaining time is a primordial factor. 
 
 -----
 
