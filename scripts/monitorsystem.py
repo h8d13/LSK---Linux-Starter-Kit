@@ -513,7 +513,7 @@ if __name__ == "__main__":
 
 ## To compile with optimal settings (altho there are a lot more) pyinstaller --onefile --windowed --optimize=2 monitor.py
 
-
+### If you're done with this tutorial go to CPPVERSION :)
 
 
 
