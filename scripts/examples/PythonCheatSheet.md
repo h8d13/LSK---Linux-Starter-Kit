@@ -125,18 +125,20 @@ What I like to do is go without init files until there is a feature that is repe
 ````
 
 Now this WILL simplify your life.
-
+``` 
 from .basic.blur import GaussianBlur
 from .basic.sharpen import Sharpen
 from .artistic.sepia import Sepia
 from .artistic.vintage import Vintage
+``` 
 
 instead of 
-
+``` 
 from filters.basic.blur import GaussianBlur
 from filters.basic.sharpen import Sharpen
 from filters.artistic.sepia import Sepia
 from filters.artistic.vintage import Vintage
+``` 
 
 Now that imports hopefully make a little more sense to you:
 
