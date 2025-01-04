@@ -1,4 +1,4 @@
-### First let's write our program functions
+### The real hello world runner ;D
 def say_hello():
     print("Hello World from Python!")
     
