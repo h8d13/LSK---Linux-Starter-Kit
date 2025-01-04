@@ -163,6 +163,8 @@ To secure that further you can look into reverse proxies.
 
 For my browser Mozilla FF is the way to go (they are at much of the origin of documentation about JavaScript as a whole, it is also pre-installed and open-source). If you want to learn more: 
 [FireFox Quantum Blog Post](https://blog.mozilla.org/en/mozilla/introducing-firefox-quantum/?utm_source=mozilla.org-firefox-browsers-quantum&utm_medium=referral&utm_campaign=seo-quantum&utm_content=hero&entrypoint=mozilla.org-firefox-browsers-quantum)
+
+
 You can also add privacy badger and an adblock for an even better experience. I've ditched my TV devices with mini-computers this way!
 
 You can always get Chromium (the same rendering engine, same tools as Chrome without the hassle).
