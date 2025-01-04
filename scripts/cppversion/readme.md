@@ -3,6 +3,9 @@
 So as we said in the other python version we want to be able to make our code as small of a footprint as possible. 
 Using cpp we can reduce the total compiled size to about 90kb (with very little opti) 
 
+> **_NOTE:_**  Get the C/C++ extensions official
+> Also I might have missed some installs you need (you can always use GPT if you're getting some errors in build)
+
 How to use CMake basics:
 
 - Create the CMakeLists.txt file in your code directory (this is like the guide for CMake to understand what to compile)
