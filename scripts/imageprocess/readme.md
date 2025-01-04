@@ -20,10 +20,12 @@ You can notice:
 - On the left (dark side) first empty values then values that are too full.
 - On the right, a clipping (or spike) that often happens with low-quality cameras.
 
+Essentially just by changing the input on both ends we can regain colors that were lost. 
+
 I'm also colorblind which makes all this the more fun; I don't need to see colors as well as others to notice improvements.
 
 So there you have another challenge...
 
 1. Detect clippings (Unusual spike at the edges often happen, on the right side in this case)
 2. Understand shifts (over or underexposure of a colour, or totally missing/full) > correct to a valid entry point.
-3. Determine this entry point using a threshold (like a range that is 'healthy' for correction)
+3. Determine this entry point using a threshold (like a range that is 'healthy' for correction based on the graph distribution)
