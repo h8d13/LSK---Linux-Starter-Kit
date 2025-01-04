@@ -546,7 +546,9 @@ device = client.devices()[0]
 device.shell("am start -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -n com.sec.android.app.clockpackage/.ClockPackage")
 ```
 
-You can now play Subway surfers on the side :D Or get neural network to play it for you hehe
+You can now play Subway surfers on the side :D Or get neural network to play it for you hehe.
+
+[HayDay Automation Example](https://github.com/h8d13/HayDay)
 
 ``` 
 from ppadb.client import Client as AdbClient
@@ -555,6 +557,7 @@ def swipe_screen(device, x1, y1, x2, y2, duration=2000):
     """
     Simulates a swipe gesture on the connected device.
     :param device: Connected ADB device.
+
     :param x1: Starting x-coordinate.
     :param y1: Starting y-coordinate.
     :param x2: Ending x-coordinate.
