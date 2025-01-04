@@ -963,7 +963,7 @@ Memory-bound (RAM Limited)
 
 ---
 
-### MEM
+### GENERAL COMPUTER KNOWLEDGE
 
 Memory Units
 ````
@@ -999,4 +999,42 @@ Unsigned Integers (positive only)
 32-bit: 0 to 4.29 billion
 64-bit: 0 to 18.45 quintillion
 ```
----``
+
+
+IP Address Formats
+``` 
+IPv4: 32-bit (e.g., 192.168.1.1)
+IPv6: 128-bit (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334)
+Subnet Mask: 255.255.255.0 (common /24 network)
+HTTP: 80
+HTTPS: 443
+FTP: 21
+SSH: 22
+SMTP: 25
+DNS: 53
+``` 
+Color Depths
+``` 
+1-bit: Black and White (2 colors)
+8-bit: 256 colors
+16-bit: 65,536 colors
+24-bit: 16.7 million colors (True Color)
+32-bit: 16.7 million colors + 8-bit alpha channel
+``` 
+Clock Speeds
+``` 
+MHz (Megahertz) = Million cycles per second
+GHz (Gigahertz) = Billion cycles per second
+1 GHz = 1000 MHz
+CPU cycle time at 3GHz = 0.33 nanoseconds
+```
+Chars
+``` 
+ASCII: 7-bit (128 characters)
+Extended ASCII: 8-bit (256 characters)
+UTF-8: Variable length (1-4 bytes)
+UTF-16: Variable length (2 or 4 bytes)
+UTF-32: Fixed length (4 bytes)
+``` 
+
+
