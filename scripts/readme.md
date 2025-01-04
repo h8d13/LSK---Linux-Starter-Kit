@@ -6,5 +6,5 @@ Go check out the [Monitor System Tutorial](https://github.com/h8d13/LSK---Linux-
 
 It will teach you about low level integration with PyQt which is built-in (Qt C++ bindings) for python.
 
-![SYSTEMONITOR](media/capcapcap.PNG)
+![SYSTEMONITOR](./media/capcapcap.PNG)
 
