@@ -148,7 +148,7 @@ That also means you can leverage their security protocols while having an interf
 pip install python-telegram-bot
 pip install discord.py
 ``` 
-Follow their docs for you key and make sure to put it inside a .env file. 
+Follow their docs for your key and make sure to put it inside a .env file. 
 
 
 
