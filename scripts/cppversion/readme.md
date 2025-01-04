@@ -67,3 +67,13 @@ monitor/
 ├── monitor.h
 └── monitor.cpp
 ```
+
+
+
+----
+
+I again added it to my start up programs removed the old python version. 
+
+Now we can check for footprint. 
+
+![htop](media/image.png)
