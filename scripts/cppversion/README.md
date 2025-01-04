@@ -26,45 +26,44 @@ sudo apt install cmake build-essential qt6-base-dev qt6-tools-dev-tools \
                  qt6-tools-dev qt6-tools-private-dev qtchooser \
 ```
 
-This would be different if you're using wayland. 
+----
 
+This would be different if you're using wayland. Some project structure:
 
-This also show some project structure:
+### CMakeLists.txt: The build system configuration file that:
 
-CMakeLists.txt: The build system configuration file that:
+- Sets the C++ standard (C++20)
+- Configures Qt's build requirements (AUTOMOC, AUTORCC, AUTOUIC)
+- Defines the executable and its dependencies
+- Links required libraries
 
-Sets the C++ standard (C++20)
-Configures Qt's build requirements (AUTOMOC, AUTORCC, AUTOUIC)
-Defines the executable and its dependencies
-Links required Qt libraries
+### monitor.h: The header file containing:
 
+- Class declarations
+- Struct definitions (SystemThresholds, SystemMetrics)
+- IconFactory class for system tray icons
+- SystemMonitorTray class with Q_OBJECT macro for Qt's meta-object system
 
-monitor.h: The header file containing:
+### monitor.cpp: The implementation file containing:
 
-Class declarations
-Struct definitions (SystemThresholds, SystemMetrics)
-IconFactory class for system tray icons
-SystemMonitorTray class with Q_OBJECT macro for Qt's meta-object system
+- All the actual code implementations for classes declared in monitor.h
+- System metric calculations (CPU, RAM, Disk)
+- UI setup and styling
+- System tray icon management
+- Event handling
 
+### main.cpp: The entry point file that:
 
-monitor.cpp: The implementation file containing:
+- Creates the QApplication instance
+- Checks for system tray availability
+- Creates and runs the monitor
 
-All the actual code implementations for classes declared in monitor.h
-System metric calculations (CPU, RAM, Disk)
-UI setup and styling
-System tray icon management
-Event handling
+---- 
 
-
-main.cpp: The entry point file that:
-
-Creates the QApplication instance
-Checks for system tray availability
-Creates and runs the monitor
-
+```
 monitor/
 ├── CMakeLists.txt ## This is simply a set up file for Cmake
 ├── main.cpp
 ├── monitor.h
 └── monitor.cpp
-
+```
