@@ -10,14 +10,18 @@ from dataclasses import dataclass
 from PyQt6.QtWidgets import QApplication, QSystemTrayIcon, QMenu
 from PyQt6.QtCore import QTimer, Qt
 from PyQt6.QtGui import QIcon, QPixmap, QColor, QPainter, QFont, QRadialGradient
+from functools import lru_cache
 
-@dataclass
+@dataclass(frozen=True)
 class SystemThresholds:
-    cpu: float = 80.0  # 80% CPU usage
-    ram: float = 85.0  # 85% RAM usage
-    disk: float = 90.0 # 90% disk usage
+    warning_cpu: float = 45.0
+    warning_ram: float = 50.0
+    warning_disk: float = 55.0
+    cpu: float = 80.0
+    ram: float = 85.0
+    disk: float = 90.0
 
-@dataclass
+@dataclass(frozen=True)
 class SystemMetrics:
     cpu: float
     ram: float
@@ -25,56 +29,88 @@ class SystemMetrics:
 
     @classmethod
     def get_current(cls):
+        # Get all metrics at once to reduce system calls
+        cpu = psutil.cpu_percent(interval=None)  # Non-blocking call
+        mem = psutil.virtual_memory()
+        disk = psutil.disk_usage('/')
+        
         return cls(
-            cpu=psutil.cpu_percent(),
-            ram=psutil.virtual_memory().percent,
-            disk=psutil.disk_usage('/').percent
+            cpu=cpu,
+            ram=mem.percent,
+            disk=disk.percent
         )
 
-    def is_healthy(self, thresholds: SystemThresholds) -> bool:
-        return (self.cpu < thresholds.cpu and 
-                self.ram < thresholds.ram and 
-                self.disk < thresholds.disk)
+    def get_status(self, thresholds: SystemThresholds) -> str:
+        if (self.cpu < thresholds.warning_cpu and 
+            self.ram < thresholds.warning_ram and 
+            self.disk < thresholds.warning_disk):
+            return 'healthy'
+        elif (self.cpu < thresholds.cpu and 
+              self.ram < thresholds.ram and 
+              self.disk < thresholds.disk):
+            return 'warning'
+        return 'critical'
 
 class IconFactory:
+    ICON_SIZE = 64
+    CIRCLE_OFFSET = 12
+    CIRCLE_SIZE = 40
+    
+    # Cache icons for each status
     @staticmethod
-    def create_system_icon(is_healthy: bool) -> QIcon:
-        pixmap = QPixmap(64, 64)
+    @lru_cache(maxsize=3)  # Only 3 possible states
+    def create_system_icon(status: str) -> QIcon:
+        pixmap = QPixmap(IconFactory.ICON_SIZE, IconFactory.ICON_SIZE)
         pixmap.fill(Qt.GlobalColor.transparent)
         
         painter = QPainter(pixmap)
         painter.setRenderHint(QPainter.RenderHint.Antialiasing)
         
-        color = IconFactory._get_health_gradient(is_healthy)
-        painter.setBrush(color)
+        gradient = IconFactory._get_health_gradient(status)
+        painter.setBrush(gradient)
         painter.setPen(Qt.PenStyle.NoPen)
-        painter.drawEllipse(12, 12, 40, 40)
+        painter.drawEllipse(
+            IconFactory.CIRCLE_OFFSET, 
+            IconFactory.CIRCLE_OFFSET, 
+            IconFactory.CIRCLE_SIZE, 
+            IconFactory.CIRCLE_SIZE
+        )
         painter.end()
         
         return QIcon(pixmap)
 
     @staticmethod
-    def _get_health_gradient(is_healthy: bool) -> QRadialGradient:
+    def _get_health_gradient(status: str) -> QRadialGradient:
         gradient = QRadialGradient(32, 32, 25)
-        if is_healthy:
+        
+        if status == 'healthy':
             gradient.setColorAt(0, QColor(50, 255, 50))
             gradient.setColorAt(0.8, QColor(0, 200, 0))
             gradient.setColorAt(1, QColor(0, 150, 0))
-        else:
+        elif status == 'warning':
+            gradient.setColorAt(0, QColor(255, 165, 0))
+            gradient.setColorAt(0.8, QColor(255, 140, 0))
+            gradient.setColorAt(1, QColor(255, 120, 0))
+        else:  # critical
             gradient.setColorAt(0, QColor(255, 50, 50))
             gradient.setColorAt(0.8, QColor(200, 0, 0))
             gradient.setColorAt(1, QColor(150, 0, 0))
         return gradient
 
 class SystemMonitorTray(QSystemTrayIcon):
+    UPDATE_INTERVAL = 3000  # 3 seconds
+    
     def __init__(self, parent=None):
         super().__init__(parent)
         self.thresholds = SystemThresholds()
+        self._cached_status = None
         self.setup_ui()
         self.start_monitoring()
 
     def setup_ui(self):
-        self.setIcon(IconFactory.create_system_icon(True))
+        metrics = SystemMetrics.get_current()
+        status = metrics.get_status(self.thresholds)
+        self.setIcon(IconFactory.create_system_icon(status))
         self.setup_menu()
         self.setVisible(True)
 
@@ -95,40 +131,38 @@ class SystemMonitorTray(QSystemTrayIcon):
     def start_monitoring(self):
         self.timer = QTimer()
         self.timer.timeout.connect(self.update_metrics)
-        self.timer.start(1000)
+        self.timer.start(self.UPDATE_INTERVAL)
 
     def update_metrics(self):
         metrics = SystemMetrics.get_current()
-        is_healthy = metrics.is_healthy(self.thresholds)
+        status = metrics.get_status(self.thresholds)
         
-        self.setIcon(IconFactory.create_system_icon(is_healthy))
-        self.update_tooltip(metrics)
-        self.update_status(metrics)
+        # Only update icon if status changed
+        if status != self._cached_status:
+            self.setIcon(IconFactory.create_system_icon(status))
+            self._cached_status = status
+        
+        # Update tooltip and status text
+        self.setToolTip(self._format_tooltip(metrics))
+        self.status_action.setText(self._format_status(metrics))
 
-    def update_tooltip(self, metrics: SystemMetrics):
-        tooltip = self._format_tooltip(metrics)
-        self.setToolTip(tooltip)
+    @staticmethod
+    def _format_tooltip(metrics: SystemMetrics) -> str:
+        return (
+            f"<div style='font-family: Segoe UI; padding: 5px;'>"
+            f"<b>System Monitor</b><br>"
+            f"CPU Usage: {metrics.cpu:2.1f}%<br>"
+            f"RAM Usage: {metrics.ram:2.1f}%<br>"
+            f"Disk Usage: {metrics.disk:2.1f}%<br>"
+            f"<br><i>Right-click for menu</i></div>"
+        )
 
-    def update_status(self, metrics: SystemMetrics):
-        status = self._format_status(metrics)
-        self.status_action.setText(status)
-
-    def _format_tooltip(self, metrics: SystemMetrics) -> str:
-        return f"""
-            <div style='font-family: Segoe UI; padding: 5px;'>
-                <b>System Monitor</b><br>
-                CPU Usage: {metrics.cpu:2.1f}%<br>
-                RAM Usage: {metrics.ram:2.1f}%<br>
-                Disk Usage: {metrics.disk:2.1f}%<br>
-                <br>
-                <i>Right-click for menu</i>
-            </div>
-        """
-
-    def _format_status(self, metrics: SystemMetrics) -> str:
+    @staticmethod
+    def _format_status(metrics: SystemMetrics) -> str:
         return f"CPU: {metrics.cpu:2.1f}% | RAM: {metrics.ram:2.1f}% | Disk: {metrics.disk:2.1f}%"
 
     @staticmethod
+    @lru_cache(maxsize=1)  # Cache the menu style
     def _get_menu_style() -> str:
         return """
             QMenu {
@@ -170,7 +204,6 @@ def main():
 if __name__ == "__main__":
     sys.exit(main())
 
-
 ### Then to make this an executable:
 
 # sudo apt install binutils
@@ -180,3 +213,73 @@ if __name__ == "__main__":
 
 # This will create a one file executable in you curretn directory under ./dist/monitor
 # You can now double click it like an app! 
+
+
+
+### But this kind of brings us to another debate... 50mb for a green/orange/red dot is a bit much. 
+# Better solution is to make a setup + source code, the runner basically just checks for basic dependencies. 
+
+import sys
+import subprocess
+from setuptools import setup, find_packages
+
+def check_and_install(req_file="requirements.txt"):
+    """
+    Checks if each package in requirements.txt is importable.
+    If not, installs it using pip.
+    """
+    try:
+        with open(req_file, "r") as f:
+            for line in f:
+                package = line.strip()
+                # Skip empty lines or commented lines
+                if not package or package.startswith("#"):
+                    continue
+
+                # Extract the raw import name (e.g., 'psutil' from 'psutil==5.9.0')
+                pkg_name = package.split("==")[0].split(">=")[0].split("<=")[0]
+                try:
+                    __import__(pkg_name)
+                except ImportError:
+                    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+    except FileNotFoundError:
+        print(f"Could not find {req_file}, skipping dependency check...")
+
+# Before running the normal setup, ensure dependencies are installed
+check_and_install()
+
+setup(
+    name="system-monitor-tray",
+    version="0.1.0",
+    description="A system tray monitor for CPU, RAM, and disk usage.",
+    author="Your Name",
+    author_email="example@example.com",
+    packages=find_packages(),
+    py_modules=["monitor"],  # Main script is monitor.py
+    install_requires=[
+        "psutil",
+        "PyQt6",
+    ],
+    entry_points={
+        "console_scripts": [
+            # Installs a command line entry point called "system-monitor"
+            # that runs monitor.py's main() function.
+            "system-monitor=monitor:main",
+        ]
+    },
+)
+
+## Then the user can simply: 
+# python setup.py install
+# then run system-monitor
+# or python -m monitor
+
+
+### You can then go a step further and create a full package with a TOML file and __init__ methods. 
+
+
+
+
+
+
+
