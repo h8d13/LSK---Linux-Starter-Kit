@@ -1,6 +1,8 @@
 ## This script will display a green/orange/red dot in the system tray until it hits any of the threshold values.
 ## Depending on distros there might need libraries or to allow notification tray applications
 
+## These should should serve as a reference point but feel free to create/modify any code here. 
+
 ### sudo apt install -y libxcb1 libxcb-xinerama0 libxcb-cursor0 libxkbcommon-x11-0 libxcb-render0 libxcb-render-util0
 ### sudo apt install -y qt6-base-dev qt6-wayland libqt5x11extras5
 ### then in your venv pip install shutil PyQt6
