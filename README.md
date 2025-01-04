@@ -438,13 +438,14 @@ sudo usermod -a -G video $USER
 newgrp video
 ```
 
+I've made a guide on how to get old VHS tapes onto hard drives: 
+[OBS GUIDE LINUX](https://github.com/h8d13/VHS-To-Digital)
 
 ## Working with USBs 🔌 
 
 As we mentionned above:
 
 First find detected devices: ```lsusb```
-
 
 Then we want to understand the devices endpoints IN/OUT, this will print all the verbose info:
 
