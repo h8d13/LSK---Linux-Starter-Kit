@@ -339,6 +339,13 @@ Many know ```htop``` which is great already but there is a special one to my hea
 ``` sudo apt install btm ```
 You can then simply launch it in terminal: ```btm```
 
+If it's not found, it means that you might need to follow install instructions:
+https://github.com/ClementTsang/bottom
+
+# x86-64
+curl -LO https://github.com/ClementTsang/bottom/releases/download/0.10.2/bottom_0.10.2-1_amd64.deb
+sudo dpkg -i bottom_0.10.2-1_amd64.deb
+
 ## YOUR ENVIRONMENT ! 
 
 Linux is highly customizable in general. 
