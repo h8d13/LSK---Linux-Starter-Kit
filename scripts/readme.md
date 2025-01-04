@@ -1,4 +1,4 @@
-## This contains some scripts for general reference. 
+## Contains scripts for general reference. 
 
 Happy coding <3
 
