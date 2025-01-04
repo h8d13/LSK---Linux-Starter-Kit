@@ -532,6 +532,11 @@ disk > 90%
 
 It's simple but shows off PyQt integration with low level linux system using psutil. 
 
+I made a complete tutorial from Python bindings to C++.
+
+[Modify your system yourself tutorial](https://github.com/h8d13/LSK---Linux-Starter-Kit/tree/main/scripts)
+
+
 ----
 
 ### One more bonus...
