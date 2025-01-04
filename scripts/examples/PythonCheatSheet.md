@@ -980,6 +980,13 @@ class ImageProcessor:
 
 ``` 
 
+This above is an illustrative example. Once you've identified the bottle-necks you can proceed with optimization.
+This usually involves either giving the program more juice with one of the techniques bellow or chunking or smarter way of handling the operation itself. 
+
+I recommend watching this video: [Stand-up Maths](https://www.youtube.com/watch?v=c33AZBnRHks)
+
+----
+
 Threading - Good for I/O-bound tasks # Example: One part of your code NEEDS to be continuous and the other is more static. 
 You can then dedicate a thread (cpu core) to a task
 
