@@ -442,9 +442,10 @@ class DateHandler:
 
 ----
 
-OPERATIONS 
+## OPERATIONS 
 
 1. Lists
+
 Creating
 ```
 my_list = [1, 2, 3]
