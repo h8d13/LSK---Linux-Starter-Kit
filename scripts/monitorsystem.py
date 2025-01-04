@@ -3,6 +3,7 @@
 
 ### sudo apt install -y libxcb1 libxcb-xinerama0 libxcb-cursor0 libxkbcommon-x11-0 libxcb-render0 libxcb-render-util0
 ### sudo apt install -y qt6-base-dev qt6-wayland libqt5x11extras5
+### then in your venv pip install shutil PyQt6
 
 import sys
 import psutil
@@ -280,7 +281,7 @@ setup(
 # or python -m monitor
 
 
-### You can then go a step further and create a full package with a TOML file and __init__ methods. 
+### You can then go a step further and create a full package with a TOML file, __init__ methods and config files if you're feeling crazy?  
 
 #### Here I've made a version that needs 2 things: htop & pavucontrol
 
