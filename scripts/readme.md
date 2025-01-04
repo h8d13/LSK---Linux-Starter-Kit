@@ -14,3 +14,8 @@ Once you're done with that you can move to the C++ verison
 
 [CPP Version](https://github.com/h8d13/LSK---Linux-Starter-Kit/tree/main/scripts/cppversion)
 
+----
+
+Your first GUI 
+
+![Screencastfrom01-04-2025031615PM-ezgif com-optimize(2)](https://github.com/user-attachments/assets/07bf075b-5ad4-44fc-a046-161fa1a5f850)
