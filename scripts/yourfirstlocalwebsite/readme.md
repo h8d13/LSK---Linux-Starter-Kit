@@ -14,9 +14,9 @@ Make sure to create a virtual environment (`venv`) before starting:
 
 ## Step 1: Create a Next.js App
 
-Run the following to create a TypeScript-based Next.js app inside your `.venv`:
+Run to create a TypeScript-based Next.js app inside your `.venv`:
 
-```bash
+```
 npx create-next-app@latest sfront --typescript
 ```
 
