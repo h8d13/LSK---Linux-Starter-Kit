@@ -10,5 +10,5 @@ It will teach you about low level integration with PyQt which is built-in (Qt C+
 
 Once you're done with that you can move to the C++ verison 
 
-[Monitor System Tutorial](https://github.com/h8d13/LSK---Linux-Starter-Kit/tree/main/scripts/cppversion)
+[CPP Version](https://github.com/h8d13/LSK---Linux-Starter-Kit/tree/main/scripts/cppversion)
 
