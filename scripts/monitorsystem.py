@@ -504,7 +504,7 @@ if __name__ == "__main__":
     sys.exit(main())
 
 
-## Pavucontrol let's you block microphone, cameras, etc or change sources when needed. 
+## Pavucontrol let's you block microphone, etc or change sources when needed. 
 ### And htop gives you the full monitor of system on top our little icon system. 
 ### Make sure to install them. 
 
