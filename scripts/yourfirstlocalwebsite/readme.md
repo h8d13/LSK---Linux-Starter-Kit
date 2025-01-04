@@ -29,8 +29,10 @@ sudo npm run dev
 ```
 By default, the app runs on `http://localhost:3000`.
 
-You can copy the page.tsx and add the pythonblack logo to ```/public``` inside you sfront if you want to get rid of the other branding.
+You can copy the ``` page.tsx ``` and add the pythonblack logo to ```/public``` inside you sfront if you want to get rid of the other branding.
+
 ---
+
 
 ## Step 2: Python Backend Setup
 
