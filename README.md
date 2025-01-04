@@ -163,9 +163,9 @@ To secure that further you can look into reverse proxies.
 
 For my browser Mozilla is the way to go (they are at much of the origin of documentation about JavaScript as a whole, it is also pre-installed and open-source). 
 
-You can also add privacy badger and an adblock for an even better experience.) I've ditched my TV devices with mini-computers this way!
+You can also add privacy badger and an adblock for an even better experience. I've ditched my TV devices with mini-computers this way!
 
-You can always get chromium (the same rendering engine, same tools as Chrome without the hassle)
+You can always get Chromium (the same rendering engine, same tools as Chrome without the hassle).
 
 ## 🖥️ Remote desktop sessions
 
@@ -326,18 +326,6 @@ If you're working with .config, .ignore, files they are always hidden by default
 Another thing is on Linux default copy is with shift, it sounds annoying but it's because ctrl + C is reserved for interruption of programs.
 
 ---
-
-**Compiling code:**
-
-```
-# sudo apt install binutils
-
-# pip install pyinstaller
-
-# pyinstaller --onefile --windowed yourscript.py
-```
-
-
 
 ## System Monitoring 📈
 
@@ -524,18 +512,13 @@ I've included some simple example scripts in the repo for general purposes and r
 
 ![SYSTEMONITOR](media/capcapcap.PNG)
 
-One of them is a green dot that is only green if:
-
-cpu > 80%
-ram > 85%
-disk > 90%
+One of them is a green dot that is only green if system ressources are healthy.
 
 It's simple but shows off PyQt integration with low level linux system using psutil. 
 
 I made a complete tutorial from Python bindings to C++.
 
 [Modify your system yourself tutorial](https://github.com/h8d13/LSK---Linux-Starter-Kit/tree/main/scripts)
-
 
 ----
 
