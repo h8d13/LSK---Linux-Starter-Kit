@@ -926,6 +926,60 @@ You can then use pip to access 600 000 other projects!
 
 I recommend trying to set start time / stop time in the heaviest functions, you can then move that around to understand where a bottle-neck might be. 
 
+```
+import time
+class ImageProcessor:
+    def __init__(self, confidence_threshold):
+        self.confidence_threshold = confidence_threshold
+        self.previous_frame = None
+
+    def process_image(self, img, window_position, templates):
+
+        start_time = time.time() ## ````````HERE START BELLOW MIGHT BE BOTTLENECKS````
+
+        img_cv = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR)
+        img_gray = cv2.cvtColor(img_cv, cv2.COLOR_BGR2GRAY)
+        
+        timestamp = time.time()
+        log_entries = []
+        
+        for template_name, template in templates:
+            match_result = self.match_template(img_gray, template)
+            if match_result:
+                startX, startY, endX, endY, scale, confidence = match_result
+                abs_startX, abs_startY = window_position[0] + startX, window_position[1] + startY
+                abs_endX, abs_endY = window_position[0] + endX, window_position[1] + endY
+                
+                if confidence >= self.confidence_threshold:
+                    cv2.rectangle(img_cv, (startX, startY), (endX, endY), (0, 255, 0), 2)
+                
+                    log_entries.append(
+                        f"Match found for template {template_name} at scale {scale:.2f}\n"
+                        f"Confidence: {confidence:.4f}\n"
+                        f"Position relative to window: ({startX}, {startY}) to ({endX}, {endY})\n"
+                        f"Absolute screen position: ({abs_startX}, {abs_startY}) to ({abs_endX}, {abs_endY})"
+                    )
+                else:
+                    log_entries.append(f"Low confidence match for template {template_name}: {confidence:.4f}")
+            else:
+                log_entries.append(f"No match found for template {template_name}")
+        
+        if self.previous_frame is not None:
+            frame_diff = cv2.absdiff(self.previous_frame, img_gray)
+            _, thresh = cv2.threshold(frame_diff, 30, 255, cv2.THRESH_BINARY)
+            
+            change_percentage = (np.sum(thresh) / 255) / (thresh.shape[0] * thresh.shape[1]) * 100
+            log_entries.append(f"Change significance: {change_percentage:.2f}%")
+        
+        self.previous_frame = img_gray
+
+        
+        end_time = time.time() ### ``````######MOVE THIS LINE AT EACH STEP UP ONE BY ONE#### ``````
+        
+        return timestamp, img_cv, log_entries
+
+``` 
+
 Threading - Good for I/O-bound tasks # Example: One part of your code NEEDS to be continuous and the other is more static. 
 You can then dedicate a thread (cpu core) to a task
 
