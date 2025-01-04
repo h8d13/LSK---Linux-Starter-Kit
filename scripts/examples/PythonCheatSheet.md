@@ -790,11 +790,12 @@ results = process_data(data)
 
 This will help you:
 
-1. Create pseudo-code 
-
-### Need a def that can capture screen at X interval and return the size of the image
+1. Create pseudo-code example
+``` 
+#### Need a def that can capture screen at X interval and return the size of the image
 ##### Then crop it to REGION (Top,left,width,height)
-
+###### Create a copy / process it for DQN implementation
+``` 
 2. Clearity when you go back to your code. 
 
 ---
