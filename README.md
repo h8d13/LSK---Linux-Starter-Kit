@@ -126,7 +126,14 @@ Then run update to your packages lists again to remove the warning:
 
 If you 're still having issues with dependencies USE AT YOUR OWN RISK:
 
-```sudo apt full-upgrade```
+```
+sudo apt full-upgrade
+sudo apt --fix-broken install
+sudo dpkg --configure -a
+```
+
+
+
 
 ## Security & Privacy 🔒
 
