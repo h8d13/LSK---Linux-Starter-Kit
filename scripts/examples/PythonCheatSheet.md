@@ -206,13 +206,6 @@ is_valid
 
 These are just conventions for clearer code and because other programming languages can have totally different standards. (For example JS: ```useEffect```)
 
-**MAIN RULES:**
-
-Packages/Modules: lowercase with underscores
-Classes: PascalCase
-Functions/Variables: lowercase with underscores
-Constants: UPPERCASE with underscores
-
 ------
 
 ## CORE PYTHON CONCEPTS
