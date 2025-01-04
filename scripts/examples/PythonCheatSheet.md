@@ -736,8 +736,15 @@ Add try blocks on what you suspect might be failing to catch errors, see example
 Then you can add specific print statements by reverse engineering the the previous elements of failure. 
 
 To create a print statement with a variable quicly ``` print(f'{problematicvariablehere} {problematicresulthere} ') ```
-M best friend who taught me most of this would always debug my code this way, just add print statements to all the error lines and get it fixed in about 30 seconds.
+
+This is called: formatted string literals
+
+My best friend who taught me most of this would always debug my code this way, just add print statements to all the error lines and get it fixed in about 30 seconds. 
+Which would make me quite angry after 30 minutes of hitting my head on the walls. 
+
 You can also if you have a lot of variables: ``` print("My name is {} and I am {} years old.".format(name, age)) ``` 
+
+This is a placeholders method. 
 
 In dev gaining time is a primordial factor. 
 
