@@ -215,6 +215,10 @@ if __name__ == "__main__":
 # This will create a one file executable in you curretn directory under ./dist/monitor
 # You can now double click it like an app! (You might need to right click and run as program)
 
+# Or you can chmod +x monitor.py
+# Add a shebang at the start of the file:
+# !/usr/bin/env python3
+
 ### There is actually one of the system ressources that is wrong, let's see if you can challenge yourself to fix it ;) (I did correct it after in the later version)
 
 ### But this kind of brings us to another debate... 50mb for a green/orange/red dot is a bit much. 

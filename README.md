@@ -203,7 +203,7 @@ Depending on your desktop type.
 
 Then add the specific port 3389
 
-It should look something like: 192.x.x.x:3390 and you DO NOT NEED to specify a user just yet.
+It should look something like: 192.x.x.x:3389 and you DO NOT NEED to specify a user just yet.
 Now this is where it usually fails because you're already in the session. To me the best is to make a second user for remote sessions:
 
 ```sudo adduser {rdpuser}```

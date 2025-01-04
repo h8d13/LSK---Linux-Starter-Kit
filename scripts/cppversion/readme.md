@@ -3,6 +3,9 @@
 So as we said in the other python version we want to be able to make our code as small of a footprint as possible. 
 Using cpp we can reduce the total compiled size to about 90kb (with very little opti) 
 
+> **_NOTE:_**  Get the C/C++ extensions official
+> Also I might have missed some installs you need (you can always use GPT if you're getting some errors in build)
+
 How to use CMake basics:
 
 - Create the CMakeLists.txt file in your code directory (this is like the guide for CMake to understand what to compile)
@@ -86,3 +89,14 @@ Using about 0,0 - 0,3% of CPU which is great.
 The total file size is now bellow 100kb. 
 
 > **_NOTE:_** There are 4 instances because of how Qt handles threading I believe. 
+
+
+
+We can compare to our python version:
+
+![image](https://github.com/user-attachments/assets/bb4db4e9-fdc7-43b5-87e5-67be26746d42)
+
+Which uses about 250mb more VRAM
+And 0,2% extra CPU. 
+
+This is negligeable but the CPP version does run more natively. 
