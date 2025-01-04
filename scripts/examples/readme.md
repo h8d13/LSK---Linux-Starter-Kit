@@ -1,2 +1,2 @@
-## This serves as general purposes examples for Python.
+## Here you will find very generic info
 
