@@ -138,5 +138,19 @@ You can achieve **real-time video feed with image recognition** (e.g., YOLO mode
 - **Performance on a laptop**: Achieved 18 FPS for live image recognition, YOLOv8 with Standard dataset.
 - No multi-threading, no GPU. 
 
+----
+
 Or you could make a full web-app and also integrate with Discord, Telegram, etc all in the same project :)
+
+That also means you can leverage their security protocols while having an interface locally or eventually decide to actually publish. 
+
+``` 
+pip install python-telegram-bot
+pip install discord.py
+``` 
+Follow their docs for you key and make sure to put it inside a .env file. 
+
+
+
+
 
