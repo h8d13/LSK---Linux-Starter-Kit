@@ -213,7 +213,7 @@ if __name__ == "__main__":
 # pyinstaller --onefile --windowed monitor.py
 
 # This will create a one file executable in you curretn directory under ./dist/monitor
-# You can now double click it like an app! 
+# You can now double click it like an app! (You might need to right click and run as program)
 
 
 
