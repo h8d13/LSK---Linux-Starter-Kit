@@ -77,3 +77,9 @@ I again added it to my start up programs removed the old python version.
 Now we can check for footprint. 
 
 ![htop](/media/image.png)
+
+
+Using about 0,0 - 0,3% of CPU which is great. 
+405M of VIRT memory (about 30-40mb of actual RAM). 
+
+> **_NOTE:_** There are 4 instances because of how Qt handles threading I believe. 
