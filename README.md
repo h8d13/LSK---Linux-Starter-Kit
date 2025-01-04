@@ -265,7 +265,7 @@ Try disabling gpu acceleration for a specific program when launching it through 
 ```{code} --disable-gpu```
 
 
-<img src="weirdtear.webp" alt="screentearing" width="300">
+<img src="media/weirdtear.webp" alt="screentearing" width="300">
 (Windows example, happens sometimes when launching an app with GPU acceleration on debian systems, likely due to drivers)
 
 If an issue like this persists; I would recommend checking if the installation was not corrupted somewhere along even at initial install..
