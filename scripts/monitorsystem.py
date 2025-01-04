@@ -219,8 +219,10 @@ if __name__ == "__main__":
 # Add a shebang at the start of the file:
 # !/usr/bin/env python3
 
+### There is actually one of the system ressources that is wrong, let's see if you can challenge yourself to fix it ;) (I did correct it after in the later version)
+
 ### But this kind of brings us to another debate... 50mb for a green/orange/red dot is a bit much. 
-# Better solution is to make a setup + source code, the runner basically just checks for basic dependencies. 
+# Better solution is to make a setup + source code, the runner basically just checks for basic dependencies. Meaning you can basically ship in a few dozens KB. 
 
 import sys
 import subprocess
