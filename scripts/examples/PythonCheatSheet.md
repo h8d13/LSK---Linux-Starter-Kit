@@ -491,6 +491,7 @@ sorted_list = sorted(my_list)  # Return new sorted list
 ...
 
 2. Dictionary
+   
 Creating
 ```
 my_dict = {'a': 1, 'b': 2}
@@ -525,6 +526,7 @@ exists = 'a' in my_dict      # Check if key exists
 ```
 
 3. Strings
+
 Creating
 ```
 my_str = "Hello"
@@ -562,6 +564,7 @@ is_alpha = my_str.isalpha()
 ```
 
 4. Sets
+   
 Creating
 ```
 my_set = {1, 2, 3}
@@ -596,6 +599,7 @@ is_subset = set1 <= set2      # Check if subset
 ```
 
 5. Tuples
+   
 Creating
 ```
 my_tuple = (1, 2, 3)
@@ -613,10 +617,11 @@ count = my_tuple.count(2)
 index = my_tuple.index(2)
 ```
 
-Each type has additional methods...
+Each type has additional methods for specific use cases...
+
 ----
 
-MORE ADVANCED FEATURES 
+## MORE ADVANCED FEATURES 
 
 Decorators
 ```
@@ -675,7 +680,7 @@ result = multiply(5, 3)  # 15
 
 ----
 
-TYPE HINTS AND DATA VALIDATIONS
+## TYPE HINTS AND DATA VALIDATIONS
 
 ```
 from typing import List, Dict, Optional
@@ -690,7 +695,7 @@ def get_user(user_id: int) -> Optional[dict]:
 
 ----
 
-WORKING WITH FILES
+## WORKING WITH FILES
 
 Basic file operations
 ```
@@ -713,7 +718,7 @@ with open('data.csv', 'r') as f:
 
 ----
 
-HANDLING ERRORS AND DEBUGGING
+## HANDLING ERRORS AND DEBUGGING
 ```
 try:
     number = int("not a number")
@@ -728,12 +733,11 @@ If you're encountering issues with your code I recommend two things:
 Add try blocks on what you suspect might be failing to catch errors, see example above. 
 Then you can add specific print statements by reverse engineering the the previous elements of failure. 
 
-If you're more of the thorough type you can try something more like this:
-LOGGING : Create a double logger! Check out examples loggers.py
+To create a print statement with a variable quicly ``` print(f'{problematicresultorvariablehere}')
 
 -----
 
-COMMENTS FOR CLARITY 
+## COMMENTS FOR CLARITY 
 ```
 
 ### Main Functions ###
@@ -795,12 +799,11 @@ This will help you:
 
 ---
 
-WORKING WITH BASIC PACKAGES 
+## WORKING WITH BASIC PACKAGES 
 
 Python comes loaded with powerful libraries built-in. 
 
-Always Available (No Import Needed)
-
+```
 Basic types (str, int, list, dict)
 Built-in functions (print, len, range)
 Basic operators (+, -, *, /)
@@ -899,13 +902,15 @@ import dbm         # Interface to Unix DBM
 **Internationalization**
 import locale      # Internationalization
 import gettext     # Multilingual text
+``` 
 
 You can then use pip to access 600 000 other projects!
 
-
 ----
 
-PERFORMANCE
+## PERFORMANCE
+
+I recommend trying to set start time / stop time in the heaviest functions, you can then move that around to understand where a bottle-neck might be. 
 
 Threading - Good for I/O-bound tasks # Example: One part of your code NEEDS to be continuous and the other is more static. 
 You can then dedicate a thread (cpu core) to a task
