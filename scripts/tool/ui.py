@@ -1,8 +1,9 @@
+# Internal
 import os
 from datetime import datetime
 from PyQt6.QtWidgets import *
 from PyQt6.QtCore import QTimer, Qt
-
+# External
 from file import FileTracker
 
 class TrackerGUI(QMainWindow):
