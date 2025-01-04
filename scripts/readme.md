@@ -6,6 +6,8 @@ Go check out the [Monitor System Tutorial](https://github.com/h8d13/LSK---Linux-
 
 It will teach you about low level integration with PyQt which is built-in (Qt C++ bindings) for python.
 
+
+[PythonCheatSheet](https://github.com/h8d13/LSK---Linux-Starter-Kit/blob/main/scripts/examples/PythonCheatSheet.md)
 Somebody somewhere said Python is the 2nd best language at EVERYTHING, which I think is a cool way to put it.
 
 ![SYSTEMONITOR](/media/capcapcap.PNG)
