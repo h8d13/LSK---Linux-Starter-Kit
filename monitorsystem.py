@@ -204,6 +204,7 @@ def main():
 if __name__ == "__main__":
     sys.exit(main())
 
+####################################################################################################################
 ### Then to make this an executable:
 
 # sudo apt install binutils
@@ -280,7 +281,7 @@ setup(
 #### Here I've made a version that needs 2 things: htop & pavucontrol
 
 ### This shows the power of being able to customize while using low level libraries:
-
+###################################################################################################################################
 
 import sys
 import psutil
@@ -507,7 +508,8 @@ if __name__ == "__main__":
 ### And htop gives you the full monitor of system on top our little icon system. 
 ### Make sure to install them. 
 
-##### For an even cooler integration you can compile this code and launch it with start up apps. Simply go to start up and select your executable.
+##### For an even cooler integration you can compile this code and launch it with start up apps. 
+### Simply go to start up and select your executable.
 
 ## To compile with optimal settings (altho there are a lot more) pyinstaller --onefile --windowed --optimize=2 monitor.py
 
