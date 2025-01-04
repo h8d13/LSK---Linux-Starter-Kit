@@ -149,7 +149,7 @@ You can also from X import * but it's never recommended. Better to import in the
 ### Properly naming:
 
 FOR FOLDERS
-
+```
 My-Package     # No hyphens
 MyPackage      # No PascalCase
 my.package     # No dots
@@ -157,27 +157,29 @@ my.package     # No dots
 my_package
 mypackage
 company_project
+```
 
 FOR MODULES
-
+```
 utils.py
 database_connector.py
 auth_helper.py
 
-**Bad**
+# Bad
 Utils.py       # Don't use capitals
 database-connector.py
+```
 
 FOR CLASSES
-
+``` 
 **Good**
 class UserProfile:
 class DatabaseConnection:
 class APIClient:
-
+``` 
 
 FOR DEFINITIONS
-
+```
 **Good**
 def get_user():
 def calculate_total():
@@ -185,21 +187,24 @@ def fetch_data():
 
 def GetUser():  # Don't use PascalCase
 def calculateTotal():  # Don't use camelCase
+``` 
 
 FOR CONSTANTS
-
+``` 
 **Good**
 MAX_CONNECTIONS = 100
 DEFAULT_TIMEOUT = 30
+```
 
 FOR VARIABLES
-
+```
 **Good**
 username
 total_count
 is_valid
+```
 
-These are just conventions for clearer code and because other programmign languages can have totally different standards. (For example JS: ```useEffect```)
+These are just conventions for clearer code and because other programming languages can have totally different standards. (For example JS: ```useEffect```)
 
 **MAIN RULES:**
 
