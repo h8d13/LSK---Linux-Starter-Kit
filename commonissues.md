@@ -13,7 +13,7 @@ You might for some OSes also need to disable fast boot setting which can break i
 
 ---
 
-### Cannot lockate packages (Ubuntu)
+### Cannot locate packages (Ubuntu)
 
 Fix: https://askubuntu.com/questions/378558/unable-to-locate-package-while-trying-to-install-packages-with-apt
 
