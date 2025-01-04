@@ -236,7 +236,7 @@ is_done = False
 empty = None
 ```
 
-COLLECTIONS
+## COLLECTIONS
 
 Lists (mutable, ordered)
 ```
