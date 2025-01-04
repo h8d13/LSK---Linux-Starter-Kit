@@ -144,7 +144,7 @@ Now that imports hopefully make a little more sense to you:
 
 **For imports from pip packages be careful to read their docs to see usages of specific features**
 
-You can also from X import * but it's never recommended. Better to import in the right places the right component for optimization reasons.
+You can also from X import * but it's never recommended. Better to import in the right places components for optimization reasons.
 
 ----
 
