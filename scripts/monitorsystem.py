@@ -1,4 +1,4 @@
-## This script will display a green dot in the system tray until it hits any of the threshold values.
+## This script will display a green/orange/red dot in the system tray until it hits any of the threshold values.
 ## Depending on distros there might need libraries or to allow notification tray applications
 
 ### sudo apt install -y libxcb1 libxcb-xinerama0 libxcb-cursor0 libxkbcommon-x11-0 libxcb-render0 libxcb-render-util0
