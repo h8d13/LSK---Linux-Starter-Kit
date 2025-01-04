@@ -509,6 +509,8 @@ if __name__ == "__main__":
 
 ##### For an even cooler integration you can compile this code and launch it with start up apps. Simply go to start up and select your executable.
 
+## To compile with optimal settings (altho there are a lot more) pyinstaller --onefile --windowed --optimize=2 monitor.py
+
 
 
 
