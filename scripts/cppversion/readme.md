@@ -14,6 +14,7 @@ How to use CMake basics:
 - Can ```sudo rm -rf build``` to delete the build folder totally.
 
 - Repeat the process with each iteration of code :)
+- ``` cd .. ``` to move one back
 
 --- 
 
