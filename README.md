@@ -93,6 +93,18 @@ Useful to check past pkg installs
 
 ```grep "install " /var/log/dpkg.log | tail```
 
+For the lazy people like me (Quoting @Exact-Teacher8489):
+You can install with:
+``` 
+apt install $packagename
+
+But you can also uninstall with:
+
+apt install packagename-
+``` 
+Thats very neat when using arrow up / down in terminal 
+
+
 ## Update warnings ⚠️
 These can happen quite frequently when one of the software providers you use didn't update to latest signatures. 
 This will give you annoying errors
@@ -126,8 +138,18 @@ sudo apt --fix-broken install
 sudo dpkg --configure -a
 ```
 
+There are also "resolvers" or "managers" that can help you, and it also gives you a visual interface if you don' like the terminal:
 
+``` 
+sudo apt install aptitude
+# then
+aptitude
 
+# or 
+sudo apt install synaptic
+# then 
+synaptic
+````
 
 ## Security & Privacy 🔒
 
