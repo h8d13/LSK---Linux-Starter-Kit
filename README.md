@@ -94,15 +94,20 @@ Useful to check past pkg installs
 ```grep "install " /var/log/dpkg.log | tail```
 
 For the lazy people like me (Quoting @Exact-Teacher8489):
-You can install with:
+You can install with (add sudo):
 ``` 
 apt install $packagename
 
-But you can also uninstall with:
+# But you can also uninstall with:
 
 apt install packagename-
-``` 
-Thats very neat when using arrow up / down in terminal 
+
+# or
+
+apt remove packagename
+```
+
+That first removal method is very neat when using arrow up / down in terminal. 
 
 
 ## Update warnings ⚠️
