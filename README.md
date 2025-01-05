@@ -371,9 +371,9 @@ For kernel logs
 
 ```` sudo journalctl -k ````
 
-```sudo journalctl -k -f ``` 
-
 To follow: you will see real-time updates. 
+
+```sudo journalctl -k -f ``` 
 
 What is cool is that you can see how your firewall for example might be protecting you, or even a USB connecting.
 
