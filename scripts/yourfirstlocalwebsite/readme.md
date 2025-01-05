@@ -20,6 +20,7 @@ It will print something like: v22.X
 - **npx**: Check with `npx --version`.
 
 If all 3 work you're all good to proceed.
+
 ---
 
 ## Step 1: Create a Next.js App
