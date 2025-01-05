@@ -12,10 +12,14 @@ Then bellow the main section select your OS and CPU Architecture.
 Hit downlaod and then follow install instructions. 
 This will also install chocolatey (optionally) and is practical for other packages. 
 
-- **Node.js**: Check installation with `node --version`. If that works the two bellow should work too in theory. 
+- **Node.js**: Check installation with `node --version`. If that works the two bellow should work too in theory.
+
+It will print something like: v22.X
+
 - **npm**: Check with `npm --version`.
 - **npx**: Check with `npx --version`.
 
+If all 3 work you're all good to proceed.
 ---
 
 ## Step 1: Create a Next.js App
