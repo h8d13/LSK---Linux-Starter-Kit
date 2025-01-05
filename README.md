@@ -364,7 +364,7 @@ Then toggle ON: Ubuntu Dock
 ----
 
 [Tasksel](https://wiki.debian.org/tasksel)
-Tasksek package provides a simple interface for users who want to configure their system to perform a specific task. It was recommended by reddit user @Exact-Teacher8489 !
+package provides a simple interface for users who want to configure their system to perform a specific task. It was recommended by reddit user @Exact-Teacher8489 !
 
 I also loves virtual dektops for managers: in linux MINT its control alt left or right and is super ingrained in my brain. 
 You will find yourself using the mouse less which gains you precious time. Up to show global overview of desktops and down to see windows in this desktop.
