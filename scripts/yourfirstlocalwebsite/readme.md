@@ -6,7 +6,13 @@
 Make sure to create a virtual environment (`venv`) before starting:
 
 ### Ensure These Tools are Accessible Inside Your `.venv`
-- **Node.js**: Check installation with `node --version`.
+[Nodesjs](https://nodejs.org/en/download)
+
+Then bellow the main section select your OS and CPU Architecture. 
+Hit downlaod and then follow install instructions. 
+This will also install chocolatey (optionally) and is practical for other packages. 
+
+- **Node.js**: Check installation with `node --version`. If that works the two bellow should work too in theory. 
 - **npm**: Check with `npm --version`.
 - **npx**: Check with `npx --version`.
 
