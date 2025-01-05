@@ -6,7 +6,7 @@
 Make sure to create a virtual environment (`venv`) before starting:
 
 ### Ensure These Tools are Accessible Inside Your `.venv`
-[Nodesjs](https://nodejs.org/en/download)
+[Nodejs](https://nodejs.org/en/download)
 
 Then bellow the main section select your OS and CPU Architecture. 
 Hit downlaod and then follow install instructions. 
@@ -126,7 +126,15 @@ Here’s an overview of the directory structure and what each folder/file repres
 
 ### Next.js:
 - Exceptional at rendering/routing (even server-side).
-- Convenient for building frontend and middleware.
+```
+//File-based: pages/post/[id].tsx
+//Folder-based: pages/[category]/[id].tsx
+# and APIs
+// app/api/[id]/route.ts
+// app/api/[category]/[id]/route.ts
+```
+
+- Convenient for building frontend, middleware, APIs.
 - Works well with Tailwind for custom themes (e.g., dark/light mode).
 - Can be made native using Electron runtime.
 
