@@ -252,6 +252,8 @@ Why you should get a prompt at some point that generates the keys (and asks you 
 This also means Native GPU/hardware access without added encoding/decoding. 
 What I mean is xrdp is okay, X11 direct is incredible. Then VNC is the noob way. 
 
+This means you can for example get your code editor on your Windows machine but running on the linux system to do whatever you like. 
+
 You can now chose between KDE, XFCE4 or whatver desktop you like... 
 I like to keep the original user's desktop intact to always be able to control from there and install desktops on secondary users...
 
