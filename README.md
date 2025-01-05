@@ -536,7 +536,7 @@ In a few clicks control other Linux systems (like a phone or tablet with Android
 Connect it allow USB debugging (in settings developer mode) & file transfer
 ✅ Press always allow this computer
 
-Check connection with adb devices
+Check connections:
 ``` adb devices```
 Then simply run: ```scrcpy``` 
 
