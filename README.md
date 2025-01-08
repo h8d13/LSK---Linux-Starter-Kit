@@ -237,6 +237,10 @@ There you go :) You know how to make a good install. For cherry on the cake you 
 
 Then you can login into this new user you created without breaking everything!
 
+You can also give your second profile all sudo rights (which will still require pswd) 
+
+```gpasswd -a {user} sudo``` 
+
 ## Direct SSH access AND LOW LEVEL X11 ACCESS
 
 One by one: 
