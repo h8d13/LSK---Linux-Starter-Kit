@@ -161,11 +161,13 @@ synaptic
 
 Check security updates are installed: 
 
+Default Ubuntu isos 
+
 ```cat /etc/apt/apt.conf.d/20auto-upgrades```
 
 Re-configure it ? 
 
-``` sudo dpkg-reconfigure unattended-upgrades```
+```sudo dpkg-reconfigure unattended-upgrades```
 
 ----
 
