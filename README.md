@@ -336,6 +336,10 @@ Then save your code and make sure to run it with the venv path to not get mixed 
 ```cd .venv```
 ```./bin/python3 hello.py ```
 
+Neat little extension that automatically selects pasted text (useful for restructuring code quickly).
+
+[DavidpCahill](https://github.com/davidpcahill/auto-select-pasted-text/tree/main)
+
 
 If you are going to work with PyQt6 and creating GUI you might need some tools:
 
