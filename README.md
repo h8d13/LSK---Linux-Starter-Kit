@@ -342,11 +342,6 @@ Then save your code and make sure to run it with the venv path to not get mixed 
 ```cd .venv```
 ```./bin/python3 hello.py ```
 
-Neat little extension that automatically selects pasted text (useful for restructuring code quickly).
-
-[DavidpCahill](https://github.com/davidpcahill/auto-select-pasted-text/tree/main)
-
-
 If you are going to work with PyQt6 and creating GUI you might need some tools:
 
 ```
@@ -358,7 +353,11 @@ You can also toggle telemetry data off in Visual Studio Code for privacy.
 
 If you're working with .config, .ignore, files they are always hidden by default and you can see them by doing alt + '.' in your files browser. Or right clicking and enable "Hidden files".
 
-Another thing is on Linux default copy is with shift, it sounds annoying but it's because ctrl + C is reserved for interruption of programs.
+Extension that automatically selects pasted text (useful for restructuring code quickly). Works on CTRL + V or Shift for regular paste. 
+
+[DavidpCahill](https://github.com/davidpcahill/auto-select-pasted-text/tree/main)
+
+Another thing is on Linux default copy is with shift (at least wwhen inside terminal for example) , it sounds annoying but it's because ctrl + C is reserved for interruption of programs.
 
 ---
 
