@@ -17,3 +17,17 @@ You might for some OSes also need to disable fast boot setting which can break i
 
 Fix: https://askubuntu.com/questions/378558/unable-to-locate-package-while-trying-to-install-packages-with-apt
 
+
+### SESSION TYPE NOT SWITCHING 
+
+Want to try x11 from wayland?
+
+Dont forget to 
+
+sudo apt install xserver-xorg
+
+Then restart and when logging back on kde small button to switch to x11.
+
+Especially useful if you're on Windows user and want low level x11 access. See remote sessions in main readme file of this repo.
+
+
