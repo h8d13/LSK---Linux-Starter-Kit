@@ -71,4 +71,9 @@ I also like to downlaod minecraft to check using F3 if it is actually using the 
 If you want to do that make sure you isntalled java ``` sudo apt install openjdk-17-jdk ```
 
 
+![Screenshot_20250115_032303](https://github.com/user-attachments/assets/fabf93a1-a715-4e16-b530-2a73f3a34fea)
 
+
+
+Last thing if you actually want to play a bit and your trackpad isn't working at the same time as your keys in KDE there is a switch for it in your settings directly:
+![Screenshot_20250115_032505](https://github.com/user-attachments/assets/85582216-08d9-4d9d-bfde-b2be0c26d2c3)
