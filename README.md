@@ -1,6 +1,6 @@
 # For Deb based systems 
 
-Grpahics card not being detected ? Can't update BIOS ? Want to switch dektop type?
+Graphics card not being detected ? Can't update BIOS ? Want to switch dektop type?
 [See Other Common Issues](https://github.com/h8d13/LSK---Linux-Starter-Kit/blob/main/commonissues.md)
 
 The installs themselves are pretty straight forward depending on distro:
