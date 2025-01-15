@@ -42,3 +42,30 @@ or
 sudo apt install cmake
 
 
+
+----
+
+### Graphics card not being used Linux
+
+I've recently been installing Linux on older machines that have both an integrated GPU and a small NVIDIA card.
+
+Here are the steps:
+Make sure everything is up to date, cehck graphics drivers: ```nvidia-smi``` 
+
+If not you need to find the right drivers follow install commands ```sudo apt install nvidia-driver-550```
+Then once you have that you you have to make sure you're in x11 and have both nvidia-prime and sudo apt install xserver-xorg-video-nouveau
+
+Finally you can open NVIDIA X SERVER SETTINGS (just a fancy way of saying graphics libraries) 
+![Screenshot_20250115_030005](https://github.com/user-attachments/assets/9c2cd7c9-2589-4828-a24a-76aebf7ac701)
+
+Go to: PRIME Profiles and select NVIDIA Performance mode.
+
+Now it will ask you to restart and voilà!
+
+I also like to downlaod minecraft to check using F3 if it is actually using the GPU and usually you can see a x2 increase in FPS compared to integrated, even on older hardware. I got a nice stable 120 with a 950 with 2GB of memory. 
+
+
+If you want to do that make sure you isntalled java ``` sudo apt install openjdk-17-jdk ```
+
+
+
