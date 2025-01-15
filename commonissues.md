@@ -8,6 +8,8 @@ Fix: https://askubuntu.com/questions/378558/unable-to-locate-package-while-tryin
 
 ### SESSION TYPE NOT SWITCHING 
 
+  sudo echo $XDG_SESSION_TYPE
+
 Want to try x11 from wayland?
 
 Dont forget to 
