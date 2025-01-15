@@ -17,6 +17,7 @@ You might for some OSes also need to disable fast boot setting which can break i
 
 Fix: https://askubuntu.com/questions/378558/unable-to-locate-package-while-trying-to-install-packages-with-apt
 
+----
 
 ### SESSION TYPE NOT SWITCHING 
 
@@ -30,4 +31,8 @@ Then restart and when logging back on kde small button to switch to x11.
 
 Especially useful if you're on Windows user and want low level x11 access. See remote sessions in main readme file of this repo.
 
+If you want to go a step further and develop directly with x11:
 
+sudo apt install libx11-dev
+
+You'll need to compile you can use gcc or make for convenience. Good luck!
