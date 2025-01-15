@@ -50,9 +50,12 @@ sudo apt install cmake
 I've recently been installing Linux on older machines that have both an integrated GPU and a small NVIDIA card.
 
 Here are the steps:
-Make sure everything is up to date, cehck graphics drivers: ```nvidia-smi``` 
+Make sure everything is up to date, check graphics drivers: ```nvidia-smi``` and ``` ubuntu-drivers devices``` this should detect your graphics card and recommend you the right version.
 
 If not you need to find the right drivers follow install commands ```sudo apt install nvidia-driver-550```
+
+Mine crashed during the end of the install but still worked? I guess just let it run even if it's not moving for a bit?
+
 Then once you have that you you have to make sure you're in x11 and have both nvidia-prime and sudo apt install xserver-xorg-video-nouveau
 
 Finally you can open NVIDIA X SERVER SETTINGS (just a fancy way of saying graphics libraries) 
