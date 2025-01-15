@@ -70,6 +70,8 @@ Last thing if you actually want to play a bit and your trackpad isn't working at
 
 **If you're on even older hardware you can also set the graphics mode to High Perfomance instead of Quality by default**
 
+Go to OPENGL Then select High Performance.
+
 ---
 
 
