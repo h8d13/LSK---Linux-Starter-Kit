@@ -5,7 +5,7 @@
 
 ### sudo apt install -y libxcb1 libxcb-xinerama0 libxcb-cursor0 libxkbcommon-x11-0 libxcb-render0 libxcb-render-util0
 ### sudo apt install -y qt6-base-dev qt6-wayland libqt5x11extras5
-### then in your venv pip install shutil PyQt6
+### then in your venv pip install psutil PyQt6
 
 import sys
 import psutil
