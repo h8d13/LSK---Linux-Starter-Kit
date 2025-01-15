@@ -1,5 +1,8 @@
 # For Deb based systems 
 
+Grpahics card not being detected ? Can't update BIOS ? Want to switch dektop type?
+[See Other Common Issues](https://github.com/h8d13/LSK---Linux-Starter-Kit/blob/main/commonissues.md)
+
 The installs themselves are pretty straight forward depending on distro:
 The only things to be careful about: Where are you installing your OS and make sure your keyboard input layout is correct (otherwise you won't get past your password aha).
 
