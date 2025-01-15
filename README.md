@@ -495,7 +495,7 @@ Then we want to understand the devices endpoints IN/OUT, this will print all the
 
 ```lsusb -d {1c4f:007c} -v```
 
-#### Now that we have the information we need we can try to interface with it, depending on device it might be really easy or the worst time of your life. 
+Now that we have the information we need we can try to interface with it, depending on device it might be really easy or the worst time of your life. 
 
 ----
 
