@@ -1,18 +1,5 @@
 # Common Issues
 
-### Veryfing Shim SBAT data failed: Security Policy Violation
-Something has gone SERIOUSLY wrong with SBAT self-check failed: Security Policy Violation
-
-FIX: (MSI motherboard) 
-
-You have to find some boot setting in your BIOS:
-Boot > Secure Boot
-OS Type > Other OS
-
-You might for some OSes also need to disable fast boot setting which can break installs. 
-
----
-
 ### Cannot locate packages (Ubuntu)
 
 Fix: https://askubuntu.com/questions/378558/unable-to-locate-package-while-trying-to-install-packages-with-apt
@@ -77,3 +64,18 @@ If you want to do that make sure you isntalled java ``` sudo apt install openjdk
 
 Last thing if you actually want to play a bit and your trackpad isn't working at the same time as your keys in KDE there is a switch for it in your settings directly:
 ![Screenshot_20250115_032505](https://github.com/user-attachments/assets/85582216-08d9-4d9d-bfde-b2be0c26d2c3)
+
+
+---
+
+
+### Veryfing Shim SBAT data failed: Security Policy Violation
+Something has gone SERIOUSLY wrong with SBAT self-check failed: Security Policy Violation
+
+FIX: (MSI motherboard) 
+
+You have to find some boot setting in your BIOS:
+Boot > Secure Boot
+OS Type > Other OS
+
+You might for some OSes also need to disable fast boot setting which can break installs. 
