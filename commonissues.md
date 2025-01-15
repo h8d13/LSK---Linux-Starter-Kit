@@ -36,3 +36,9 @@ If you want to go a step further and develop directly with x11:
 sudo apt install libx11-dev
 
 You'll need to compile you can use gcc or make for convenience. Good luck!
+
+sudo apt install build-essential
+or 
+sudo apt install cmake
+
+
