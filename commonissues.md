@@ -68,6 +68,8 @@ Last thing if you actually want to play a bit and your trackpad isn't working at
 ![Screenshot_20250115_032505](https://github.com/user-attachments/assets/85582216-08d9-4d9d-bfde-b2be0c26d2c3)
 
 
+**If you're on even older hardware you can also set the graphics mode to High Perfomance instead of Quality by default**
+
 ---
 
 
