@@ -705,14 +705,7 @@ sudo dd if=/dev/sda of=qubes.iso bs=4M status=progress
 ## This is also done at a block level copying everything from it including empty space. Now you regret that 512gb USB stick...
 
 ## Now you can launch your first VM
-qemu-system-x86_64 \
-  -enable-kvm \
-  -m 2048 \
-  -cpu host \
-  -smp 2 \
-  -hda myvm.qcow2 \
-  -cdrom /home/usr/Downloads/qubes.iso \
-  -boot d
+qemu-system-x86_64   -enable-kvm   -m 8096   -cpu host   -smp 2   -hda myvm.qcow2   -cdrom ~/Downloads/qubes.iso   -boot d
 
 ```
 
