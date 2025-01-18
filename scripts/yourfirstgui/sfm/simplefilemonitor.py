@@ -16,13 +16,19 @@ class SimpleTracker(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Simple File Tracker")
-        self.setGeometry(100, 100, 600, 300)
+        self.setGeometry(100, 100, 600, 400)
         
         self.cwd = os.getcwd()
         self.saves_dir = os.path.join(self.cwd, '.saves')
         
         self.ignore_dirs = {'.saves', '.git', '__pycache__', '.venv', 'venv', 'env', 'node_modules', '.pytest_cache'}
         self.ignore_extensions = {'.pyc', '.pyo', '.pyd', '.so', '.git'}
+        
+        # Add autosave settings
+        self.autosave_enabled = False
+        self.autosave_interval = 5  # Default 5 minutes
+        self.autosave_timer = QTimer()
+        self.autosave_timer.timeout.connect(self.auto_save)
         
         if not os.path.exists(self.saves_dir):
             os.makedirs(self.saves_dir)
@@ -40,16 +46,40 @@ class SimpleTracker(QMainWindow):
         self.setCentralWidget(widget)
         layout = QVBoxLayout()
         
+        # Status label
         self.status = QLabel("Monitoring changes...")
         self.status.setWordWrap(True)
         
+        # Buttons
         save_btn = QPushButton("Save Current State")
         restore_btn = QPushButton("Restore Previous State")
-
+        
+        # Autosave group
+        autosave_group = QGroupBox("Autosave Settings")
+        autosave_layout = QHBoxLayout()
+        
+        self.autosave_checkbox = QCheckBox("Enable Autosave")
+        self.autosave_checkbox.setChecked(self.autosave_enabled)
+        self.autosave_checkbox.stateChanged.connect(self.toggle_autosave)
+        
+        interval_label = QLabel("Interval (minutes):")
+        self.interval_spinbox = QSpinBox()
+        self.interval_spinbox.setRange(1, 60)
+        self.interval_spinbox.setValue(self.autosave_interval)
+        self.interval_spinbox.valueChanged.connect(self.update_autosave_interval)
+        
+        autosave_layout.addWidget(self.autosave_checkbox)
+        autosave_layout.addWidget(interval_label)
+        autosave_layout.addWidget(self.interval_spinbox)
+        autosave_group.setLayout(autosave_layout)
+        
+        # Connect buttons
         save_btn.clicked.connect(self.prompt_save)
         restore_btn.clicked.connect(self.prompt_restore)
 
+        # Add widgets to layout
         layout.addWidget(self.status)
+        layout.addWidget(autosave_group)
         layout.addWidget(save_btn)
         layout.addWidget(restore_btn)
         widget.setLayout(layout)
@@ -95,6 +125,31 @@ class SimpleTracker(QMainWindow):
             }, f)
         
         self.last_state = current_files
+
+    def toggle_autosave(self, state):
+        self.autosave_enabled = bool(state)
+        if self.autosave_enabled:
+            self.start_autosave_timer()
+        else:
+            self.autosave_timer.stop()
+
+    def update_autosave_interval(self, value):
+        self.autosave_interval = value
+        if self.autosave_enabled:
+            self.start_autosave_timer()
+
+    def start_autosave_timer(self):
+        # Convert minutes to milliseconds
+        interval_ms = self.autosave_interval * 60 * 1000
+        self.autosave_timer.start(interval_ms)
+
+    def auto_save(self):
+        if self.autosave_enabled:
+            current_files = self.get_files()
+            if current_files != self.last_state:
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                self.save_state(f"Autosave at {timestamp}")
+                self.status.setText("Autosave completed")
 
     def check_changes(self):
         current_files = self.get_files()
