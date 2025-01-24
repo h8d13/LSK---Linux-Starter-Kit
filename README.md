@@ -740,6 +740,8 @@ Make it feel like home: In your QEMU window set the view to "Best Fit" or "Fulls
 
 Ctrl + alt + F to get out of fullscreen. You can also control alt G to lock into the QEMU instance and do the same to release.
 
+Here is another guide I made for ![Windows-Sub-System](https://github.com/h8d13/Windows-Sub-System)
+
 ----
 
 You're still here.........
