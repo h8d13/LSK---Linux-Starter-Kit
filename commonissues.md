@@ -44,6 +44,7 @@ Make sure everything is up to date, check graphics drivers: ```nvidia-smi``` and
 If not you need to find the right drivers follow install commands ```sudo apt install nvidia-driver-550```
 
 Mine crashed during the end of the install but still worked? I guess just let it run even if it's not moving for a bit?
+Make sure to reboot after install.
 
 Then once you have that you you have to make sure you're in x11 and have both nvidia-prime and sudo apt install xserver-xorg-video-nouveau
 
