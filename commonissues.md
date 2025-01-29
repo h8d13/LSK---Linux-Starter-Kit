@@ -41,7 +41,7 @@ I've recently been installing Linux on older machines that have both an integrat
 Here are the steps:
 Make sure everything is up to date, check graphics drivers: ```nvidia-smi``` and ``` ubuntu-drivers devices``` this should detect your graphics card and recommend you the right version.
 
-If not you need to find the right drivers follow install commands ```sudo apt install nvidia-driver-550```
+If not you need to find the right drivers follow install commands ```sudo apt install nvidia-driver-XXX```
 
 Mine crashed during the end of the install but still worked? I guess just let it run even if it's not moving for a bit?
 Make sure to reboot after install.
