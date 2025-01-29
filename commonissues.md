@@ -6,7 +6,7 @@ Fix: https://askubuntu.com/questions/378558/unable-to-locate-package-while-tryin
 
 ----
 
-### SESSION TYPE NOT SWITCHING 
+### SESSION TYPE NOT SWITCHING OR NEED X11 FOR GAMES
 
   sudo echo $XDG_SESSION_TYPE
 
