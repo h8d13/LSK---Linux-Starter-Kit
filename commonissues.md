@@ -39,6 +39,8 @@ sudo apt install cmake
 I've recently been installing Linux on older machines that have both an integrated GPU and a small NVIDIA card.
 
 Here are the steps:
+```lspci | grep -i vga``` if you want to check your graphics devices
+
 Make sure everything is up to date, check graphics drivers: ```nvidia-smi``` and ``` ubuntu-drivers devices``` this should detect your graphics card and recommend you the right version.
 
 If not you need to find the right drivers follow install commands ```sudo apt install nvidia-driver-XXX```
