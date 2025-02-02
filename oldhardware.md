@@ -74,3 +74,4 @@ Anyways...
 ![20250202_141639](https://github.com/user-attachments/assets/aa75383d-55ed-45b2-b2e7-835c99a42818)
 
 
+It struggles a bit at first (pre-loading shaders I'm guessing) then goes from 150-200 fps to 250-300 easily. 
