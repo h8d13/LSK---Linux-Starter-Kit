@@ -28,7 +28,8 @@ I will not go over steam either as there is a little to do (you can also find it
 
 --- 
 
-Now let's work our way up. 
+**Now let's work our way up.**
+
 We'll start with minecraft and finish with much larger game. 
 
 Step 0: Prereqs
