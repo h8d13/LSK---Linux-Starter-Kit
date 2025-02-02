@@ -71,5 +71,6 @@ Also weird keeps validating or downloading, while the app is actually opened and
 Anyways... 
 
 
+![20250202_141639](https://github.com/user-attachments/assets/aa75383d-55ed-45b2-b2e7-835c99a42818)
 
 
