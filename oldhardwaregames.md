@@ -65,7 +65,7 @@ Also have to log-in Epic Games, from steam app? xd (Make sure you have a browser
 ![image](https://github.com/user-attachments/assets/6cb363b0-c389-4908-8be2-955fe6ca9af0)
 
 You can also watch here:
-![linkvideo](https://www.youtube.com/watch?v=IbIlBv9Yejo)
+[![Video Title](https://img.youtube.com/vi/IbIlBv9Yejo/0.jpg)](https://www.youtube.com/watch?v=IbIlBv9Yejo)
 
 Now again I put all the settings on super low, performance, as I just want to play in smooth experience rather than looks. 
 Also weird keeps validating or downloading, while the app is actually opened and I'm able to play. Or I have to start another download to open another app? 
