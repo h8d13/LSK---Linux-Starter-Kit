@@ -1,4 +1,4 @@
-# Reviving Old Hardware
+# Reviving Old Hardware and Games 
 
 Last week I installed Ubuntu on a recycled build:
  ```
