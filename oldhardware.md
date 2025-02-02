@@ -58,7 +58,7 @@ As we continue to upgrade Rocket League® with new technologies like DirectX 11 
 From the official store page you get this infoirmation. Yet the when checking proton compatibility https://www.protondb.com/ it pretty much says it's almost native using Proton. 
 
 Which is a bit weird to me, becuse it just is behind a few clicks, downloads and toggles. 
-Also have to log-in Epic Games, from steam app? xd
+Also have to log-in Epic Games, from steam app? xd (Make sure you have a browser isntalled lmao)
 
 #### Stuck Processing Vulkan Shaders
 
