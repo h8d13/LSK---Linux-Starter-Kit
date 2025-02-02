@@ -74,4 +74,21 @@ Anyways...
 ![20250202_141639](https://github.com/user-attachments/assets/aa75383d-55ed-45b2-b2e7-835c99a42818)
 
 
-It struggles a bit at first (pre-loading shaders I'm guessing) then goes from 150-200 fps to 250-300 easily. 
+It struggles a bit at first (pre-loading shaders I'm guessing) then goes from 150-200 fps to 250-300 easily. Looks and reacts smooth after 10 seconds. 
+
+### ARK: SE
+
+Now I love ark because when it came out it was the most horrible mess of optimization. It would regularly have updates as large as the game, performance issues, also from around 2015, but was a landmark in terms of graphics to me in the realistic-cartoonship vibe that Fortnite/Bordelands style or othergames use nowadays. 
+
+I didn' t do anything, just downloaded and ran the normal version. Joined a server with 30+ players, ping looks low, no battleye, and TheIsland base map (no extra downloads please). 
+
+Iconic music btw. Had to force quit the app once. 
+It downloaded more shaders (1.3GiB). Wait validation... 
+
+Pressed launch again > Launch ARK (Normal Mode) 
+
+Settings low > Full screen
+
+Got around 100-113 fps, and a man beating me up with a stick. 
+
+
