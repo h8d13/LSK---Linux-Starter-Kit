@@ -42,6 +42,9 @@ I always start with minecraft for two reasons:
 One they have the neat F3 with FPS, GPU, CPU etc 
 Two it's a chunk based game so you it's a good baseline to compare. 
 
+![20250202_133212](https://github.com/user-attachments/assets/549e6e1f-5b60-4b85-ab3c-c7c7bb78198b)
+
+![20250202_133223](https://github.com/user-attachments/assets/d912af97-7000-479d-a2f9-c28584df0d9c)
 
 
 
