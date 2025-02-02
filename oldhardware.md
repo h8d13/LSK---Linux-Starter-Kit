@@ -30,7 +30,7 @@ I will not go over steam either as there is a little to do (you can also find it
 
 **Now let's work our way up.**
 
-We'll start with minecraft and finish with much larger game. 
+We'll start with minecraft and finish with much larger game. Sorry in advance about the pictures.
 
 Step 0: Prereqs
 Nvidia drivers, X11 tools etc
@@ -43,9 +43,11 @@ One they have the neat F3 with FPS, GPU, CPU etc
 Two it's a chunk based game so you it's a good baseline to compare. 
 
 ![20250202_133212](https://github.com/user-attachments/assets/549e6e1f-5b60-4b85-ab3c-c7c7bb78198b)
+_Here we can tell it's using the right GPU_
 
 ![20250202_133223](https://github.com/user-attachments/assets/d912af97-7000-479d-a2f9-c28584df0d9c)
 
+A whooping 400 fps (min 230 in loading).
 
 
 
