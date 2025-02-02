@@ -88,3 +88,18 @@ Boot > Secure Boot
 OS Type > Other OS
 
 You might for some OSes also need to disable fast boot setting which can break installs. 
+
+---
+
+### ALERT! UUID=XXXXXXXX doesn't exist. Dropping to a shell. 
+Gave up waiting for system root device. Common problems.
+
+
+THis one is stupid. So when you unplug an old motherboard it might default back to IDE Legacy or RST. But modern Ubuntu needs AHCI. 
+
+If you have a Acer Bios you will need to go to Advanced > Integrated Peripherals.
+Then change the Onboard SATA Mode. 
+
+
+
+
