@@ -159,6 +159,8 @@ sudo apt install synaptic
 synaptic
 ````
 
+![Package Managers Linux](https://github.com/h8d13/LSK---Linux-Starter-Kit/blob/main/packagemanagers.md)
+
 ## Security & Privacy 🔒
 
 
