@@ -776,6 +776,8 @@ Test your inputs in steam to verify it's all good.
 If still not working it's often the same issue with linux permissions:
 ```sudo usermod -aG input $USER```
 
+![Gaming old hardware](https://github.com/h8d13/LSK---Linux-Starter-Kit/blob/main/oldhardwaregames.md)
+
 ----
 
 "To seek is to recognize potential beyond a current state, a gesture that inherently lacks contempt for what is."
