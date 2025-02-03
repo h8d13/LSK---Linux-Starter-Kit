@@ -19,12 +19,9 @@ Dont forget to
 Then restart and when logging back on kde small button to switch to x11, same for many distros it's in log-in screen.
 
 You can then run the first command again to check. 
-
-  `echo $XDG_SESSION_TYPE
-  x11`
+Hopefully you get output: `x11`
 
 Especially useful if you're on Windows user and want low level x11 access. See remote sessions in main readme file of this repo.
-
 
 If you want to go a step further down the rabbit hole: 
 `cat /etc/X11/default-display-manager
