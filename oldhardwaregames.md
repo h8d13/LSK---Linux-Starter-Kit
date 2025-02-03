@@ -100,4 +100,6 @@ Got around 100-113 fps, and a man beating me up with a stick.
 There are so many emulators available for linux that can help you have a variety gaming experience:
 Citra, PSPPP, Cemu, RetroArch just to mention a few.
 
+# Not sure how to get x11 and Nvidia drivers? 
 
+See ![Common Issues](https://github.com/h8d13/LSK---Linux-Starter-Kit/blob/main/commonissues.md)
