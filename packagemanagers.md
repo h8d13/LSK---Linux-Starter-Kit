@@ -1,7 +1,10 @@
 # Package Managers for Linux
 =====================================
 
-Package managers are essential tools for Linux users, allowing them to easily install, update, and manage software packages on their systems. In this document, we will explore four of the most common package managers for Linux: Flatpak, Snapd, Pacman, and Apt.
+Package managers are essential tools for Linux users, allowing them to easily install, update, and manage software packages on their systems. In this document, we will explore four of the most common package managers for Linux: Flatpak, Snapd, Pacman, and Apt. 
+
+**Do be careful if working from barebones that you will need dependencies for each of them, and they can conflict if you use several of them.**
+
 
 ## Flatpak
 ------------
@@ -82,3 +85,16 @@ Apt is the package manager for Debian-based Linux distributions, such as Ubuntu 
 | Snapd | Ubuntu-based | Yes |
 | Pacman | Arch Linux-based | No |
 | Apt | Debian-based | No |
+
+
+For Debian based systems, you can also work directly with dpkg and .deb files. 
+
+## GUI Package Managers
+
+If you don't like the terminal: There are solutions for GUIs. 
+
+Synaptic: A graphical package manager for Debian-based systems 
+Aptitude: Another GUI for apt
+Tasksel: Specific tasks for deb based systems
+Ubuntu Software Center: A graphical package manager for Ubuntu 
+Linux Mint Software Manager: A graphical package manager for Linux Mint 
