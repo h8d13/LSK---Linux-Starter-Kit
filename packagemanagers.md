@@ -25,10 +25,12 @@ Add a hub if not done already.
 * Install the GIMP image editor: `flatpak install org.gimp.GIMP`
 * List all installed packages: `flatpak list`
 
-## Snapd
+## Snapd & Snap
 ------------
 
 Snapd is a package manager developed by Canonical, the company behind Ubuntu. It allows users to install and run applications in a sandboxed environment, similar to Flatpak.
+Useful is the refresh button on top left.
+Snap is the CLI tool. 
 
 ### Basic Usage
 
