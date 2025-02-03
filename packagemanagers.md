@@ -9,9 +9,8 @@ Package managers are essential tools for Linux users, allowing them to easily in
 Flatpak is a package manager that allows users to install and run applications in a sandboxed environment. This means that applications are isolated from the rest of the system, improving security and reducing the risk of conflicts between packages.
 
 ### Basic Usage
-Add a hub:
-`# Add the flathub remote (if it's not already added)
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
+Add a hub if not done already.
+`flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 
 * Install a package: `flatpak install <package_name>`
 * List installed packages: `flatpak list`
