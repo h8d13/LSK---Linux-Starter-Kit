@@ -90,13 +90,13 @@ Apt is the package manager for Debian-based Linux distributions, such as Ubuntu 
 
 For Debian based systems, you can also work directly with dpkg and .deb files. 
 
-Install a package: dpkg -i <package_name>.deb
-Remove a package: dpkg -r <package_name>
-Search for packages: dpkg -S <keyword>
-List installed packages: dpkg -l
-List package details: dpkg -s <package_name>
-Install a package with dependencies: dpkg -i --force-depends <package_name>.deb
-Remove a package with dependencies: dpkg -r --force-depends <package_name>
+* Install a package: `dpkg -i <package_name>.deb`
+* Remove a package: `dpkg -r <package_name>`
+* Search for packages: `dpkg -S <keyword>`
+* List installed packages: `dpkg -l`
+* List package details: `dpkg -s <package_name>`
+* Install a package with dependencies: `dpkg -i --force-depends <package_name>.deb`
+* Remove a package with dependencies: `dpkg -r --force-depends <package_name>`
 
 ## AppImage
 
