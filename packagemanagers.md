@@ -116,10 +116,6 @@ If you don't like the terminal: There are solutions for GUIs.
 - Synaptic: A graphical package manager for Debian-based systems 
 - Aptitude: Another GUI for apt
 - Tasksel: Specific tasks for deb based systems
-- Ubuntu Software Center: A graphical package manager for Ubuntu 
-- Linux Mint Software Manager: A graphical package manager for Linux Mint 
-
-
 
 ## Working from source code
 
