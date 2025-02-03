@@ -8,20 +8,20 @@ Fix: https://askubuntu.com/questions/378558/unable-to-locate-package-while-tryin
 
 ### SESSION TYPE NOT SWITCHING OR NEED X11 FOR GAMES
 
-  sudo echo $XDG_SESSION_TYPE
+  `sudo echo $XDG_SESSION_TYPE`
 
 Want to try x11 from wayland?
 
 Dont forget to 
 
-  sudo apt install xserver-xorg
+  `sudo apt install xserver-xorg`
 
 Then restart and when logging back on kde small button to switch to x11, same for many distros it's in log-in screen.
 
 You can then run the first command again to check. 
 
-  echo $XDG_SESSION_TYPE
-  x11
+  `echo $XDG_SESSION_TYPE
+  x11`
 
 Especially useful if you're on Windows user and want low level x11 access. See remote sessions in main readme file of this repo.
 
