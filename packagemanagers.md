@@ -86,8 +86,25 @@ Apt is the package manager for Debian-based Linux distributions, such as Ubuntu 
 | Pacman | Arch Linux-based | No |
 | Apt | Debian-based | No |
 
+## Dpkg
 
 For Debian based systems, you can also work directly with dpkg and .deb files. 
+
+Install a package: dpkg -i <package_name>.deb
+Remove a package: dpkg -r <package_name>
+Search for packages: dpkg -S <keyword>
+List installed packages: dpkg -l
+List package details: dpkg -s <package_name>
+Install a package with dependencies: dpkg -i --force-depends <package_name>.deb
+Remove a package with dependencies: dpkg -r --force-depends <package_name>
+
+## AppImage
+
+Open a terminal in the folder you downloaded the app.
+
+`chmod +x Cemu-2.5-x86_64.AppImage`
+
+Boom you can now open it. 
 
 ## GUI Package Managers
 
@@ -98,3 +115,18 @@ If you don't like the terminal: There are solutions for GUIs.
 - Tasksel: Specific tasks for deb based systems
 - Ubuntu Software Center: A graphical package manager for Ubuntu 
 - Linux Mint Software Manager: A graphical package manager for Linux Mint 
+
+
+
+## Working from source code
+
+You will need make or whatver the project requires to build
+
+Extract the .tar.gz (or whatever compressed format) 
+Then 
+
+cd application
+./configure (whatever is the config/setup/launch script)
+make
+make install
+
