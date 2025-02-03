@@ -25,6 +25,22 @@ You can then run the first command again to check.
 
 Especially useful if you're on Windows user and want low level x11 access. See remote sessions in main readme file of this repo.
 
+
+If you want to go a step further down the rabbit hole: 
+`cat /etc/X11/default-display-manager
+/usr/sbin/gdm3`
+
+Then: `sudo nano /etc/gdm3/custom.conf` 
+
+And uncomment the line: 
+`WaylandEnable=false`
+
+Now this might vary based on if you chose another display manager. 
+
+    LightDM: /etc/lightdm/lightdm.conf
+    GDM3: /etc/gdm3/custom.conf
+    SDDM: /etc/sddm.conf
+
 ----
 
 ### Graphics card not being used Linux
