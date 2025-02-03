@@ -159,12 +159,30 @@ sudo apt install synaptic
 synaptic
 ````
 
+## Packages
+
 ![Package Managers Linux](https://github.com/h8d13/LSK---Linux-Starter-Kit/blob/main/packagemanagers.md)
+
+.deb packages are your friends! "dpkg" is designed to work with these files. 
+They will be lighter because they interact directly with the host system. 
+
+Flatpack is the most practical way to download apps in my opinion: They will be slightly heavier than on Windows because:
+Many modern apps (like Stremio) are built using Electron, which bundles a full Chromium engine and Node.js runtime. This increases the size of the app significantly.
+
+But they install seemlessly with dependencies: 
+
+```flatpak install flathub com.stremio.Stremio```
+
+Some distros like Linux Mint have a neat little software manager pre-installed!
+Basically just uses Flatpack for people who don't like terminal. 
+
+For Ubuntu, it will be snap packages by default. But you can easily install flatpack or deb packages too or use other managers. 
+
+Do be careful that .deb interacts with the host system so download from trusted sources. 
 
 ## Security & Privacy 🔒
 
-
-Check security updates are installed: 
+Check security updates are installed (ubuntu): 
 
 Default Ubuntu isos 
 
@@ -316,24 +334,6 @@ Simple solution is to check compatibility issues and re-install a clean OS with 
 
 It's also recommended to make savepoints before making major changes, there are a lot of different libraries to do this for more redundant storage :D
 
-## Packages
-.deb packages are your friends! "dpkg" is designed to work with these files. 
-They will be lighter because they interact directly with the host system. 
-
-Flatpack is the most practical way to download apps in my opinion: They will be slightly heavier than on Windows because:
-Many modern apps (like Stremio) are built using Electron, which bundles a full Chromium engine and Node.js runtime. This increases the size of the app significantly.
-
-But they install seemlessly with dependencies: 
-
-```flatpak install flathub com.stremio.Stremio```
-
-Some distros like Linux Mint have a neat little software manager pre-installed!
-Basically just uses Flatpack for people who don't like terminal. 
-
-For Ubuntu, it will be snap packages by default. But you can easily install flatpack or deb packages too or use other managers. 
-
-Do be careful that .deb interacts with the host system so download from trusted sources. 
-
 ## Developer tools
 
 I personally just get vs code from the official source and is nicely integrated with Python with the public Microsoft extensions.
@@ -431,18 +431,6 @@ When you activated tiling you can also use just super for launcher, and super + 
 Then shift + super + up/down to move them to different desktops.
 
 ![popostilingworkspaces](media/poposexample.png)
-
-## Reviving Old Hardware @geerlingguy
-
-From what I gather the older the hardware, the more lightweight the distro you will want to pick. 
-This means either going the light Ubuntu distros (Mate or Xubuntu) route or Mint which is slightly lighter than Ubuntu.
-
-But if it's not too old you can go for the regular long term support. 
-You can also go XFCE route ( another lighter desktop), which might not look as polished but is lighter and has more performance on old hardware. 
-
-There are also a bunch of beautiful systems that are also deb based like Zorin OS and KDE Neon, Pop!OS, Kali, MX and more... But under the hood you will still be able to use all your new knowledge as it's still bellow all the pretty windows.
-
-Deb iso image (that also comes with a desktop) is actually 600mb which is crazy for it can do and all the included tools. So if it's for older hardware just be careful this desktop manager is not too "heavy". 
 
 ## 📷 Working with cameras or HMDI inputs 
 
@@ -779,6 +767,18 @@ If still not working it's often the same issue with linux permissions:
 ```sudo usermod -aG input $USER```
 
 ![Gaming old hardware](https://github.com/h8d13/LSK---Linux-Starter-Kit/blob/main/oldhardwaregames.md)
+
+## Reviving Old Hardware @geerlingguy
+
+From what I gather the older the hardware, the more lightweight the distro you will want to pick. 
+This means either going the light Ubuntu distros (Mate or Xubuntu) route or Mint which is slightly lighter than Ubuntu.
+
+But if it's not too old you can go for the regular long term support. 
+You can also go XFCE route ( another lighter desktop), which might not look as polished but is lighter and has more performance on old hardware. 
+
+There are also a bunch of beautiful systems that are also deb based like Zorin OS and KDE Neon, Pop!OS, Kali, MX and more... But under the hood you will still be able to use all your new knowledge as it's still bellow all the pretty windows.
+
+Deb iso image (that also comes with a desktop) is actually 600mb which is crazy for it can do and all the included tools. So if it's for older hardware just be careful this desktop manager is not too "heavy". 
 
 ----
 
