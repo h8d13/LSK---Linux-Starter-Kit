@@ -104,7 +104,8 @@ Open a terminal in the folder you downloaded the app.
 
 `chmod +x Cemu-2.5-x86_64.AppImage`
 
-Boom you can now open it. 
+Boom you can now open it. Again don't like the terminal? 
+You can right click > Permissions > Allow executing file as program. Which will do the same as above. 
 
 ## GUI Package Managers
 
