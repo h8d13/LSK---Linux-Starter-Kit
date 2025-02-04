@@ -109,6 +109,10 @@ Open a terminal in the folder you downloaded the app.
 Boom you can now open it. Again don't like the terminal? 
 You can right click > Permissions > Allow executing file as program. Which will do the same as above. 
 
+--appimage-extract
+
+To extract all it's content. 
+
 ## GUI Package Managers
 
 If you don't like the terminal: There are solutions for GUIs. 
