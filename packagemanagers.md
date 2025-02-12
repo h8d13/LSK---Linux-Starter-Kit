@@ -44,23 +44,6 @@ Snap is the CLI tool.
 * Install the VLC media player: `snap install vlc`
 * List all installed packages: `snap list`
 
-## Pacman
-------------
-
-Pacman is the package manager for Arch Linux and its derivatives. It is known for its simplicity and flexibility.
-
-### Basic Usage
-
-* Install a package: `pacman -S <package_name>`
-* List installed packages: `pacman -Q`
-* Update packages: `pacman -Syu`
-* Remove a package: `pacman -R <package_name>`
-
-### Example
-
-* Install the Firefox web browser: `pacman -S firefox`
-* List all installed packages: `pacman -Q`
-
 ## Apt
 ------------
 
@@ -77,6 +60,23 @@ Apt is the package manager for Debian-based Linux distributions, such as Ubuntu 
 
 * Install the Chromium web browser: `apt install chromium-browser`
 * List all installed packages: `apt list --installed`
+
+## Pacman
+------------
+
+Pacman is the package manager for Arch Linux and its derivatives. It is known for its simplicity and flexibility.
+
+### Basic Usage
+
+* Install a package: `pacman -S <package_name>`
+* List installed packages: `pacman -Q`
+* Update packages: `pacman -Syu`
+* Remove a package: `pacman -R <package_name>`
+
+### Example
+
+* Install the Firefox web browser: `pacman -S firefox`
+* List all installed packages: `pacman -Q`
 
 ## Comparison
 --------------
