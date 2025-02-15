@@ -9,3 +9,8 @@ Add the following line:
 `
 
 Reload your terminal and you should be able to sudo. 
+
+Find out more details about your system
+---
+
+cat /etc/os-release
