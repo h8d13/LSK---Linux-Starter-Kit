@@ -1,5 +1,10 @@
 # Common Issues
 
+### Permissions Denied
+
+You either need to log in as su
+or give your profile access from etc/sudoers
+
 ### Cannot locate packages (Ubuntu)
 
 Fix: https://askubuntu.com/questions/378558/unable-to-locate-package-while-trying-to-install-packages-with-apt
