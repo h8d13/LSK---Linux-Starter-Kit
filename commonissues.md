@@ -106,4 +106,8 @@ Then change the Onboard SATA Mode.
 
 
 
+## Want to restart Network ? 
+
+sudo systemctl restart NetworkManager
+
 
