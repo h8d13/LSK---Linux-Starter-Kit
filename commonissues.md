@@ -105,9 +105,20 @@ If you have a Acer Bios you will need to go to Advanced > Integrated Peripherals
 Then change the Onboard SATA Mode. 
 
 
+----
 
 ## Want to restart Network ? 
 
 sudo systemctl restart NetworkManager
 
+----
 
+## Feels slow compared to when charging (laptops)
+
+Most distros have a power setting for when on charge. It will for example cap writing/reading speed of disks because the PC is not charging... You can change these in Ubuntu for example just go to power and hit performance. 
+
+I tested on an encryption program: from 400mb/s to 800mb/s just switching this. 
+
+
+
+---
