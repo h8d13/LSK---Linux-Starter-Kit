@@ -771,8 +771,6 @@ You can also go XFCE route ( another lighter desktop), which might not look as p
 
 There are also a bunch of beautiful systems that are also deb based like Zorin OS and KDE Neon, Pop!OS, Kali, MX and more... But under the hood you will still be able to use all your new knowledge as it's still bellow all the pretty windows.
 
-Deb iso image (that also comes with a desktop) is actually 600mb which is crazy for it can do and all the included tools. So if it's for older hardware just be careful this desktop manager is not too "heavy". 
-
 ----
 
 "To seek is to recognize potential beyond a current state, a gesture that inherently lacks contempt for what is."
