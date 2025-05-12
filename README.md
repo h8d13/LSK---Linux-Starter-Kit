@@ -161,12 +161,10 @@ synaptic
 
 ## Packages
 
-![Package Managers Linux](https://github.com/h8d13/LSK---Linux-Starter-Kit/blob/main/packagemanagers.md)
-
 .deb packages are your friends! "dpkg" is designed to work with these files. 
 They will be lighter because they interact directly with the host system. 
 
-Flatpack is the most practical way to download apps in my opinion: They will be slightly heavier than on Windows because:
+Flatpak is the most practical way to download apps in my opinion: They will be slightly heavier than on Windows because:
 Many modern apps (like Stremio) are built using Electron, which bundles a full Chromium engine and Node.js runtime. This increases the size of the app significantly.
 
 But they install seemlessly with dependencies: 
