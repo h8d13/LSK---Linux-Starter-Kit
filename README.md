@@ -195,6 +195,7 @@ Re-configure it ?
 Firewall
 
 ```sudo apt install ufw```
+```sudo ufw default deny incoming```
 ```sudo ufw enable```
 ```sudo ufw allow ssh``` Make sure to use keys :)
 
